@@ -44,7 +44,7 @@
     {
       "request_method": "POST",
       "request_path": "/v1/sign_up",
-      "request_body": "{\"user\":{\"full_name\":\"Minh Waelchi\",\"email\":\"shawna@miller.net\",\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"258-907-6581\"}}",
+      "request_body": "{\"user\":{\"full_name\":\"Karolyn Goodwin\",\"email\":\"alexandria@kassulke.io\",\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"(388) 870-5823 x6322\"}}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"
@@ -54,12 +54,12 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 14,\n  \"email\": \"shawna@miller.net\",\n  \"full_name\": \"Minh Waelchi\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"258-907-6581\"\n}",
+      "response_body": "{\n  \"id\": 15,\n  \"email\": \"alexandria@kassulke.io\",\n  \"full_name\": \"Karolyn Goodwin\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"(388) 870-5823 x6322\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/sign_up\" -d '{\"user\":{\"full_name\":\"Minh Waelchi\",\"email\":\"shawna@miller.net\",\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"258-907-6581\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+      "curl": "curl \"http://0.0.0.0/v1/sign_up\" -d '{\"user\":{\"full_name\":\"Karolyn Goodwin\",\"email\":\"alexandria@kassulke.io\",\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"(388) 870-5823 x6322\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
     }
   ]
 }

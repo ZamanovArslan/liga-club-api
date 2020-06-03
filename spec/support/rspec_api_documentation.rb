@@ -1,6 +1,14 @@
 require "rspec_api_documentation"
 require "rspec_api_documentation/dsl"
 
+module RspecApiDocumentation
+  class RackTestClient < ClientBase
+    def response_body
+      last_response.body.encode("utf-8")
+    end
+  end
+end
+
 # rubocop:disable Style/WordArray
 RspecApiDocumentation.configure do |config|
   config.app = Rails.application
