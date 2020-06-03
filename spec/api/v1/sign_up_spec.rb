@@ -1,9 +1,9 @@
-resource "Registration" do
+resource "Sign up" do
   include_context "with API Headers"
 
   post "/v1/sign_up" do
     with_options scope: :user do
-      parameter :full_name, "Full name"
+      parameter :full_name, "Full name", required: true
       parameter :email, "Email", required: true
       parameter :group_number, "Group number", required: true
       parameter :password, "Password", required: true

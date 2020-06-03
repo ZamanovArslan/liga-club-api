@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  mount Raddocs::App => "/"
+  mount Raddocs::App => "/docs"
 
   namespace :v1, defaults: { format: :json } do
     resources :sign_up, only: :create

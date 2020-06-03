@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "name": "Sign up",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Create User",
+          "link": "sign_up/create_user.json",
+          "groups": "all",
+          "route": "/v1/sign_up",
+          "method": "post"
+        }
+      ]
+    }
+  ]
+}
