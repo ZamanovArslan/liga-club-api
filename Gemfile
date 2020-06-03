@@ -2,15 +2,22 @@ source "https://rubygems.org"
 
 ruby "2.7.0"
 
-gem "pg", ">= 0.18", "< 2.0"
-gem "puma", "~> 4.1"
-gem "rails", "~> 6.0.3", ">= 6.0.3.1"
+gem "pg"
+gem "puma"
+gem "rails", "6.0.3.1"
 
 gem "bootsnap", ">= 1.4.2", require: false
-
-# gem 'rack-cors'
+gem "knock"
+gem "raddocs"
+gem "rack-cors"
+gem "interactor"
+gem "decent_exposure"
+gem "active_model_serializers"
+gem "responders"
 
 group :development, :test do
+  gem "factory_bot_rails"
+  gem "faker"
   gem "byebug"
   gem "dotenv-rails"
   gem "rubocop-rails"
@@ -18,6 +25,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "letter_opener"
   gem "listen", "~> 3.2"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
