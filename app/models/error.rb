@@ -26,7 +26,7 @@ class Error
     Rack::Utils.status_code(CODES_TO_STATUS[code])
   end
 
-  def to_json
+  def to_json(*_args)
     ActiveModelSerializers::SerializableResource.new([self], adapter: :json).to_json
   end
 

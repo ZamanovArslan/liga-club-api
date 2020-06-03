@@ -6,20 +6,20 @@ gem "pg"
 gem "puma"
 gem "rails", "6.0.3.1"
 
-gem "bootsnap", ">= 1.4.2", require: false
-gem "knock"
-gem "raddocs"
-gem "rack-cors"
-gem "interactor"
-gem "decent_exposure"
 gem "active_model_serializers"
+gem "bootsnap", ">= 1.4.2", require: false
+gem "decent_exposure"
+gem "interactor"
+gem "knock"
+gem "rack-cors"
+gem "raddocs"
 gem "responders"
 
 group :development, :test do
-  gem "factory_bot_rails"
-  gem "faker"
   gem "byebug"
   gem "dotenv-rails"
+  gem "factory_bot_rails"
+  gem "faker"
   gem "rubocop-rails"
   gem "rubocop-rspec"
 end
