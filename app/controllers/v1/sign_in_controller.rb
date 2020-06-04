@@ -3,10 +3,10 @@ module V1
     skip_before_action :authenticate_user!
 
     def create
-      result = CreateJwt.call(authentication_params)
+      result = Users::CreateJwt.call(authentication_params)
 
       if result.success?
-        respond_with result.jwt_token
+        respond_with result.jwt_token, seri
       else
         respond_with_error result.error
       end
@@ -15,7 +15,7 @@ module V1
     private
 
     def authentication_params
-      params.require(:authorization).permit(:email, :password)
+      params.require(:user).permit(:email, :password)
     end
   end
 end
