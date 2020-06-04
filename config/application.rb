@@ -10,6 +10,7 @@ require "action_controller/railtie"
 require "action_mailer/railtie"
 require "action_mailbox/engine"
 require "action_text/engine"
+require "action_cable/engine"
 require "action_view/railtie"
 # require "sprockets/railtie"
 
