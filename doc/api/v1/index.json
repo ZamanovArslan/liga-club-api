@@ -1,6 +1,19 @@
 {
   "resources": [
     {
+      "name": "Tokens",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Create Token",
+          "link": "tokens/create_token.json",
+          "groups": "all",
+          "route": "/v1/sign_in",
+          "method": "post"
+        }
+      ]
+    },
+    {
       "name": "Sign up",
       "explanation": null,
       "examples": [

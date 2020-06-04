@@ -6,7 +6,7 @@ module V1
       result = Users::CreateJwt.call(authentication_params)
 
       if result.success?
-        respond_with result.jwt_token, seri
+        respond_with result.jwt_token, root: "token"
       else
         respond_with_error result.error
       end
