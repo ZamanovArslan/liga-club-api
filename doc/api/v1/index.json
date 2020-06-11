@@ -10,6 +10,13 @@
           "groups": "all",
           "route": "/v1/sign_in",
           "method": "post"
+        },
+        {
+          "description": "Create Token with invalid password",
+          "link": "tokens/create_token_with_invalid_password.json",
+          "groups": "all",
+          "route": "/v1/sign_in",
+          "method": "post"
         }
       ]
     },
@@ -23,6 +30,33 @@
           "groups": "all",
           "route": "/v1/sign_up",
           "method": "post"
+        },
+        {
+          "description": "Create User",
+          "link": "sign_up/create_user.json",
+          "groups": "all",
+          "route": "/v1/sign_up",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "name": "Verify code",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Returns code",
+          "link": "verify_code/returns_code.json",
+          "groups": "all",
+          "route": "/v1/verify_code",
+          "method": "get"
+        },
+        {
+          "description": "Returns error",
+          "link": "verify_code/returns_error.json",
+          "groups": "all",
+          "route": "/v1/verify_code",
+          "method": "get"
         }
       ]
     }

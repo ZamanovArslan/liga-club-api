@@ -9,12 +9,6 @@
     {
       "scope": "user",
       "required": true,
-      "name": "full_name",
-      "description": "Full name"
-    },
-    {
-      "scope": "user",
-      "required": true,
       "name": "email",
       "description": "Email"
     },
@@ -35,6 +29,18 @@
       "required": true,
       "name": "phone_number",
       "description": "Phone number"
+    },
+    {
+      "scope": "user",
+      "required": true,
+      "name": "full_name",
+      "description": "Full name"
+    },
+    {
+      "scope": "user",
+      "required": true,
+      "name": "code_value",
+      "description": "Code"
     }
   ],
   "response_fields": [
@@ -44,7 +50,7 @@
     {
       "request_method": "POST",
       "request_path": "/v1/sign_up",
-      "request_body": "{\"user\":{\"full_name\":\"Dr. Lachelle Schoen\",\"email\":\"sylvia.spencer@hirthe.info\",\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"622-744-3422 x825\"}}",
+      "request_body": "{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"139.125.2899 x24338\",\"full_name\":\"Johnson Bernier\",\"code_value\":\"1425\"}}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"
@@ -52,14 +58,14 @@
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
-      "response_status": 201,
-      "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 66,\n  \"email\": \"sylvia.spencer@hirthe.info\",\n  \"full_name\": \"Dr. Lachelle Schoen\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"622-744-3422 x825\"\n}",
+      "response_status": 422,
+      "response_status_text": "Unprocessable Entity",
+      "response_body": "{\n  \"errors\": [\n    {\n      \"id\": \"5929f1b9-ea3a-44d3-af5f-d4a13bc6a2c4\",\n      \"status\": 422,\n      \"error\": \"Invalid credentials\"\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/sign_up\" -d '{\"user\":{\"full_name\":\"Dr. Lachelle Schoen\",\"email\":\"sylvia.spencer@hirthe.info\",\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"622-744-3422 x825\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+      "curl": "curl \"http://0.0.0.0/v1/sign_up\" -d '{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"139.125.2899 x24338\",\"full_name\":\"Johnson Bernier\",\"code_value\":\"1425\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
     }
   ]
 }
