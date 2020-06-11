@@ -2,7 +2,7 @@ module Users
   class CreateJwt
     include Interactor
 
-    delegate :email, :password, to: :context
+    delegate :phone_number, :password, to: :context
 
     def call
       context.fail!(error: :invalid_credentials) unless authenticated?
@@ -20,7 +20,7 @@ module Users
     end
 
     def user
-      @user ||= User.find_by(email: email)
+      @user ||= User.find_by(phone_number: phone_number)
     end
   end
 end

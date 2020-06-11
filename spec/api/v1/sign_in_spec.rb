@@ -3,13 +3,13 @@ resource "Tokens" do
 
   post "/v1/sign_in" do
     with_options scope: :user do
-      parameter :email, "email", required: true
-      parameter :password, "password", required: true
+      parameter :phone_number, "Phone number", required: true
+      parameter :password, "Password", required: true
     end
 
     let!(:user) { create :user }
-    let(:email) { user.email }
     let(:password) { user.password }
+    let(:phone_number) { user.phone_number }
     let(:jwt_token) { build(:jwt_token, subject: user) }
     let(:expected_data) { { "token" => jwt_token.token } }
 
@@ -22,7 +22,7 @@ resource "Tokens" do
       let(:password) { "invalid" }
       let(:expected_error) { "Invalid credentials" }
 
-      example "Create Token with invalid password", document: false do
+      example "Create Token with invalid password" do
         do_request
 
         expect(response_status).to eq(422)

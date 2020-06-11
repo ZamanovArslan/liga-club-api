@@ -15,7 +15,7 @@ module V1
     private
 
     def authentication_params
-      params.require(:user).permit(:email, :password)
+      params.require(:user).permit(:phone_number, :password)
     end
   end
 end
