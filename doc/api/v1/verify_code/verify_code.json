@@ -3,7 +3,7 @@
   "resource_explanation": null,
   "http_method": "GET",
   "route": "/v1/verify_code",
-  "description": "Returns code",
+  "description": "Verify code",
   "explanation": null,
   "parameters": [
     {

@@ -15,7 +15,7 @@ resource "Verify code" do
         }
       end
 
-      example "Returns code" do
+      example "Verify code" do
         do_request
 
         expect(response_status).to eq(200)
@@ -26,7 +26,7 @@ resource "Verify code" do
     context "when code not exists" do
       let(:code) { build :code }
 
-      example "Returns error" do
+      example "Verify code which not exists" do
         do_request
 
         expect(response_status).to eq(404)

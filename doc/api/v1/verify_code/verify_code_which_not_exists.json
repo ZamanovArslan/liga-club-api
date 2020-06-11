@@ -3,7 +3,7 @@
   "resource_explanation": null,
   "http_method": "GET",
   "route": "/v1/verify_code",
-  "description": "Returns error",
+  "description": "Verify code which not exists",
   "explanation": null,
   "parameters": [
     {
@@ -30,7 +30,7 @@
       "request_content_type": "application/json",
       "response_status": 404,
       "response_status_text": "Not Found",
-      "response_body": "{\n  \"errors\": [\n    {\n      \"id\": \"7326156f-b8a6-4225-8acf-ce9b6026e42d\",\n      \"status\": 404,\n      \"error\": \"Record not found\"\n    }\n  ]\n}",
+      "response_body": "{\n  \"errors\": [\n    {\n      \"id\": \"b680395c-583d-47f7-b270-e44d39191c63\",\n      \"status\": 404,\n      \"error\": \"Record not found\"\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

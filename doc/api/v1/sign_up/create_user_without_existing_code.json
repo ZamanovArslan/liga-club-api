@@ -3,7 +3,7 @@
   "resource_explanation": null,
   "http_method": "POST",
   "route": "/v1/sign_up",
-  "description": "Create User",
+  "description": "Create User without existing code",
   "explanation": null,
   "parameters": [
     {
@@ -50,7 +50,7 @@
     {
       "request_method": "POST",
       "request_path": "/v1/sign_up",
-      "request_body": "{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"131-017-0270 x64950\",\"full_name\":\"Bianca Jones\",\"code_value\":\"1425\"}}",
+      "request_body": "{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"837-389-3105 x039\",\"full_name\":\"Vance Dickinson\",\"code_value\":\"1425\"}}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"
@@ -58,14 +58,14 @@
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
-      "response_status": 201,
-      "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 33,\n  \"full_name\": \"Bianca Jones\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"131-017-0270 x64950\"\n}",
+      "response_status": 422,
+      "response_status_text": "Unprocessable Entity",
+      "response_body": "{\n  \"errors\": [\n    {\n      \"id\": \"4bfd86d6-982c-477b-8d5c-fe5830d8f55d\",\n      \"status\": 422,\n      \"error\": \"Invalid credentials\"\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/sign_up\" -d '{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"131-017-0270 x64950\",\"full_name\":\"Bianca Jones\",\"code_value\":\"1425\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+      "curl": "curl \"http://0.0.0.0/v1/sign_up\" -d '{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"837-389-3105 x039\",\"full_name\":\"Vance Dickinson\",\"code_value\":\"1425\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
     }
   ]
 }

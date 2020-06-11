@@ -32,8 +32,8 @@
           "method": "post"
         },
         {
-          "description": "Create User",
-          "link": "sign_up/create_user.json",
+          "description": "Create User without existing code",
+          "link": "sign_up/create_user_without_existing_code.json",
           "groups": "all",
           "route": "/v1/sign_up",
           "method": "post"
@@ -45,15 +45,15 @@
       "explanation": null,
       "examples": [
         {
-          "description": "Returns code",
-          "link": "verify_code/returns_code.json",
+          "description": "Verify code",
+          "link": "verify_code/verify_code.json",
           "groups": "all",
           "route": "/v1/verify_code",
           "method": "get"
         },
         {
-          "description": "Returns error",
-          "link": "verify_code/returns_error.json",
+          "description": "Verify code which not exists",
+          "link": "verify_code/verify_code_which_not_exists.json",
           "groups": "all",
           "route": "/v1/verify_code",
           "method": "get"
