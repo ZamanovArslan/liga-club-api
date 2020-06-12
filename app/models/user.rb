@@ -6,5 +6,5 @@ class User < ApplicationRecord
   validates :phone_number, uniqueness: true
 
   has_one :code, dependent: :destroy
-  has_one :university, dependent: :destroy
+  belongs_to :university, dependent: :destroy
 end

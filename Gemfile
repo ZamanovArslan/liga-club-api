@@ -6,6 +6,7 @@ gem "pg"
 gem "puma"
 gem "rails", "6.0.3.1"
 
+gem "administrate", git: "https://github.com/thoughtbot/administrate.git"
 gem "active_model_serializers"
 gem "bootsnap", require: false
 gem "decent_exposure"

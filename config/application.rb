@@ -12,7 +12,7 @@ require "action_mailbox/engine"
 require "action_text/engine"
 require "action_cable/engine"
 require "action_view/railtie"
-# require "sprockets/railtie"
+require "sprockets/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -32,5 +32,12 @@ module LigaClubApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # Enable Flash, Cookies, MethodOverride for Administrate Gem
+    config.middleware.use ActionDispatch::Flash
+    config.session_store :cookie_store
+    config.middleware.use ActionDispatch::Cookies
+    config.middleware.use ActionDispatch::Session::CookieStore, config.session_options
+    config.middleware.use ::Rack::MethodOverride
   end
 end
