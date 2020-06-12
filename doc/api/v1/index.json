@@ -41,6 +41,19 @@
       ]
     },
     {
+      "name": "Universities",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List of universities",
+          "link": "universities/list_of_universities.json",
+          "groups": "all",
+          "route": "/v1/universities",
+          "method": "get"
+        }
+      ]
+    },
+    {
       "name": "Verify code",
       "explanation": null,
       "examples": [

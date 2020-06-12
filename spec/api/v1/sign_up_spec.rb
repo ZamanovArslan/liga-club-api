@@ -9,7 +9,10 @@ resource "Sign up" do
       parameter :phone_number, "Phone number", required: true
       parameter :full_name, "Full name", required: true
       parameter :code_value, "Code", required: true
+      parameter :university_id, "University id", required: true
     end
+
+    let(:university) { create :university }
 
     let(:user) { build :user }
     let(:full_name) { user.full_name }
@@ -17,13 +20,15 @@ resource "Sign up" do
     let(:group_number) { user.group_number }
     let(:phone_number) { user.phone_number }
     let(:code_value) { code.value }
+    let(:university_id) { university.id }
 
     let(:expected_data) do
       {
         "id" => User.last.id,
         "full_name" => user.full_name,
         "group_number" => user.group_number,
-        "phone_number" => user.phone_number
+        "phone_number" => user.phone_number,
+        "university_id" => university.id
       }
     end
 

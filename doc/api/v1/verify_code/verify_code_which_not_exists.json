@@ -30,7 +30,7 @@
       "request_content_type": "application/json",
       "response_status": 404,
       "response_status_text": "Not Found",
-      "response_body": "{\n  \"errors\": [\n    {\n      \"id\": \"b680395c-583d-47f7-b270-e44d39191c63\",\n      \"status\": 404,\n      \"error\": \"Record not found\"\n    }\n  ]\n}",
+      "response_body": "{\n  \"errors\": [\n    {\n      \"id\": \"ed7fe431-bc37-453f-ad25-166d196f3b33\",\n      \"status\": 404,\n      \"error\": \"Record not found\"\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
