@@ -322,7 +322,6 @@ DEPENDENCIES
   factory_bot_rails
   faker
   interactor
-  jquery-rails
   knock
   letter_opener
   listen (~> 3.2)
