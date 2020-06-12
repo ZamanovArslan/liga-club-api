@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_12_200014) do
+ActiveRecord::Schema.define(version: 2020_06_12_202825) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_06_12_200014) do
     t.string "value", null: false
     t.bigint "user_id"
     t.index ["user_id"], name: "index_codes_on_user_id"
+    t.index ["value"], name: "index_codes_on_value", unique: true
   end
 
   create_table "universities", force: :cascade do |t|
