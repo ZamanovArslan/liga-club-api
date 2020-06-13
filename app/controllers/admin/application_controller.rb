@@ -9,13 +9,15 @@ module Admin
     before_action :authenticate_admin
 
     def authenticate_admin
-      # TODO Add authentication logic here.
+      # TODO: Add authentication logic here.
     end
 
-    http_basic_authenticate_with(
-      name: ENV.fetch("ADMIN_NAME"),
-      password: ENV.fetch("ADMIN_PASSWORD")
-    ) unless Rails.env.development?
+    unless Rails.env.development?
+      http_basic_authenticate_with(
+        name: ENV.fetch("ADMIN_NAME"),
+        password: ENV.fetch("ADMIN_PASSWORD")
+      )
+    end
 
     # Override this value to specify the number of elements to display at a time
     # on index pages. Defaults to 20.

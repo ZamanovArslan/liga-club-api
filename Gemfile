@@ -7,8 +7,8 @@ gem "puma"
 gem "rails", "6.0.3.1"
 
 # Cause https://github.com/thoughtbot/administrate/issues/1643
-gem "administrate", git: "https://github.com/thoughtbot/administrate.git", ref: "34686446c"
 gem "active_model_serializers"
+gem "administrate", git: "https://github.com/thoughtbot/administrate.git", ref: "34686446c"
 gem "bootsnap", require: false
 gem "decent_exposure"
 gem "interactor"

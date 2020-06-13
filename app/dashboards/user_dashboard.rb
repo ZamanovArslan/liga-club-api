@@ -16,7 +16,7 @@ class UserDashboard < Administrate::BaseDashboard
     phone_number: Field::String,
     password: Field::String,
     created_at: Field::DateTime,
-    updated_at: Field::DateTime,
+    updated_at: Field::DateTime
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -25,36 +25,36 @@ class UserDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
-  id
-  full_name
-  university
-  code
+    id
+    full_name
+    university
+    code
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
-  code
-  university
-  id
-  full_name
-  group_number
-  phone_number
-  password
-  created_at
-  updated_at
+    code
+    university
+    id
+    full_name
+    group_number
+    phone_number
+    password
+    created_at
+    updated_at
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
-  code
-  university
-  full_name
-  group_number
-  phone_number
-  password
+    code
+    university
+    full_name
+    group_number
+    phone_number
+    password
   ].freeze
 
   # COLLECTION_FILTERS

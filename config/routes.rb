@@ -2,12 +2,12 @@ Rails.application.routes.draw do
   mount Raddocs::App => "/docs"
 
   namespace :admin do
-    %i(
+    %i[
       users
       codes
       universities
-    ).each do |name|
-      resources name, only: %i(index show new create edit update destroy)
+    ].each do |name|
+      resources name, only: %i[index show new create edit update destroy]
     end
 
     root to: "users#index"
