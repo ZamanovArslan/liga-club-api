@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :admin do
     %i[
       users
+      levels
       codes
       universities
     ].each do |name|
