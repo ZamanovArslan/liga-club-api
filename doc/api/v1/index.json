@@ -44,6 +44,13 @@
           "groups": "all",
           "route": "/v1/levels/:id",
           "method": "get"
+        },
+        {
+          "description": "List of current user levels",
+          "link": "levels/list_of_current_user_levels.json",
+          "groups": "all",
+          "route": "/v1/my/levels",
+          "method": "get"
         }
       ]
     },
@@ -108,19 +115,19 @@
       ]
     },
     {
-      "name": "Tokens",
+      "name": "Sign in",
       "explanation": null,
       "examples": [
         {
           "description": "Create Token",
-          "link": "tokens/create_token.json",
+          "link": "sign_in/create_token.json",
           "groups": "all",
           "route": "/v1/sign_in",
           "method": "post"
         },
         {
           "description": "Create Token with invalid password",
-          "link": "tokens/create_token_with_invalid_password.json",
+          "link": "sign_in/create_token_with_invalid_password.json",
           "groups": "all",
           "route": "/v1/sign_in",
           "method": "post"

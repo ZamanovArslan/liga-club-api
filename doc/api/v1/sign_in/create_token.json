@@ -1,9 +1,9 @@
 {
-  "resource": "Tokens",
+  "resource": "Sign in",
   "resource_explanation": null,
   "http_method": "POST",
   "route": "/v1/sign_in",
-  "description": "Create Token with invalid password",
+  "description": "Create Token",
   "explanation": null,
   "parameters": [
     {
@@ -26,7 +26,7 @@
     {
       "request_method": "POST",
       "request_path": "/v1/sign_in",
-      "request_body": "{\"user\":{\"phone_number\":\"461.586.7526\",\"password\":\"invalid\"}}",
+      "request_body": "{\"user\":{\"phone_number\":\"594-097-9262 x2067\",\"password\":\"123456\"}}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"
@@ -34,14 +34,14 @@
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
-      "response_status": 422,
-      "response_status_text": "Unprocessable Entity",
-      "response_body": "{\n  \"errors\": [\n    {\n      \"id\": \"4eac02e2-6856-449b-bc28-fbf1b32a20f2\",\n      \"status\": 422,\n      \"error\": \"Invalid credentials\"\n    }\n  ]\n}",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTI2ODYsInN1YiI6NjN9.UIy9Mg1l5KVn3_n0KT1sniebp9Pd1YEmrfZGsVkwsa8\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/sign_in\" -d '{\"user\":{\"phone_number\":\"461.586.7526\",\"password\":\"invalid\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+      "curl": "curl \"http://0.0.0.0/v1/sign_in\" -d '{\"user\":{\"phone_number\":\"594-097-9262 x2067\",\"password\":\"123456\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
     }
   ]
 }

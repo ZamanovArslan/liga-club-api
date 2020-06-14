@@ -56,7 +56,7 @@
     {
       "request_method": "POST",
       "request_path": "/v1/sign_up",
-      "request_body": "{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"215.898.1936 x3404\",\"full_name\":\"Miss Andrew Hintz\",\"code_value\":\"1425\",\"university_id\":43}}",
+      "request_body": "{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"1-275-923-9161 x99522\",\"full_name\":\"Everett Hermann\",\"code_value\":\"1425\",\"university_id\":80}}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"
@@ -66,12 +66,12 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 34,\n  \"full_name\": \"Miss Andrew Hintz\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"215.898.1936 x3404\",\n  \"university_id\": 43\n}",
+      "response_body": "{\n  \"id\": 65,\n  \"full_name\": \"Everett Hermann\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"1-275-923-9161 x99522\",\n  \"university_id\": 80\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/sign_up\" -d '{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"215.898.1936 x3404\",\"full_name\":\"Miss Andrew Hintz\",\"code_value\":\"1425\",\"university_id\":43}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+      "curl": "curl \"http://0.0.0.0/v1/sign_up\" -d '{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"1-275-923-9161 x99522\",\"full_name\":\"Everett Hermann\",\"code_value\":\"1425\",\"university_id\":80}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
     }
   ]
 }

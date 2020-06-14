@@ -19,23 +19,23 @@
     {
       "request_method": "POST",
       "request_path": "/v1/participations",
-      "request_body": "{\"badge_id\":15}",
+      "request_body": "{\"badge_id\":32}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTE5MjQsInN1YiI6Mjl9.YFCAnlK2M9SXBUUbJza1KrIVtREPNHDwfTTqv_yaywU"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTI2ODYsInN1YiI6NjB9.t2D_70eEYsR5hkqf7F83ZdwiAISpHoV9H2TBYBuuoUY"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 6,\n  \"confirmed?\": false,\n  \"badge_id\": 15,\n  \"user\": {\n    \"id\": 29,\n    \"full_name\": \"Dr. Olimpia Considine\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"1-275-641-8822\",\n    \"university_id\": 38\n  }\n}",
+      "response_body": "{\n  \"id\": 18,\n  \"confirmed?\": false,\n  \"badge_id\": 32,\n  \"user\": {\n    \"id\": 60,\n    \"full_name\": \"Mr. Chance Green\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"1-203-463-1925 x909\",\n    \"university_id\": 75\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/participations\" -d '{\"badge_id\":15}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTE5MjQsInN1YiI6Mjl9.YFCAnlK2M9SXBUUbJza1KrIVtREPNHDwfTTqv_yaywU\""
+      "curl": "curl \"http://0.0.0.0/v1/participations\" -d '{\"badge_id\":32}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTI2ODYsInN1YiI6NjB9.t2D_70eEYsR5hkqf7F83ZdwiAISpHoV9H2TBYBuuoUY\""
     }
   ]
 }

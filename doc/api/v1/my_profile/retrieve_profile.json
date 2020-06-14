@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTE5MjQsInN1YiI6MjV9.rnD2xePe5sjtvdyTTtCxE_rYnTl13nlY0yZInA6Gjqk"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTI2ODYsInN1YiI6NTZ9.Y2Mf4wVf1zKmETmPSFQvRzB-IyIIOg5ynjhkxofrzXc"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 25,\n  \"full_name\": \"Bernardo Kreiger\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"(717) 079-6297\",\n  \"university_id\": 31\n}",
+      "response_body": "{\n  \"id\": 56,\n  \"full_name\": \"Lashon Grimes II\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"(137) 955-5840 x1884\",\n  \"university_id\": 68\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTE5MjQsInN1YiI6MjV9.rnD2xePe5sjtvdyTTtCxE_rYnTl13nlY0yZInA6Gjqk\""
+      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTI2ODYsInN1YiI6NTZ9.Y2Mf4wVf1zKmETmPSFQvRzB-IyIIOg5ynjhkxofrzXc\""
     }
   ]
 }
