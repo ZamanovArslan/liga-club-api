@@ -1,6 +1,33 @@
 {
   "resources": [
     {
+      "name": "Badges",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List of only actual badges",
+          "link": "badges/list_of_only_actual_badges.json",
+          "groups": "all",
+          "route": "/v1/badges",
+          "method": "get"
+        },
+        {
+          "description": "Specific badge",
+          "link": "badges/specific_badge.json",
+          "groups": "all",
+          "route": "/v1/badges/:id",
+          "method": "get"
+        },
+        {
+          "description": "List of current user badges",
+          "link": "badges/list_of_current_user_badges.json",
+          "groups": "all",
+          "route": "/v1/my/badges",
+          "method": "get"
+        }
+      ]
+    },
+    {
       "name": "Levels",
       "explanation": null,
       "examples": [
@@ -44,6 +71,39 @@
           "groups": "all",
           "route": "/v1/my/profile",
           "method": "delete"
+        }
+      ]
+    },
+    {
+      "name": "Participation",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Create participation for current user",
+          "link": "participation/create_participation_for_current_user.json",
+          "groups": "all",
+          "route": "/v1/participations",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "name": "Rarities",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List of rarities",
+          "link": "rarities/list_of_rarities.json",
+          "groups": "all",
+          "route": "/v1/rarities",
+          "method": "get"
+        },
+        {
+          "description": "Specific rarity",
+          "link": "rarities/specific_rarity.json",
+          "groups": "all",
+          "route": "/v1/rarities/:id",
+          "method": "get"
         }
       ]
     },

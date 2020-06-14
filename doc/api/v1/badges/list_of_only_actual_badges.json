@@ -1,0 +1,38 @@
+{
+  "resource": "Badges",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/v1/badges",
+  "description": "List of only actual badges",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/badges",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTE5MjMsInN1YiI6MjF9.hP71r5NCZfP46ADI4KUNDCueXEx6Sbuy-OkWUFitzxQ"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 9,\n    \"name\": \"Some help to elderly\",\n    \"description\": 0,\n    \"ends_at\": \"2020-06-15 23:12\",\n    \"rarity\": {\n      \"id\": 13,\n      \"name\": \"Uncommon\",\n      \"scores_count\": 9\n    },\n    \"university\": null\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://0.0.0.0/v1/badges\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTE5MjMsInN1YiI6MjF9.hP71r5NCZfP46ADI4KUNDCueXEx6Sbuy-OkWUFitzxQ\""
+    }
+  ]
+}
