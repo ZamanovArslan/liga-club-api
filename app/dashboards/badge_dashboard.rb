@@ -15,6 +15,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     name: Field::String,
     description: Field::Number,
     created_at: Field::DateTime,
+    ends_at: Field::DateTime,
     updated_at: Field::DateTime
   }.freeze
 
@@ -27,6 +28,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     name
     rarity
     university
+    ends_at
     users
   ].freeze
 
@@ -39,6 +41,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     rarity
     university
     users
+    ends_at
     created_at
     updated_at
   ].freeze
@@ -50,6 +53,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     name
     description
     rarity
+    ends_at
     university
   ].freeze
 
