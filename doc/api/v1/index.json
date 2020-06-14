@@ -1,6 +1,53 @@
 {
   "resources": [
     {
+      "name": "Levels",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List of levels",
+          "link": "levels/list_of_levels.json",
+          "groups": "all",
+          "route": "/v1/levels",
+          "method": "get"
+        },
+        {
+          "description": "Specific level",
+          "link": "levels/specific_level.json",
+          "groups": "all",
+          "route": "/v1/levels/:id",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "My Profile",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Retrieve Profile",
+          "link": "my_profile/retrieve_profile.json",
+          "groups": "all",
+          "route": "/v1/my/profile",
+          "method": "get"
+        },
+        {
+          "description": "Update Profile",
+          "link": "my_profile/update_profile.json",
+          "groups": "all",
+          "route": "/v1/my/profile",
+          "method": "patch"
+        },
+        {
+          "description": "Delete Profile",
+          "link": "my_profile/delete_profile.json",
+          "groups": "all",
+          "route": "/v1/my/profile",
+          "method": "delete"
+        }
+      ]
+    },
+    {
       "name": "Tokens",
       "explanation": null,
       "examples": [
@@ -49,6 +96,33 @@
           "link": "universities/list_of_universities.json",
           "groups": "all",
           "route": "/v1/universities",
+          "method": "get"
+        },
+        {
+          "description": "Specific university",
+          "link": "universities/specific_university.json",
+          "groups": "all",
+          "route": "/v1/universities/:id",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List of users",
+          "link": "users/list_of_users.json",
+          "groups": "all",
+          "route": "/v1/users",
+          "method": "get"
+        },
+        {
+          "description": "Specific user",
+          "link": "users/specific_user.json",
+          "groups": "all",
+          "route": "/v1/users/:id",
           "method": "get"
         }
       ]

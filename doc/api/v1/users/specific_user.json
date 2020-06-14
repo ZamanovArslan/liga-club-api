@@ -1,0 +1,38 @@
+{
+  "resource": "Users",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/v1/users/:id",
+  "description": "Specific user",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/users/77",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyMjQ3NzgsInN1YiI6Nzh9.LHiCHSJOt_oSRKQyoA3CaC6gpcdu1qrZir9cW1tuL6A"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 77,\n  \"full_name\": \"Jaime Von\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"661.086.1357 x40279\",\n  \"university_id\": 95\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://0.0.0.0/v1/users/77\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyMjQ3NzgsInN1YiI6Nzh9.LHiCHSJOt_oSRKQyoA3CaC6gpcdu1qrZir9cW1tuL6A\""
+    }
+  ]
+}

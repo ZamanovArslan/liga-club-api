@@ -1,0 +1,38 @@
+{
+  "resource": "Users",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/v1/users",
+  "description": "List of users",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/users",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyMjQ3NzgsInN1YiI6NzV9.9FKooe9sn2de1ay7ljunIm8Ojz7OHkJPw0rr0kvd-5E"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 74,\n    \"full_name\": \"Mrs. Vanda Skiles\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"321-672-3232 x4928\",\n    \"university_id\": 92\n  },\n  {\n    \"id\": 75,\n    \"full_name\": \"Stephanie Daugherty\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"762.347.8691\",\n    \"university_id\": 93\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyMjQ3NzgsInN1YiI6NzV9.9FKooe9sn2de1ay7ljunIm8Ojz7OHkJPw0rr0kvd-5E\""
+    }
+  ]
+}

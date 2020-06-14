@@ -56,7 +56,7 @@
     {
       "request_method": "POST",
       "request_path": "/v1/sign_up",
-      "request_body": "{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"528-831-0046 x716\",\"full_name\":\"Marg Conn\",\"code_value\":\"1425\",\"university_id\":18}}",
+      "request_body": "{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"(413) 049-1160 x5963\",\"full_name\":\"Jerrica Armstrong\",\"code_value\":\"1425\",\"university_id\":89}}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"
@@ -66,12 +66,12 @@
       "request_content_type": "application/json",
       "response_status": 422,
       "response_status_text": "Unprocessable Entity",
-      "response_body": "{\n  \"errors\": [\n    {\n      \"id\": \"3d35fe79-d281-41a2-9bdb-8c34c7b176ba\",\n      \"status\": 422,\n      \"error\": \"Invalid credentials\"\n    }\n  ]\n}",
+      "response_body": "{\n  \"errors\": [\n    {\n      \"id\": \"4eac02e2-6856-449b-bc28-fbf1b32a20f2\",\n      \"status\": 422,\n      \"error\": \"Invalid credentials\"\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/sign_up\" -d '{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"528-831-0046 x716\",\"full_name\":\"Marg Conn\",\"code_value\":\"1425\",\"university_id\":18}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+      "curl": "curl \"http://0.0.0.0/v1/sign_up\" -d '{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"(413) 049-1160 x5963\",\"full_name\":\"Jerrica Armstrong\",\"code_value\":\"1425\",\"university_id\":89}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
     }
   ]
 }
