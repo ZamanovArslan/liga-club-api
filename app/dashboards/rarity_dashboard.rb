@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class LevelDashboard < Administrate::BaseDashboard
+class RarityDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -11,7 +11,6 @@ class LevelDashboard < Administrate::BaseDashboard
     id: Field::Number,
     name: Field::String,
     scores_count: Field::Number,
-    description: Field::Text,
     created_at: Field::DateTime,
     updated_at: Field::DateTime
   }.freeze
@@ -25,7 +24,7 @@ class LevelDashboard < Administrate::BaseDashboard
     id
     name
     scores_count
-    description
+    created_at
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -34,7 +33,6 @@ class LevelDashboard < Administrate::BaseDashboard
     id
     name
     scores_count
-    description
     created_at
     updated_at
   ].freeze
@@ -45,7 +43,6 @@ class LevelDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = %i[
     name
     scores_count
-    description
   ].freeze
 
   # COLLECTION_FILTERS
@@ -60,10 +57,10 @@ class LevelDashboard < Administrate::BaseDashboard
   #   }.freeze
   COLLECTION_FILTERS = {}.freeze
 
-  # Overwrite this method to customize how levels are displayed
+  # Overwrite this method to customize how rarities are displayed
   # across all pages of the admin dashboard.
   #
-  def display_resource(level)
-    level.name
+  def display_resource(rarity)
+    rarity.name
   end
 end

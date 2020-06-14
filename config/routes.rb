@@ -24,9 +24,9 @@ Rails.application.routes.draw do
     post :sign_up, to: "sign_up#create"
     get :verify_code, to: "verify_code#show"
 
-    resources :universities, only: %i[show index]
-    resources :levels, only: %i[show index]
     resources :users, only: %i[show index]
-    resource :users, only: %i[show index]
+    resources :levels, only: %i[show index]
+    resources :rarities, only: %i[show index]
+    resources :universities, only: %i[show index]
   end
 end
