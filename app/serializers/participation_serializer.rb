@@ -1,7 +1,4 @@
 class ParticipationSerializer < ApplicationSerializer
-  attributes :id, :confirmed?
+  attributes :id, :confirmed?, :badge_id
   has_one :user
-  has_one :badge
-
-  validates :user, uniqueness: true, scope: :badge
 end

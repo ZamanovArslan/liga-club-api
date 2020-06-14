@@ -7,7 +7,9 @@ class User < ApplicationRecord
 
   has_one :code, dependent: :destroy
   has_many :participations, dependent: :destroy
-  has_many :badges, through: :participations
+  has_many :badges, through: :participations do
+    -> { confirmed }
+  end
 
   belongs_to :university, dependent: :destroy
 

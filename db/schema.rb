@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2020_06_14_162300) do
   create_table "badges", force: :cascade do |t|
     t.string "name", null: false
     t.integer "description", null: false
+    t.datetime "ends_at", null: false
     t.bigint "rarity_id", null: false
     t.bigint "university_id"
     t.datetime "created_at", precision: 6, null: false
@@ -48,6 +49,7 @@ ActiveRecord::Schema.define(version: 2020_06_14_162300) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["badge_id"], name: "index_participations_on_badge_id"
+    t.index ["user_id", "badge_id"], name: "index_participations_on_user_id_and_badge_id", unique: true
     t.index ["user_id"], name: "index_participations_on_user_id"
   end
 

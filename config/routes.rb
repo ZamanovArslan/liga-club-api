@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :participations
-  resources :badges
   mount Raddocs::App => "/docs"
 
   namespace :admin do
@@ -23,16 +21,19 @@ Rails.application.routes.draw do
   namespace :v1, defaults: { format: :json } do
     namespace :my do
       resources :levels, only: %i[index]
+      resources :badges, only: %i[index]
       resource :profile, only: %i[show update destroy]
     end
+
+    resources :users, only: %i[show index]
+    resources :badges, only: %i[show index]
+    resources :levels, only: %i[show index]
+    resources :rarities, only: %i[show index]
+    resources :participations, only: %i[create]
+    resources :universities, only: %i[show index]
 
     post :sign_in, to: "sign_in#create"
     post :sign_up, to: "sign_up#create"
     get :verify_code, to: "verify_code#show"
-
-    resources :users, only: %i[show index]
-    resources :levels, only: %i[show index]
-    resources :rarities, only: %i[show index]
-    resources :universities, only: %i[show index]
   end
 end

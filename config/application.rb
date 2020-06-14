@@ -33,6 +33,7 @@ module LigaClubApi
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
+    config.time_zone = "Moscow"
     # Enable Flash, Cookies, MethodOverride for Administrate Gem
     config.middleware.use ActionDispatch::Flash
     config.session_store :cookie_store

@@ -7,5 +7,7 @@ class CreateParticipations < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
+
+    add_index :participations, [:user_id, :badge_id], unique: true
   end
 end
