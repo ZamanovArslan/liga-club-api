@@ -1,4 +1,4 @@
-resource "Tokens" do
+resource "Sign in" do
   include_context "with API Headers"
 
   post "/v1/sign_in" do
