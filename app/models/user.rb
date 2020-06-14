@@ -6,5 +6,12 @@ class User < ApplicationRecord
   validates :phone_number, uniqueness: true
 
   has_one :code, dependent: :destroy
+  has_many :participations, dependent: :destroy
+  has_many :badges, through: :participations
+
   belongs_to :university, dependent: :destroy
+
+  def scores_count
+    participations.confirmed.joins(badge: :rarity).sum(:scores_count)
+  end
 end

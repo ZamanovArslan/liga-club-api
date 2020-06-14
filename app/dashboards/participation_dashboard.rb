@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class CodeDashboard < Administrate::BaseDashboard
+class ParticipationDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -9,8 +9,11 @@ class CodeDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     user: Field::BelongsTo,
+    badge: Field::BelongsTo,
     id: Field::Number,
-    value: Field::String
+    confirmed?: Field::Boolean,
+    created_at: Field::DateTime,
+    updated_at: Field::DateTime
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -19,16 +22,21 @@ class CodeDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
-    value
+    id
     user
+    badge
+    confirmed?
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
     id
-    value
     user
+    badge
+    confirmed?
+    created_at
+    updated_at
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -36,7 +44,8 @@ class CodeDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
     user
-    value
+    badge
+    confirmed?
   ].freeze
 
   # COLLECTION_FILTERS
@@ -51,10 +60,10 @@ class CodeDashboard < Administrate::BaseDashboard
   #   }.freeze
   COLLECTION_FILTERS = {}.freeze
 
-  # Overwrite this method to customize how codes are displayed
+  # Overwrite this method to customize how participations are displayed
   # across all pages of the admin dashboard.
   #
-  def display_resource(code)
-    code.value
-  end
+  # def display_resource(participation)
+  #   "Participation ##{participation.id}"
+  # end
 end

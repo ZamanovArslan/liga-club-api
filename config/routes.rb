@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
+  resources :participations
+  resources :badges
   mount Raddocs::App => "/docs"
 
   namespace :admin do
     %i[
       users
+      participations
+      badges
+      universities
+      rarities
       levels
       codes
       universities
