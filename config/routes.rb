@@ -20,7 +20,7 @@ Rails.application.routes.draw do
 
   namespace :v1, defaults: { format: :json } do
     namespace :my do
-      resources :levels, only: %i[index]
+      resource :level, only: %i[show]
       resources :badges, only: %i[index]
       resource :profile, only: %i[show update destroy]
     end
