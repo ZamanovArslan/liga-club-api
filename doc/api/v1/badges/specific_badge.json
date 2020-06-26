@@ -14,12 +14,12 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/badges/26",
+      "request_path": "/v1/badges/27",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTI2ODYsInN1YiI6NTF9.MWygj_OjDIisCRBfNOvPXGyrJL5WomtwRqMJm22ewDg"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNzQyNDgsInN1YiI6NDl9.nZ3YzLkT8N6TVFnQiq4AKGamOV5LI_3wJjwFESIRn0g"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 26,\n  \"name\": \"Some help to elderly\",\n  \"description\": 0,\n  \"ends_at\": \"2020-06-15 23:24\",\n  \"rarity\": {\n    \"id\": 34,\n    \"name\": \"Uncommon\",\n    \"scores_count\": 3\n  },\n  \"university\": null\n}",
+      "response_body": "{\n  \"id\": 27,\n  \"name\": \"Some help to elderly\",\n  \"description\": 0,\n  \"ends_at\": \"2020-06-27 19:10\",\n  \"rarity\": {\n    \"id\": 36,\n    \"name\": \"Uncommon\",\n    \"scores_count\": 9\n  },\n  \"university\": null\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/badges/26\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTI2ODYsInN1YiI6NTF9.MWygj_OjDIisCRBfNOvPXGyrJL5WomtwRqMJm22ewDg\""
+      "curl": "curl -g \"http://0.0.0.0/v1/badges/27\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNzQyNDgsInN1YiI6NDl9.nZ3YzLkT8N6TVFnQiq4AKGamOV5LI_3wJjwFESIRn0g\""
     }
   ]
 }

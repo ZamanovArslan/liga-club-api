@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTI2ODYsInN1YiI6NTZ9.Y2Mf4wVf1zKmETmPSFQvRzB-IyIIOg5ynjhkxofrzXc"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNzQyNDgsInN1YiI6NTR9.IRChbVTHX5Zl4iFvk2NWDRxIop_tk8JOjMRD0SS3_ew"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 56,\n  \"full_name\": \"Lashon Grimes II\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"(137) 955-5840 x1884\",\n  \"university_id\": 68\n}",
+      "response_body": "{\n  \"id\": 54,\n  \"full_name\": \"Yessenia Ullrich\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"(667) 431-7431 x169\",\n  \"university_id\": 66\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTI2ODYsInN1YiI6NTZ9.Y2Mf4wVf1zKmETmPSFQvRzB-IyIIOg5ynjhkxofrzXc\""
+      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNzQyNDgsInN1YiI6NTR9.IRChbVTHX5Zl4iFvk2NWDRxIop_tk8JOjMRD0SS3_ew\""
     }
   ]
 }

@@ -3,7 +3,6 @@ resource "Sign up" do
 
   post "/v1/sign_up" do
     with_options scope: :user do
-      parameter :email, "Email", required: true
       parameter :group_number, "Group number", required: true
       parameter :password, "Password", required: true
       parameter :phone_number, "Phone number", required: true

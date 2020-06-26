@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTI2ODYsInN1YiI6Njd9.VaqarscyVVGa5Y-WAO2HLDiuz1TaoBhPeF5k2Am_Jj8"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNzQyNDgsInN1YiI6NjV9.32VKi0RiUDWATkU8BApvGLBXrh450m4ahG3UE2qRVlk"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 66,\n    \"full_name\": \"Gertrudis Miller\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"287.745.6568 x113\",\n    \"university_id\": 84\n  },\n  {\n    \"id\": 67,\n    \"full_name\": \"Kala Brekke\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"484-192-3109 x66141\",\n    \"university_id\": 85\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 64,\n    \"full_name\": \"Agustina Bins\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"1-933-736-2510\",\n    \"university_id\": 82\n  },\n  {\n    \"id\": 65,\n    \"full_name\": \"Josphine Volkman\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"225.833.7936 x3669\",\n    \"university_id\": 83\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTIyNTI2ODYsInN1YiI6Njd9.VaqarscyVVGa5Y-WAO2HLDiuz1TaoBhPeF5k2Am_Jj8\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNzQyNDgsInN1YiI6NjV9.32VKi0RiUDWATkU8BApvGLBXrh450m4ahG3UE2qRVlk\""
     }
   ]
 }

@@ -26,7 +26,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 18,\n    \"name\": \"Первак\",\n    \"scores_count\": 5,\n    \"description\": \"Первый уровень\"\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 13,\n    \"name\": \"Первак\",\n    \"scores_count\": 0,\n    \"description\": \"Первый уровень\"\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
