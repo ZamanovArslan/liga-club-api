@@ -4,7 +4,6 @@ module V1
       expose :level, :fetch_level
 
       def show
-        debugger
         respond_with level
       end
 
