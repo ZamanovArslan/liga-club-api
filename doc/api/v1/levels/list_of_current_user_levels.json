@@ -2,7 +2,7 @@
   "resource": "Levels",
   "resource_explanation": null,
   "http_method": "GET",
-  "route": "/v1/my/levels",
+  "route": "/v1/my/level",
   "description": "List of current user levels",
   "explanation": null,
   "parameters": [
@@ -14,12 +14,12 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/my/levels",
+      "request_path": "/v1/my/level",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNzQyNDgsInN1YiI6NTJ9.Egc7hVoy_stJvBfG0e_YjJDhggxgTs1jdDMvirIcA0Q"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwMjUyOTEsInN1YiI6MTEwfQ.2gwQkJCEV2ESh3ayJA0qKA3i9YczKQgcqdFzum14ato"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 15,\n    \"name\": \"Первак\",\n    \"scores_count\": 10,\n    \"description\": \"Первый уровень\"\n  }\n]",
+      "response_body": "{\n  \"id\": 61,\n  \"name\": \"Первак\",\n  \"scores_count\": 50,\n  \"description\": \"Первый уровень\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/my/levels\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNzQyNDgsInN1YiI6NTJ9.Egc7hVoy_stJvBfG0e_YjJDhggxgTs1jdDMvirIcA0Q\""
+      "curl": "curl -g \"http://0.0.0.0/v1/my/level\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwMjUyOTEsInN1YiI6MTEwfQ.2gwQkJCEV2ESh3ayJA0qKA3i9YczKQgcqdFzum14ato\""
     }
   ]
 }

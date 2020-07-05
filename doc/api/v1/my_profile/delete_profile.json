@@ -19,19 +19,19 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNzQyNDgsInN1YiI6NTd9.OxpZI04DxG4jXmulSx-pd6FmM-zSIaW1f17oYw6RV-I"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwMjUyOTEsInN1YiI6MTE1fQ.SeNrBW3awSXHO3gxjcmW9-r857NPCdw8OWi8aufJJFg"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 57,\n  \"full_name\": \"Evelin Roberts\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"1-826-298-2187 x1855\",\n  \"university_id\": 72\n}",
+      "response_body": "{\n  \"id\": 115,\n  \"full_name\": \"Karole Williamson\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"1-804-902-8271\",\n  \"university_id\": 142\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNzQyNDgsInN1YiI6NTd9.OxpZI04DxG4jXmulSx-pd6FmM-zSIaW1f17oYw6RV-I\""
+      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwMjUyOTEsInN1YiI6MTE1fQ.SeNrBW3awSXHO3gxjcmW9-r857NPCdw8OWi8aufJJFg\""
     }
   ]
 }

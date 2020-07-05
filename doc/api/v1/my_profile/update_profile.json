@@ -39,23 +39,23 @@
     {
       "request_method": "PATCH",
       "request_path": "/v1/my/profile",
-      "request_body": "{\"user\":{\"full_name\":\"Updated Name\",\"phone_number\":\"+79393619602\",\"password\":\"new_password\",\"group_number\":\"11-707\",\"university_id\":67}}",
+      "request_body": "{\"user\":{\"full_name\":\"Updated Name\",\"phone_number\":\"+79393619602\",\"password\":\"new_password\",\"group_number\":\"11-707\",\"university_id\":137}}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNzQyNDgsInN1YiI6NTV9.p2fTFn55hQrBX31vvSREusNxuLZUFKndMeNe-JVA1Kw"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwMjUyOTEsInN1YiI6MTEzfQ.aFgPJ9ciBsrQejcdW8mw0HSBx6QZnlIINF-J9kH84QY"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 55,\n  \"full_name\": \"Updated Name\",\n  \"group_number\": \"11-707\",\n  \"phone_number\": \"+79393619602\",\n  \"university_id\": 67\n}",
+      "response_body": "{\n  \"id\": 113,\n  \"full_name\": \"Updated Name\",\n  \"group_number\": \"11-707\",\n  \"phone_number\": \"+79393619602\",\n  \"university_id\": 137\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{\"user\":{\"full_name\":\"Updated Name\",\"phone_number\":\"+79393619602\",\"password\":\"new_password\",\"group_number\":\"11-707\",\"university_id\":67}}' -X PATCH \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTMyNzQyNDgsInN1YiI6NTV9.p2fTFn55hQrBX31vvSREusNxuLZUFKndMeNe-JVA1Kw\""
+      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{\"user\":{\"full_name\":\"Updated Name\",\"phone_number\":\"+79393619602\",\"password\":\"new_password\",\"group_number\":\"11-707\",\"university_id\":137}}' -X PATCH \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwMjUyOTEsInN1YiI6MTEzfQ.aFgPJ9ciBsrQejcdW8mw0HSBx6QZnlIINF-J9kH84QY\""
     }
   ]
 }

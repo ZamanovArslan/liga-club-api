@@ -50,7 +50,7 @@
     {
       "request_method": "POST",
       "request_path": "/v1/sign_up",
-      "request_body": "{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"285-856-1248 x3095\",\"full_name\":\"Chance Parisian\",\"code_value\":\"1425\",\"university_id\":79}}",
+      "request_body": "{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"568-771-0794\",\"full_name\":\"Leonore O'Keefe\",\"code_value\":\"1425\",\"university_id\":149}}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"
@@ -65,7 +65,7 @@
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/sign_up\" -d '{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"285-856-1248 x3095\",\"full_name\":\"Chance Parisian\",\"code_value\":\"1425\",\"university_id\":79}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+      "curl": "curl \"http://0.0.0.0/v1/sign_up\" -d '{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"568-771-0794\",\"full_name\":\"Leonore O\\u0027Keefe\",\"code_value\":\"1425\",\"university_id\":149}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
     }
   ]
 }
