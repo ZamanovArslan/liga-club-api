@@ -151,6 +151,13 @@
           "groups": "all",
           "route": "/v1/sign_up",
           "method": "post"
+        },
+        {
+          "description": "Create User without existing code",
+          "link": "sign_up/create_user_without_existing_code.json",
+          "groups": "all",
+          "route": "/v1/sign_up",
+          "method": "post"
         }
       ]
     },

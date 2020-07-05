@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNDkzNjYsInN1YiI6OTR9.GtNk5QmvUO1K6KbiTjm7BoJTLjrt7LEGozTESCTzZCs"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjcsInN1YiI6MjQwfQ.0BUrPJ9nJE3emo0_JKXjydAKp496aTJCr-RKTgpV4fE"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 45,\n    \"name\": \"Some help to elderly\",\n    \"description\": 0,\n    \"ends_at\": \"2020-07-06 18:29\",\n    \"rarity\": {\n      \"id\": 61,\n      \"name\": \"Uncommon\",\n      \"scores_count\": 3\n    },\n    \"university\": null\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 113,\n    \"name\": \"Some help to elderly\",\n    \"description\": 0,\n    \"ends_at\": \"2020-07-06 19:59\",\n    \"rarity\": {\n      \"id\": 150,\n      \"name\": \"Uncommon\",\n      \"scores_count\": 2\n    },\n    \"university\": null\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/my/badges\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNDkzNjYsInN1YiI6OTR9.GtNk5QmvUO1K6KbiTjm7BoJTLjrt7LEGozTESCTzZCs\""
+      "curl": "curl -g \"http://0.0.0.0/v1/my/badges\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjcsInN1YiI6MjQwfQ.0BUrPJ9nJE3emo0_JKXjydAKp496aTJCr-RKTgpV4fE\""
     }
   ]
 }

@@ -20,8 +20,6 @@ resource "Sign up" do
     let(:phone_number) { user.phone_number }
     let(:code_value) { code.value }
     let(:university_id) { university.id }
-    let(:jwt_token) { build(:jwt_token, subject: User.last) }
-    let(:expected_data) { { "token" => jwt_token.token } }
 
     context "when code exists" do
       let(:code) { create :code }
@@ -30,12 +28,24 @@ resource "Sign up" do
         do_request
 
         expect(response_status).to eq(201)
-        expect(json_response_body).to eq(expected_data)
       end
     end
 
     context "when code not exists" do
       let(:code) { build :code }
+
+      example "Create User without existing code" do
+        do_request
+
+        expect(response_status).to eq(422)
+      end
+    end
+
+    context "when code already taken" do
+      let(:code) { create :code }
+      before do
+        another_user = create :user, code: code
+      end
 
       example "Create User without existing code" do
         do_request

@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNDkzNjYsInN1YiI6OTh9.yPbV_vshhKP8lRb7dGuxMdRXtuhz7bRvZhbN9HtNo3Y"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjgsInN1YiI6MjQ0fQ.YvvJ7QTB_vt1-GqNaQkdAqpe4hr6kh-WsRtslDsbAgM"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 98,\n  \"full_name\": \"Pat Beatty\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"532-437-3112 x815\",\n  \"university_id\": 125\n}",
+      "response_body": "{\n  \"id\": 244,\n  \"full_name\": \"Marcus Conn\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"300.043.7717 x6780\",\n  \"university_id\": 302\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNDkzNjYsInN1YiI6OTh9.yPbV_vshhKP8lRb7dGuxMdRXtuhz7bRvZhbN9HtNo3Y\""
+      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjgsInN1YiI6MjQ0fQ.YvvJ7QTB_vt1-GqNaQkdAqpe4hr6kh-WsRtslDsbAgM\""
     }
   ]
 }
