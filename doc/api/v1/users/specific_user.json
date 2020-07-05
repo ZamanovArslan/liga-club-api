@@ -14,12 +14,12 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/users/125",
+      "request_path": "/v1/users/111",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwMjUyOTEsInN1YiI6MTI2fQ.fbWJqdzYkmp1DNZyxGLIlwB_m4jIz5-dwfmKDkm96qE"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNDkzNjcsInN1YiI6MTEyfQ.2VtYZlicUMe47h_bBcGPis20TnjiL3CXYHGi4y1Z7UY"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 125,\n  \"full_name\": \"Mrs. Garry Stroman\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"518.342.1109 x681\",\n  \"university_id\": 155\n}",
+      "response_body": "{\n  \"id\": 111,\n  \"full_name\": \"Euna Koch\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"1-502-302-0766\",\n  \"university_id\": 144\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users/125\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwMjUyOTEsInN1YiI6MTI2fQ.fbWJqdzYkmp1DNZyxGLIlwB_m4jIz5-dwfmKDkm96qE\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users/111\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNDkzNjcsInN1YiI6MTEyfQ.2VtYZlicUMe47h_bBcGPis20TnjiL3CXYHGi4y1Z7UY\""
     }
   ]
 }

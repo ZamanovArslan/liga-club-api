@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwMjUyOTEsInN1YiI6MTIzfQ.2-96ONW5jtZiHPX_HVJuScCtK--VH9eyY06GTLqO-Kg"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNDkzNjcsInN1YiI6MTA5fQ.I6F8iUpUosIo89675YgDnReXHoZ194gvz7f27nDzxqA"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 122,\n    \"full_name\": \"Ramonita Lehner Sr.\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"253-325-1424 x8004\",\n    \"university_id\": 152\n  },\n  {\n    \"id\": 123,\n    \"full_name\": \"Youlanda Kiehn V\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"1-362-457-4365\",\n    \"university_id\": 153\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 108,\n    \"full_name\": \"Golda Koch\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"884-887-0103 x36643\",\n    \"university_id\": 141\n  },\n  {\n    \"id\": 109,\n    \"full_name\": \"Darius Shields Sr.\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"(551) 226-5175 x4046\",\n    \"university_id\": 142\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwMjUyOTEsInN1YiI6MTIzfQ.2-96ONW5jtZiHPX_HVJuScCtK--VH9eyY06GTLqO-Kg\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNDkzNjcsInN1YiI6MTA5fQ.I6F8iUpUosIo89675YgDnReXHoZ194gvz7f27nDzxqA\""
     }
   ]
 }

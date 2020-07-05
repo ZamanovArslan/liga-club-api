@@ -50,7 +50,7 @@
     {
       "request_method": "POST",
       "request_path": "/v1/sign_up",
-      "request_body": "{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"1-733-070-4876 x187\",\"full_name\":\"Johanne Kemmer I\",\"code_value\":\"1425\",\"university_id\":148}}",
+      "request_body": "{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"(408) 500-5236 x550\",\"full_name\":\"Harris Davis\",\"code_value\":\"1425\",\"university_id\":137}}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"
@@ -60,12 +60,12 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 121,\n  \"full_name\": \"Johanne Kemmer I\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"1-733-070-4876 x187\",\n  \"university_id\": 148\n}",
+      "response_body": "{\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNDkzNjcsInN1YiI6MTA3fQ.PhfhUgV7K0smtZC87dWXjZVH4MHc12-Bg80fmWG5F6Q\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/sign_up\" -d '{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"1-733-070-4876 x187\",\"full_name\":\"Johanne Kemmer I\",\"code_value\":\"1425\",\"university_id\":148}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+      "curl": "curl \"http://0.0.0.0/v1/sign_up\" -d '{\"user\":{\"group_number\":\"11-703\",\"password\":\"123456\",\"phone_number\":\"(408) 500-5236 x550\",\"full_name\":\"Harris Davis\",\"code_value\":\"1425\",\"university_id\":137}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
     }
   ]
 }

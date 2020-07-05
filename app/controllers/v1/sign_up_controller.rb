@@ -6,7 +6,7 @@ module V1
       result = Users::Create.call(params: user_params)
 
       if result.success?
-        respond_with result.user
+        respond_with JwtToken.new(payload: { sub: result.user.id }), root: "token"
       else
         respond_with_error result.error
       end
