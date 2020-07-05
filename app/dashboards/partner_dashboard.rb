@@ -14,7 +14,7 @@ class PartnerDashboard < Administrate::BaseDashboard
     discount: Field::Number,
     instagram_link: Field::String,
     created_at: Field::DateTime,
-    updated_at: Field::DateTime,
+    updated_at: Field::DateTime
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -23,32 +23,32 @@ class PartnerDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
-  id
-  name
-  description
-  discount
+    id
+    name
+    description
+    discount
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
-  id
-  name
-  description
-  discount
-  instagram_link
-  created_at
-  updated_at
+    id
+    name
+    description
+    discount
+    instagram_link
+    created_at
+    updated_at
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
-  name
-  description
-  discount
-  instagram_link
+    name
+    description
+    discount
+    instagram_link
   ].freeze
 
   # COLLECTION_FILTERS

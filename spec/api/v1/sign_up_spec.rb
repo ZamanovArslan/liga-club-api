@@ -43,8 +43,9 @@ resource "Sign up" do
 
     context "when code already taken" do
       let(:code) { create :code }
+
       before do
-        another_user = create :user, code: code
+        create :user, code: code
       end
 
       example "Create User without existing code" do
