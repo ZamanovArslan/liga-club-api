@@ -27,6 +27,7 @@ resource "Sign up" do
       example "Create User" do
         do_request
 
+        expect(User.last.code).to eq(code)
         expect(response_status).to eq(201)
       end
     end
