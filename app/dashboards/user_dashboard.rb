@@ -9,6 +9,7 @@ class UserDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     code: Field::HasOne,
+    photo: Field::ActiveStorage,
     university: Field::BelongsTo,
     id: Field::Number,
     full_name: Field::String,
