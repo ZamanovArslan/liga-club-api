@@ -30,7 +30,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 64,\n  \"confirmed?\": false,\n  \"badge_id\": 117,\n  \"user\": {\n    \"id\": 248,\n    \"full_name\": \"Kristeen Walter\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"1-794-078-0832\",\n    \"university_id\": 309\n  }\n}",
+      "response_body": "{\n  \"id\": 64,\n  \"confirmed\": false,\n  \"badge_id\": 117,\n  \"user\": {\n    \"id\": 248,\n    \"full_name\": \"Kristeen Walter\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"1-794-078-0832\",\n    \"university_id\": 309\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

@@ -6,7 +6,7 @@ resource "Participation" do
   let(:expected_data) do
     {
       "id" => Participation.last.id,
-      "confirmed?" => Participation.last.confirmed?,
+      "confirmed" => Participation.last.confirmed,
       "user" =>
         {
           "id" => current_user.id,

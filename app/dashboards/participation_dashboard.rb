@@ -11,7 +11,7 @@ class ParticipationDashboard < Administrate::BaseDashboard
     user: Field::BelongsTo,
     badge: Field::BelongsTo,
     id: Field::Number,
-    confirmed?: Field::Boolean,
+    confirmed: Field::Boolean,
     created_at: Field::DateTime,
     updated_at: Field::DateTime
   }.freeze
@@ -25,7 +25,7 @@ class ParticipationDashboard < Administrate::BaseDashboard
     id
     user
     badge
-    confirmed?
+    confirmed
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -34,7 +34,7 @@ class ParticipationDashboard < Administrate::BaseDashboard
     id
     user
     badge
-    confirmed?
+    confirmed
     created_at
     updated_at
   ].freeze
@@ -45,7 +45,7 @@ class ParticipationDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = %i[
     user
     badge
-    confirmed?
+    confirmed
   ].freeze
 
   # COLLECTION_FILTERS

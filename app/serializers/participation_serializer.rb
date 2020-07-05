@@ -1,4 +1,4 @@
 class ParticipationSerializer < ApplicationSerializer
-  attributes :id, :confirmed?, :badge_id
+  attributes :id, :confirmed, :badge_id
   has_one :user
 end

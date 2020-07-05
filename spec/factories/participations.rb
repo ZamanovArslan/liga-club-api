@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :participation do
     trait :confirmed do
-      confirmed? { true }
+      confirmed { true }
     end
   end
 end
