@@ -4,7 +4,7 @@ module V1
     expose :rarity
 
     def index
-      respond_with rarities
+      respond_with rarities, each_serializer: RaritySerializer
     end
 
     def show

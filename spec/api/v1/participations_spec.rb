@@ -26,7 +26,7 @@ resource "Participation" do
 
     example_request "Create participation for current user" do
       expect(response_status).to eq(201)
-      expect(json_response_body).to eq(expected_data)
+      expect(json_response_body["participation"]).to eq(expected_data)
     end
   end
 end

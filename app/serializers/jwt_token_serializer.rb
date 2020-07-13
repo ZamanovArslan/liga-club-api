@@ -1,3 +1,7 @@
 class JwtTokenSerializer < ApplicationSerializer
-  attributes :token
+  attributes :value
+
+  def value
+    object.token
+  end
 end

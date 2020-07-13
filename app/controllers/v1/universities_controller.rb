@@ -6,7 +6,7 @@ module V1
     expose :university
 
     def index
-      respond_with universities
+      respond_with universities, each_serializer: UniversitySerializer
     end
 
     def show

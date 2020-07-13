@@ -6,11 +6,13 @@ resource "My Profile" do
   get "/v1/my/profile" do
     let(:expected_data) do
       {
-        "id" => User.last.id,
-        "full_name" => current_user.full_name,
-        "group_number" => current_user.group_number,
-        "phone_number" => current_user.phone_number,
-        "university_id" => current_user.university.id
+        "user" => {
+          "id" => User.last.id,
+          "full_name" => current_user.full_name,
+          "group_number" => current_user.group_number,
+          "phone_number" => current_user.phone_number,
+          "university_id" => current_user.university.id
+        }
       }
     end
 
@@ -53,7 +55,7 @@ resource "My Profile" do
 
     example_request "Update Profile" do
       expect(response_status).to eq(200)
-      expect(json_response_body).to eq(expected_data)
+      expect(json_response_body["user"]).to eq(expected_data)
     end
 
     context "with invalid data" do
@@ -74,7 +76,7 @@ resource "My Profile" do
         do_request
 
         expect(response_status).to eq(422)
-        expect(json_response_body).to eq(expected_data)
+        expect(json_response_body["error"]).to eq(expected_data)
       end
     end
   end
@@ -94,7 +96,7 @@ resource "My Profile" do
 
     example_request "Delete Profile" do
       expect(response_status).to eq(200)
-      expect(json_response_body).to eq(expected_data)
+      expect(json_response_body["user"]).to eq(expected_data)
     end
   end
 end

@@ -6,7 +6,7 @@ module V1
     expose :level
 
     def index
-      respond_with levels
+      respond_with levels, each_serializer: LevelSerializer
     end
 
     def show

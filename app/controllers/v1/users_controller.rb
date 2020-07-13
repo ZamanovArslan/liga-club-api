@@ -4,7 +4,7 @@ module V1
     expose :user
 
     def index
-      respond_with users
+      respond_with users, each_serializer: UserSerializer
     end
 
     def show

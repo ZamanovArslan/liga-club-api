@@ -15,7 +15,7 @@ resource "Levels" do
   get "/v1/levels" do
     example_request "List of levels" do
       expect(response_status).to eq(200)
-      expect(json_response_body).to eq([expected_data])
+      expect(json_response_body["levels"]).to eq([expected_data])
     end
   end
 
@@ -24,7 +24,7 @@ resource "Levels" do
 
     example_request "Specific level" do
       expect(response_status).to eq(200)
-      expect(json_response_body).to eq(expected_data)
+      expect(json_response_body["level"]).to eq(expected_data)
     end
   end
 end

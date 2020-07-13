@@ -13,7 +13,7 @@ resource "Universities" do
   get "/v1/universities" do
     example_request "List of universities" do
       expect(response_status).to eq(200)
-      expect(json_response_body).to eq([expected_data])
+      expect(json_response_body["universities"]).to eq([expected_data])
     end
   end
 
@@ -22,7 +22,7 @@ resource "Universities" do
 
     example_request "Specific university" do
       expect(response_status).to eq(200)
-      expect(json_response_body).to eq(expected_data)
+      expect(json_response_body["university"]).to eq(expected_data)
     end
   end
 end
