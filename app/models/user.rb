@@ -16,4 +16,6 @@ class User < ApplicationRecord
   def scores_count
     participations.confirmed.joins(badge: :rarity).sum(:scores_count)
   end
+
+  def level
 end
