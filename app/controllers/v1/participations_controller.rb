@@ -4,7 +4,7 @@ module V1
       participation = Participation.create(user: current_user, badge_id: params[:badge_id])
 
       if participation.save
-        respond_with participation
+        respond_with participation, each_serializer: ParticipationSerializer
       else
         respond_with participation.errors
       end

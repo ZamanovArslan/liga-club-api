@@ -10,10 +10,12 @@ resource "Levels" do
 
   let(:expected_data) do
     {
-      "id" => suitable_level.id,
-      "name" => suitable_level.name,
-      "scores_count" => suitable_level.scores_count,
-      "description" => suitable_level.description
+      "level" => {
+        "id" => suitable_level.id,
+        "name" => suitable_level.name,
+        "scores_count" => suitable_level.scores_count,
+        "description" => suitable_level.description
+      }
     }
   end
 

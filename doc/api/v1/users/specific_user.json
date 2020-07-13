@@ -14,12 +14,12 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/users/258",
+      "request_path": "/v1/users/882",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjgsInN1YiI6MjU5fQ.ggpzLC8gXi_Pyf17jIxpoyjXAeB1LCs1FVzBJrUtVOA"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDIsInN1YiI6ODgzfQ.c3kZ-odZE3vb03GZjC_kZAEoDdnh1bXsFVbo5a3KsBM"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 258,\n  \"full_name\": \"Merle Flatley\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"(264) 701-1520 x8646\",\n  \"university_id\": 323\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 882,\n    \"full_name\": \"Florencio Kovacek\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"147.797.0591 x431\",\n    \"university_id\": 1119\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users/258\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjgsInN1YiI6MjU5fQ.ggpzLC8gXi_Pyf17jIxpoyjXAeB1LCs1FVzBJrUtVOA\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users/882\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDIsInN1YiI6ODgzfQ.c3kZ-odZE3vb03GZjC_kZAEoDdnh1bXsFVbo5a3KsBM\""
     }
   ]
 }

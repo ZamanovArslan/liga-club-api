@@ -23,7 +23,7 @@ resource "Badges" do
 
     example_request "List of only actual badges" do
       expect(response_status).to eq(200)
-      expect(json_response_body).to eq([expected_data])
+      expect(json_response_body["badges"]).to eq([expected_data])
     end
   end
 
@@ -34,7 +34,7 @@ resource "Badges" do
 
     example_request "Specific badge" do
       expect(response_status).to eq(200)
-      expect(json_response_body).to eq(expected_data)
+      expect(json_response_body["badge"]).to eq(expected_data)
     end
   end
 end

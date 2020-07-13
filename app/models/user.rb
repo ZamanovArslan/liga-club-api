@@ -15,6 +15,10 @@ class User < ApplicationRecord
   belongs_to :university, dependent: :destroy
 
   def scores_count
-    participations.confirmed.joins(badge: :rarity).sum(:scores_count)
+    badges.joins(:rarity).sum(:scores_count)
+  end
+
+  def level
+    Level.where("scores_count <= ?", scores_count).max_by(&:scores_count)
   end
 end

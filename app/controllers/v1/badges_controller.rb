@@ -4,7 +4,7 @@ module V1
     expose :badge
 
     def index
-      respond_with badges
+      respond_with badges, each_serializer: BadgeSerializer
     end
 
     def show

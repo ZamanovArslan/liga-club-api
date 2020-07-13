@@ -16,7 +16,7 @@ resource "Rarities" do
 
     example_request "List of rarities" do
       expect(response_status).to eq(200)
-      expect(json_response_body).to eq([expected_data])
+      expect(json_response_body["rarities"]).to eq([expected_data])
     end
   end
 
@@ -27,7 +27,7 @@ resource "Rarities" do
 
     example_request "Specific rarity" do
       expect(response_status).to eq(200)
-      expect(json_response_body).to eq(expected_data)
+      expect(json_response_body["rarity"]).to eq(expected_data)
     end
   end
 end

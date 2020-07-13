@@ -4,7 +4,7 @@ module V1
       expose :badges, from: :current_user
 
       def index
-        respond_with badges
+        respond_with badges, each_serializer: BadgeSerializer
       end
     end
   end

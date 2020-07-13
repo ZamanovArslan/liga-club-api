@@ -10,8 +10,10 @@ resource "Verify code" do
       let(:code) { create :code }
       let(:expected_data) do
         {
-          "value" => code.value,
-          "user_id" => nil
+          "code" => {
+            "value" => code.value,
+            "user_id" => nil
+          }
         }
       end
 

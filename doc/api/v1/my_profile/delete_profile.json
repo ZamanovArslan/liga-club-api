@@ -19,19 +19,19 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjgsInN1YiI6MjQ3fQ.PAVmQ9RXqCpLIG1Ohr482pjAn8zbHQQkgpT8qxmh7pU"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDEsInN1YiI6ODcxfQ.ySbfxI3GTwtjWfXte0YuYbrPZkP4KE26aAV8wKlmsXE"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 247,\n  \"full_name\": \"Mrs. Dwayne Bashirian\",\n  \"group_number\": \"11-703\",\n  \"phone_number\": \"376.256.8156\",\n  \"university_id\": 308\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 871,\n    \"full_name\": \"Dr. Eldridge Witting\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"509-972-6912 x422\",\n    \"university_id\": 1104\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjgsInN1YiI6MjQ3fQ.PAVmQ9RXqCpLIG1Ohr482pjAn8zbHQQkgpT8qxmh7pU\""
+      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDEsInN1YiI6ODcxfQ.ySbfxI3GTwtjWfXte0YuYbrPZkP4KE26aAV8wKlmsXE\""
     }
   ]
 }
