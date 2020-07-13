@@ -1,4 +1,4 @@
-  module Admin
+module Admin
   class UsersController < Admin::ApplicationController
     def scoped_resource
       resource_class.with_attached_photo
