@@ -36,6 +36,7 @@ class UserDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
     code
+    photo
     university
     id
     full_name
@@ -53,6 +54,7 @@ class UserDashboard < Administrate::BaseDashboard
     university
     full_name
     group_number
+    photo
     phone_number
     password
   ].freeze
