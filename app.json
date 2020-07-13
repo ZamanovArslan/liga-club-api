@@ -1,0 +1,19 @@
+{
+  "name": "Liga Club API",
+  "env": {
+    "ADMIN_NAME": { "value": "liga-admin" },
+    "ADMIN_PASSWORD": { "value": "liga-club321" },
+    "CORS_ORIGINS": { "value": "localhost" },
+    "LANG": { "value": "en_US.UTF-8" },
+    "RACK_ENV": { "value": "production" },
+    "RAILS_ENV": { "value": "production" },
+    "SECRET_KEY_BASE": { "value": "156d2bf7d28df1e852f8af741141658f6b96c22e7836a9201e420afb1526a7dc45e09109149ceebe69cc1a09ca9b8d6b5679a124b54cd1ca008f88f9feb9f1ca" },
+    "RAILS_LOG_TO_STDOUT": { "value": "production" },
+    "RAILS_SERVE_STATIC_FILES": { "value": "enabled" },
+    "RAILS_MASTER_KEY": { "value": "9aecfd32fe047c19cc758198c24286d1" },
+    "SECRET_KEY_BASE": { "value": "164adac32e4613d7e3bb0c96bde4b7d234176401d3e65162346c835a5a72c1940c8119c6be452829ca8812a150214c26e665d3a61771330e605405a7c72f304f" },
+},
+  "addons": [
+    "heroku-postgresql"
+  ]
+}
