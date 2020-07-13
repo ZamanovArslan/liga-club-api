@@ -19,23 +19,23 @@
     {
       "request_method": "POST",
       "request_path": "/v1/participations",
-      "request_body": "{\"badge_id\":117}",
+      "request_body": "{\"badge_id\":362}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjgsInN1YiI6MjQ4fQ.4vDjOsXI8qkmUTHs8usXan26YEWBaZyqn-9uu0tcWoc"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDEsInN1YiI6ODcyfQ.z2QbT8ALC8wlJnBzu-0zMz_PEAMqrGxhVWxNHem3hUc"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 64,\n  \"confirmed\": false,\n  \"badge_id\": 117,\n  \"user\": {\n    \"id\": 248,\n    \"full_name\": \"Kristeen Walter\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"1-794-078-0832\",\n    \"university_id\": 309\n  }\n}",
+      "response_body": "{\n  \"participation\": {\n    \"id\": 146,\n    \"confirmed\": false,\n    \"badge_id\": 362,\n    \"user\": {\n      \"id\": 872,\n      \"full_name\": \"Blaine Herman\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"156-652-8154 x3772\",\n      \"university_id\": 1105\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/participations\" -d '{\"badge_id\":117}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjgsInN1YiI6MjQ4fQ.4vDjOsXI8qkmUTHs8usXan26YEWBaZyqn-9uu0tcWoc\""
+      "curl": "curl \"http://0.0.0.0/v1/participations\" -d '{\"badge_id\":362}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDEsInN1YiI6ODcyfQ.z2QbT8ALC8wlJnBzu-0zMz_PEAMqrGxhVWxNHem3hUc\""
     }
   ]
 }

@@ -26,7 +26,7 @@
     {
       "request_method": "POST",
       "request_path": "/v1/sign_in",
-      "request_body": "{\"user\":{\"phone_number\":\"1-207-194-3845\",\"password\":\"123456\"}}",
+      "request_body": "{\"user\":{\"phone_number\":\"811.933.2167\",\"password\":\"123456\"}}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"
@@ -36,12 +36,12 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjgsInN1YiI6MjUxfQ.lApSkAGC3KU64WgS8IpmW0ElQK6hOdFpnTtWkaYn34k\"\n}",
+      "response_body": "{\n  \"token\": {\n    \"value\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDEsInN1YiI6ODc1fQ.-LDw0s4qgXvNF04Wjq_an9WpzCGTTJqOQmgS94DnMfU\"\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/sign_in\" -d '{\"user\":{\"phone_number\":\"1-207-194-3845\",\"password\":\"123456\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+      "curl": "curl \"http://0.0.0.0/v1/sign_in\" -d '{\"user\":{\"phone_number\":\"811.933.2167\",\"password\":\"123456\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
     }
   ]
 }

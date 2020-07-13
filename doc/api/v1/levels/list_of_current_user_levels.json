@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjcsInN1YiI6MjQyfQ.vd6rBWdzrralN_w5EZejR_--4H9Zl3Qq_NdqAkK5xHU"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDEsInN1YiI6ODY2fQ.15hYZNocf2auvl_8A7bF5pVor3ra8fikaxXvMosKK28"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 101,\n  \"name\": \"Первак\",\n  \"scores_count\": 50,\n  \"description\": \"Первый уровень\"\n}",
+      "response_body": "{\n  \"level\": {\n    \"id\": 285,\n    \"name\": \"Первак\",\n    \"scores_count\": 50,\n    \"description\": \"Первый уровень\"\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/my/level\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjcsInN1YiI6MjQyfQ.vd6rBWdzrralN_w5EZejR_--4H9Zl3Qq_NdqAkK5xHU\""
+      "curl": "curl -g \"http://0.0.0.0/v1/my/level\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDEsInN1YiI6ODY2fQ.15hYZNocf2auvl_8A7bF5pVor3ra8fikaxXvMosKK28\""
     }
   ]
 }

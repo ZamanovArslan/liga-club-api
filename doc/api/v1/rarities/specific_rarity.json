@@ -14,12 +14,12 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/rarities/158",
+      "request_path": "/v1/rarities/496",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjgsInN1YiI6MjUwfQ.MuAun65Jv6p5a7ewASUuhppf3hilmILJdc0nnsetQgE"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDEsInN1YiI6ODc0fQ.PqGAMIW0m46cwpEZBttuu-PAFPu0aM6fPJAmLFbzHhk"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 158,\n  \"name\": \"Uncommon\",\n  \"scores_count\": 0\n}",
+      "response_body": "{\n  \"rarity\": {\n    \"id\": 496,\n    \"name\": \"Uncommon\",\n    \"scores_count\": 0\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/rarities/158\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjgsInN1YiI6MjUwfQ.MuAun65Jv6p5a7ewASUuhppf3hilmILJdc0nnsetQgE\""
+      "curl": "curl -g \"http://0.0.0.0/v1/rarities/496\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDEsInN1YiI6ODc0fQ.PqGAMIW0m46cwpEZBttuu-PAFPu0aM6fPJAmLFbzHhk\""
     }
   ]
 }

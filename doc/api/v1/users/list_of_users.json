@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjgsInN1YiI6MjU2fQ.FHGnpDkt4-liFACPqMZWv4GrmZMPC6bXJyQOlLMwFvA"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDEsInN1YiI6ODgwfQ.HDP_Yq291t7U3Du02ZbBE8dcxKNn11sLllAzsmJxXtM"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 255,\n    \"full_name\": \"Ms. Herb Grady\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"(909) 058-6058 x2593\",\n    \"university_id\": 320\n  },\n  {\n    \"id\": 256,\n    \"full_name\": \"Sid Bogan\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"1-643-817-4630 x71376\",\n    \"university_id\": 321\n  }\n]",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 879,\n      \"full_name\": \"Maddie Sipes\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"(554) 608-3789 x968\",\n      \"university_id\": 1116\n    },\n    {\n      \"id\": 880,\n      \"full_name\": \"Anthony Gibson\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"156-362-0386 x791\",\n      \"university_id\": 1117\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQwNTQ3NjgsInN1YiI6MjU2fQ.FHGnpDkt4-liFACPqMZWv4GrmZMPC6bXJyQOlLMwFvA\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDEsInN1YiI6ODgwfQ.HDP_Yq291t7U3Du02ZbBE8dcxKNn11sLllAzsmJxXtM\""
     }
   ]
 }
