@@ -13,7 +13,8 @@ resource "Participation" do
           "full_name" => current_user.full_name,
           "group_number" => current_user.group_number,
           "phone_number" => current_user.phone_number,
-          "university_id" => current_user.university.id
+          "university_id" => current_user.university.id,
+          "avatar" => be_a_empty_image_attachment
         },
       "badge_id" => badge.id
     }
@@ -26,7 +27,7 @@ resource "Participation" do
 
     example_request "Create participation for current user" do
       expect(response_status).to eq(201)
-      expect(json_response_body["participation"]).to eq(expected_data)
+      expect(json_response_body["participation"]).to include(expected_data)
     end
   end
 end

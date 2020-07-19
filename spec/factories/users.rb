@@ -6,4 +6,8 @@ FactoryBot.define do
     password { "123456" }
     university { association(:university) }
   end
+
+  trait :with_avatar do
+    avatar { Rack::Test::UploadedFile.new(File.join("spec/support/fixtures", "image.png")) }
+  end
 end

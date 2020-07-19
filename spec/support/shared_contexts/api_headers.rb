@@ -1,9 +1,8 @@
 shared_context "with API Headers" do
   header "Accept", "application/json"
-  header "Content-Type", "application/json"
   header "Lang", "en"
 
-  let(:raw_post) { params.to_json }
+  let(:raw_post) { debugger;params.to_json }
 end
 
 shared_context "with Authorization header" do

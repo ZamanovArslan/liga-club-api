@@ -9,6 +9,11 @@ class BadgeDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     rarity: Field::BelongsTo,
+    image: Field::Carrierwave.with_options(
+      image: :medium,
+      remove: true,
+      remote_url: false
+    ),
     university: Field::BelongsTo,
     users: Field::HasMany,
     id: Field::Number,
@@ -38,6 +43,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     id
     name
     description
+    image
     rarity
     university
     users
@@ -52,6 +58,7 @@ class BadgeDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = %i[
     name
     description
+    image
     rarity
     ends_at
     university

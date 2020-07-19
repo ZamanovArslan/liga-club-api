@@ -1,5 +1,6 @@
 resource "Sign up" do
-  include_context "with API Headers"
+  header "Content-Type", "application/json"
+  header "Accept", "application/json"
 
   post "/v1/sign_up" do
     with_options scope: :user do
@@ -9,6 +10,7 @@ resource "Sign up" do
       parameter :full_name, "Full name", required: true
       parameter :code_value, "Code", required: true
       parameter :university_id, "University id", required: true
+      parameter :avatar, "Avatar"
     end
 
     let(:university) { create :university }
@@ -20,6 +22,8 @@ resource "Sign up" do
     let(:phone_number) { user.phone_number }
     let(:code_value) { code.value }
     let(:university_id) { university.id }
+    let(:avatar) { Rack::Test::UploadedFile.new("spec/support/fixtures/image.png", "image/png") }
+    let(:new_user) { User.last }
 
     context "when code exists" do
       let(:code) { create :code }
@@ -27,7 +31,8 @@ resource "Sign up" do
       example "Create User" do
         do_request
 
-        expect(User.last.code).to eq(code)
+        expect(new_user.code).to eq(code)
+        expect(new_user.avatar.url).to eq("/uploads/user/avatar/#{new_user.id}/image.png")
         expect(response_status).to eq(201)
       end
     end
@@ -35,7 +40,7 @@ resource "Sign up" do
     context "when code not exists" do
       let(:code) { build :code }
 
-      example "Create User without existing code" do
+      example "don't creates user" do
         do_request
 
         expect(response_status).to eq(422)
@@ -49,7 +54,7 @@ resource "Sign up" do
         create :user, code: code
       end
 
-      example "Create User without existing code" do
+      example "don't creates user" do
         do_request
 
         expect(response_status).to eq(422)
