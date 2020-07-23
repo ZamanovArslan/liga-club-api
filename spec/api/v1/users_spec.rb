@@ -6,24 +6,24 @@ resource "Users" do
   get "/v1/users" do
     it_behaves_like "API endpoint with authorization"
 
-    let(:expected_data) {
+    let(:expected_data) do
       [{
-          "id" => current_user.id,
-          "full_name" => current_user.full_name,
-          "group_number" => current_user.group_number,
-          "phone_number" => current_user.phone_number,
-          "university_id" => current_user.university.id,
-          "avatar" => be_a_empty_image_attachment
-        },
-        {
-          "id" => user.id,
-          "full_name" => user.full_name,
-          "group_number" => user.group_number,
-          "phone_number" => user.phone_number,
-          "university_id" => user.university.id,
-          "avatar" => be_a_image_attachment
-      }]
-    }
+        "id" => current_user.id,
+        "full_name" => current_user.full_name,
+        "group_number" => current_user.group_number,
+        "phone_number" => current_user.phone_number,
+        "university_id" => current_user.university.id,
+        "avatar" => be_a_empty_image_attachment
+      },
+       {
+         "id" => user.id,
+         "full_name" => user.full_name,
+         "group_number" => user.group_number,
+         "phone_number" => user.phone_number,
+         "university_id" => user.university.id,
+         "avatar" => be_a_image_attachment
+       }]
+    end
 
     example_request "List of users" do
       expect(response_status).to eq(200)

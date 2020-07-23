@@ -13,4 +13,3 @@ RSpec.configure do |config|
     FileUtils.rm_rf(Dir[Rails.root.join("public", "testing")])
   end
 end
-
