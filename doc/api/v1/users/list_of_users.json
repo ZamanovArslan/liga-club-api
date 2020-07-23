@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjIzOTksInN1YiI6MTYxNX0.ek0pj8N5gIxJs-PCkNSP4CTL87LP7KkwIqp8oN-lsoI"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQyMDYsInN1YiI6MTc1Nn0.lus78zXXWJm7ewz3q53ICSOiy2RN4J_jV-dhZ6M9MUk"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 1614,\n      \"full_name\": \"Albina Prohaska Jr.\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"775-429-3972 x8650\",\n      \"university_id\": 2103,\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/1614/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/1614/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/1614/thumb_image.png\"\n        }\n      }\n    },\n    {\n      \"id\": 1615,\n      \"full_name\": \"Kelsey Cruickshank\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"1-273-219-5003 x358\",\n      \"university_id\": 2104,\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      }\n    }\n  ]\n}",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 1755,\n      \"full_name\": \"Steven Botsford\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"1-821-414-0203 x58153\",\n      \"university_id\": 2290,\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/1755/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/1755/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/1755/thumb_image.png\"\n        }\n      },\n      \"scores_count\": 0\n    },\n    {\n      \"id\": 1756,\n      \"full_name\": \"Gregorio Stoltenberg\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"(305) 219-8670 x569\",\n      \"university_id\": 2291,\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"scores_count\": 0\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjIzOTksInN1YiI6MTYxNX0.ek0pj8N5gIxJs-PCkNSP4CTL87LP7KkwIqp8oN-lsoI\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQyMDYsInN1YiI6MTc1Nn0.lus78zXXWJm7ewz3q53ICSOiy2RN4J_jV-dhZ6M9MUk\""
     }
   ]
 }

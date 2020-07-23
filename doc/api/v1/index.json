@@ -46,8 +46,8 @@
           "method": "get"
         },
         {
-          "description": "List of current user levels",
-          "link": "levels/list_of_current_user_levels.json",
+          "description": "List of current user level",
+          "link": "levels/list_of_current_user_level.json",
           "groups": "all",
           "route": "/v1/my/level",
           "method": "get"

@@ -1,0 +1,38 @@
+{
+  "resource": "Levels",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/v1/my/level",
+  "description": "List of current user level",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/my/level",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQyMDUsInN1YiI6MTc0Mn0.-2Dzx9ZFN0bSgmrYdGaazNf3uL1Jv_BOQuvGCjsv29E"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"level\": {\n    \"id\": 529,\n    \"name\": \"Первак\",\n    \"scores_count\": 50,\n    \"description\": \"Первый уровень\",\n    \"image\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    }\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://0.0.0.0/v1/my/level\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQyMDUsInN1YiI6MTc0Mn0.-2Dzx9ZFN0bSgmrYdGaazNf3uL1Jv_BOQuvGCjsv29E\""
+    }
+  ]
+}

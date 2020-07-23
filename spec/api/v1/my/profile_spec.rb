@@ -12,7 +12,8 @@ resource "My Profile" do
           "group_number" => current_user.group_number,
           "phone_number" => current_user.phone_number,
           "university_id" => current_user.university.id,
-          "avatar" => be_a_empty_image_attachment
+          "avatar" => be_a_empty_image_attachment,
+          "scores_count" => 0
         }
       }
     end

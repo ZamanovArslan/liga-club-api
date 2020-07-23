@@ -19,23 +19,23 @@
     {
       "request_method": "POST",
       "request_path": "/v1/participations",
-      "request_body": "{\"badge_id\":608}",
+      "request_body": "{\"badge_id\":690}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjIzOTgsInN1YiI6MTYwN30.EK-uuH0hf_qdvXXDsEAyl3IfSjkAr5oS0uM2lUlev2Y"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQyMDYsInN1YiI6MTc0OH0.y6nFoN2QXWP2Y95Wxxwcx24SkKCFJiOrxgjfl9FmGbk"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"participation\": {\n    \"id\": 262,\n    \"confirmed\": false,\n    \"badge_id\": 608,\n    \"user\": {\n      \"id\": 1607,\n      \"full_name\": \"Karrie Langosh\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"1-862-154-9472\",\n      \"university_id\": 2092,\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      }\n    }\n  }\n}",
+      "response_body": "{\n  \"participation\": {\n    \"id\": 297,\n    \"confirmed\": false,\n    \"badge_id\": 690,\n    \"user\": {\n      \"id\": 1748,\n      \"full_name\": \"Carmen Bogisich Jr.\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"(660) 113-9551 x5821\",\n      \"university_id\": 2279,\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"scores_count\": 0\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/participations\" -d '{\"badge_id\":608}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjIzOTgsInN1YiI6MTYwN30.EK-uuH0hf_qdvXXDsEAyl3IfSjkAr5oS0uM2lUlev2Y\""
+      "curl": "curl \"http://0.0.0.0/v1/participations\" -d '{\"badge_id\":690}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQyMDYsInN1YiI6MTc0OH0.y6nFoN2QXWP2Y95Wxxwcx24SkKCFJiOrxgjfl9FmGbk\""
     }
   ]
 }

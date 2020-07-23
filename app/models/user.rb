@@ -6,10 +6,8 @@ class User < ApplicationRecord
   validates :phone_number, uniqueness: true
 
   has_one :code, dependent: :destroy
-  has_many :participations, dependent: :destroy
-  has_many :badges, through: :participations do
-    -> { confirmed }
-  end
+  has_many :confirmed_participations, -> { confirmed }, dependent: :destroy, class_name: "Participation"
+  has_many :badges, through: :confirmed_participations
   mount_uploader :avatar, BaseUploader
 
   belongs_to :university, dependent: :destroy

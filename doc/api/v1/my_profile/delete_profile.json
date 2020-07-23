@@ -19,19 +19,19 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjIzOTgsInN1YiI6MTYwNn0.GIYceM3aaJaKehDoQFeOZFKIb1zjQIvboY3AioWmXY0"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQyMDYsInN1YiI6MTc0N30.-oRiDuELl_64LUZggHQxpJfRjfGHYSvR6VtYKwCtkOM"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 1606,\n    \"full_name\": \"Miss Carry Beatty\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"287.950.4143\",\n    \"university_id\": 2091,\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    }\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 1747,\n    \"full_name\": \"Cathey Jacobson\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"(116) 831-4693 x59455\",\n    \"university_id\": 2278,\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"scores_count\": 0\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjIzOTgsInN1YiI6MTYwNn0.GIYceM3aaJaKehDoQFeOZFKIb1zjQIvboY3AioWmXY0\""
+      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQyMDYsInN1YiI6MTc0N30.-oRiDuELl_64LUZggHQxpJfRjfGHYSvR6VtYKwCtkOM\""
     }
   ]
 }

@@ -13,15 +13,17 @@ resource "Users" do
         "group_number" => current_user.group_number,
         "phone_number" => current_user.phone_number,
         "university_id" => current_user.university.id,
-        "avatar" => be_a_empty_image_attachment
-      },
+        "avatar" => be_a_empty_image_attachment,
+        "scores_count" => 0
+       },
        {
          "id" => user.id,
          "full_name" => user.full_name,
          "group_number" => user.group_number,
          "phone_number" => user.phone_number,
          "university_id" => user.university.id,
-         "avatar" => be_a_image_attachment
+         "avatar" => be_a_image_attachment,
+         "scores_count" => 0
        }]
     end
 
@@ -41,7 +43,8 @@ resource "Users" do
           "group_number" => user.group_number,
           "phone_number" => user.phone_number,
           "university_id" => user.university.id,
-          "avatar" => be_a_image_attachment
+          "avatar" => be_a_image_attachment,
+          "scores_count" => 0
         }
       }
     end
