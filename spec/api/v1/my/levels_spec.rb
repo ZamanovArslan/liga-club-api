@@ -14,7 +14,8 @@ resource "Levels" do
         "id" => suitable_level.id,
         "name" => suitable_level.name,
         "scores_count" => suitable_level.scores_count,
-        "description" => suitable_level.description
+        "description" => suitable_level.description,
+        "image" => be_a_empty_image_attachment
       }
     }
   end
@@ -24,7 +25,7 @@ resource "Levels" do
 
     example_request "List of current user levels" do
       expect(response_status).to eq(200)
-      expect(json_response_body).to eq(expected_data)
+      expect(json_response_body).to include(expected_data)
     end
   end
 end

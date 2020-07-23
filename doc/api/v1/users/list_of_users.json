@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDEsInN1YiI6ODgwfQ.HDP_Yq291t7U3Du02ZbBE8dcxKNn11sLllAzsmJxXtM"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjIzOTksInN1YiI6MTYxNX0.ek0pj8N5gIxJs-PCkNSP4CTL87LP7KkwIqp8oN-lsoI"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 879,\n      \"full_name\": \"Maddie Sipes\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"(554) 608-3789 x968\",\n      \"university_id\": 1116\n    },\n    {\n      \"id\": 880,\n      \"full_name\": \"Anthony Gibson\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"156-362-0386 x791\",\n      \"university_id\": 1117\n    }\n  ]\n}",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 1614,\n      \"full_name\": \"Albina Prohaska Jr.\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"775-429-3972 x8650\",\n      \"university_id\": 2103,\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/1614/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/1614/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/1614/thumb_image.png\"\n        }\n      }\n    },\n    {\n      \"id\": 1615,\n      \"full_name\": \"Kelsey Cruickshank\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"1-273-219-5003 x358\",\n      \"university_id\": 2104,\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      }\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTQ3NTI0NDEsInN1YiI6ODgwfQ.HDP_Yq291t7U3Du02ZbBE8dcxKNn11sLllAzsmJxXtM\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjIzOTksInN1YiI6MTYxNX0.ek0pj8N5gIxJs-PCkNSP4CTL87LP7KkwIqp8oN-lsoI\""
     }
   ]
 }
