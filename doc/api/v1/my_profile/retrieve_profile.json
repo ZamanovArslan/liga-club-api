@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQyMDUsInN1YiI6MTc0NH0.zSSHQLDP0S8QYKX6lf31kOB3pAcCe09-7yNPVcv2qaA"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQ1ODEsInN1YiI6MTc2N30.2bm6QcIpywMpiRKHK6-E3UY53zPcbfPpdZyxQuwjMrM"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 1744,\n    \"full_name\": \"Karrie Schiller\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"665.129.0707\",\n    \"university_id\": 2272,\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"scores_count\": 0\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 1767,\n    \"full_name\": \"Bryanna Hamill\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"903-067-7149\",\n    \"university_id\": 2302,\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"scores_count\": 0\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQyMDUsInN1YiI6MTc0NH0.zSSHQLDP0S8QYKX6lf31kOB3pAcCe09-7yNPVcv2qaA\""
+      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQ1ODEsInN1YiI6MTc2N30.2bm6QcIpywMpiRKHK6-E3UY53zPcbfPpdZyxQuwjMrM\""
     }
   ]
 }

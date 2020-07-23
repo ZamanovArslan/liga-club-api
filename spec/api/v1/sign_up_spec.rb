@@ -40,7 +40,7 @@ resource "Sign up" do
     context "when code not exists" do
       let(:code) { build :code }
 
-      example "don't creates user" do
+      example "don't creates user", document: false do
         do_request
 
         expect(response_status).to eq(422)
@@ -54,7 +54,7 @@ resource "Sign up" do
         create :user, code: code
       end
 
-      example "don't creates user" do
+      example "don't creates user", document: false do
         do_request
 
         expect(response_status).to eq(422)

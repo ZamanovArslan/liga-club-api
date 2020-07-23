@@ -47,7 +47,7 @@
         },
         {
           "description": "Current user level",
-          "link": "levels/list_of_current_user_level.json",
+          "link": "levels/current_user_level.json",
           "groups": "all",
           "route": "/v1/my/level",
           "method": "get"
@@ -141,20 +141,6 @@
         {
           "description": "Create User",
           "link": "sign_up/create_user.json",
-          "groups": "all",
-          "route": "/v1/sign_up",
-          "method": "post"
-        },
-        {
-          "description": "don't creates user",
-          "link": "sign_up/don't_creates_user.json",
-          "groups": "all",
-          "route": "/v1/sign_up",
-          "method": "post"
-        },
-        {
-          "description": "don't creates user",
-          "link": "sign_up/don't_creates_user.json",
           "groups": "all",
           "route": "/v1/sign_up",
           "method": "post"
