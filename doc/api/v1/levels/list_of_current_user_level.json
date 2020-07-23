@@ -3,7 +3,7 @@
   "resource_explanation": null,
   "http_method": "GET",
   "route": "/v1/my/level",
-  "description": "List of current user level",
+  "description": "Current user level",
   "explanation": null,
   "parameters": [
 

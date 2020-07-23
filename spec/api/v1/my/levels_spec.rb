@@ -23,7 +23,7 @@ resource "Levels" do
   get "/v1/my/level" do
     it_behaves_like "API endpoint with authorization"
 
-    example_request "List of current user level" do
+    example_request "Current user level" do
       expect(response_status).to eq(200)
       expect(json_response_body).to include(expected_data)
     end
