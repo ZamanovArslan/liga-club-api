@@ -12,6 +12,6 @@ RSpec::Matchers.define :be_a_empty_image_attachment do |_expected|
     %w[large medium thumb].each { |version| expect(actual[version]["url"]).to be_nil }
   end
   failure_message do |actual|
-    "expected that #{actual} contains image attachment"
+    "expected that #{actual} not contains image attachment"
   end
 end
