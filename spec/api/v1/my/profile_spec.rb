@@ -11,7 +11,8 @@ resource "My Profile" do
           "full_name" => current_user.full_name,
           "group_number" => current_user.group_number,
           "phone_number" => current_user.phone_number,
-          "university_id" => current_user.university.id
+          "university_id" => current_user.university.id,
+          "avatar" => be_a_empty_image_attachment
         }
       }
     end
@@ -20,7 +21,7 @@ resource "My Profile" do
 
     example_request "Retrieve Profile" do
       expect(response_status).to eq(200)
-      expect(json_response_body).to eq(expected_data)
+      expect(json_response_body).to include(expected_data)
     end
   end
 
@@ -47,7 +48,8 @@ resource "My Profile" do
         "phone_number" => phone_number,
         "full_name" => full_name,
         "group_number" => group_number,
-        "university_id" => university_id
+        "university_id" => university_id,
+        "avatar" => be_a_empty_image_attachment
       }
     end
 
@@ -55,7 +57,7 @@ resource "My Profile" do
 
     example_request "Update Profile" do
       expect(response_status).to eq(200)
-      expect(json_response_body["user"]).to eq(expected_data)
+      expect(json_response_body["user"]).to include(expected_data)
     end
 
     context "with invalid data" do
@@ -76,7 +78,7 @@ resource "My Profile" do
         do_request
 
         expect(response_status).to eq(422)
-        expect(json_response_body["error"]).to eq(expected_data)
+        expect(json_response_body["error"]).to include(expected_data)
       end
     end
   end
@@ -88,7 +90,8 @@ resource "My Profile" do
         "phone_number" => current_user.phone_number,
         "full_name" => current_user.full_name,
         "group_number" => current_user.group_number,
-        "university_id" => current_user.university.id
+        "university_id" => current_user.university.id,
+        "avatar" => be_a_empty_image_attachment
       }
     end
 
@@ -96,7 +99,7 @@ resource "My Profile" do
 
     example_request "Delete Profile" do
       expect(response_status).to eq(200)
-      expect(json_response_body["user"]).to eq(expected_data)
+      expect(json_response_body["user"]).to include(expected_data)
     end
   end
 end

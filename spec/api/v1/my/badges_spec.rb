@@ -15,9 +15,11 @@ resource "Badges" do
       "rarity" => {
         "id" => badge.rarity.id,
         "name" => badge.rarity.name,
-        "scores_count" => badge.rarity.scores_count
+        "scores_count" => badge.rarity.scores_count,
+        "image" => be_a_empty_image_attachment
       },
-      "university" => nil
+      "university" => nil,
+      "image" => be_a_empty_image_attachment
     }
   end
 
@@ -26,7 +28,7 @@ resource "Badges" do
 
     example_request "List of current user badges" do
       expect(response_status).to eq(200)
-      expect(json_response_body["badges"]).to eq([expected_data])
+      expect(json_response_body["badges"]).to match_array([expected_data])
     end
   end
 end

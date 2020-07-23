@@ -10,7 +10,7 @@ class User < ApplicationRecord
   has_many :badges, through: :participations do
     -> { confirmed }
   end
-  has_one_attached :photo
+  mount_uploader :avatar, BaseUploader
 
   belongs_to :university, dependent: :destroy
 

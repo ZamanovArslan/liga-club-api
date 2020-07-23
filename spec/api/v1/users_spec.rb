@@ -1,27 +1,29 @@
 resource "Users" do
   include_context "with Authorization header"
 
-  let!(:user) { create :user }
+  let!(:user) { create :user, :with_avatar }
 
   get "/v1/users" do
     it_behaves_like "API endpoint with authorization"
 
-    let(:expected_data) {
+    let(:expected_data) do
       [{
-          "id" => current_user.id,
-          "full_name" => current_user.full_name,
-          "group_number" => current_user.group_number,
-          "phone_number" => current_user.phone_number,
-          "university_id" => current_user.university.id
-        },
-        {
-          "id" => user.id,
-          "full_name" => user.full_name,
-          "group_number" => user.group_number,
-          "phone_number" => user.phone_number,
-          "university_id" => user.university.id
-      }]
-    }
+        "id" => current_user.id,
+        "full_name" => current_user.full_name,
+        "group_number" => current_user.group_number,
+        "phone_number" => current_user.phone_number,
+        "university_id" => current_user.university.id,
+        "avatar" => be_a_empty_image_attachment
+      },
+       {
+         "id" => user.id,
+         "full_name" => user.full_name,
+         "group_number" => user.group_number,
+         "phone_number" => user.phone_number,
+         "university_id" => user.university.id,
+         "avatar" => be_a_image_attachment
+       }]
+    end
 
     example_request "List of users" do
       expect(response_status).to eq(200)
@@ -38,7 +40,8 @@ resource "Users" do
           "full_name" => user.full_name,
           "group_number" => user.group_number,
           "phone_number" => user.phone_number,
-          "university_id" => user.university.id
+          "university_id" => user.university.id,
+          "avatar" => be_a_image_attachment
         }
       }
     end
@@ -47,7 +50,7 @@ resource "Users" do
 
     example_request "Specific user" do
       expect(response_status).to eq(200)
-      expect(json_response_body).to eq(expected_data)
+      expect(json_response_body).to include(expected_data)
     end
   end
 end

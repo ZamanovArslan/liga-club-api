@@ -1,3 +1,6 @@
 class LevelSerializer < ApplicationSerializer
-  attributes :id, :name, :scores_count, :description
+  include ImageSerializer
+
+  attributes :id, :name, :scores_count, :description, :image
+  alias_method :image, :attachment
 end

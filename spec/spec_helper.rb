@@ -1,6 +1,5 @@
 RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
-
   config.backtrace_exclusion_patterns << /\.bundle/
 
   config.expect_with :rspec do |c|

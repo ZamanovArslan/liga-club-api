@@ -1,13 +1,14 @@
 resource "Rarities" do
   include_context "with Authorization header"
 
-  let!(:rarity) { create :rarity }
+  let!(:rarity) { create :rarity, :with_image }
 
   let(:expected_data) do
     {
       "id" => rarity.id,
       "scores_count" => rarity.scores_count,
-      "name" => rarity.name
+      "name" => rarity.name,
+      "image" => be_a_image_attachment
     }
   end
 
@@ -16,7 +17,7 @@ resource "Rarities" do
 
     example_request "List of rarities" do
       expect(response_status).to eq(200)
-      expect(json_response_body["rarities"]).to eq([expected_data])
+      expect(json_response_body["rarities"]).to match_array([expected_data])
     end
   end
 
@@ -27,7 +28,7 @@ resource "Rarities" do
 
     example_request "Specific rarity" do
       expect(response_status).to eq(200)
-      expect(json_response_body["rarity"]).to eq(expected_data)
+      expect(json_response_body["rarity"]).to include(expected_data)
     end
   end
 end

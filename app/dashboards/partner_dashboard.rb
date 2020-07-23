@@ -8,6 +8,11 @@ class PartnerDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
+    image: Field::Carrierwave.with_options(
+      image: :medium,
+      remove: true,
+      remote_url: false
+    ),
     id: Field::Number,
     name: Field::String,
     description: Field::Text,
@@ -34,6 +39,7 @@ class PartnerDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = %i[
     id
     name
+    image
     description
     discount
     instagram_link
@@ -46,6 +52,7 @@ class PartnerDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
     name
+    image
     description
     discount
     instagram_link

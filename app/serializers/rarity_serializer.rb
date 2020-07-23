@@ -1,3 +1,6 @@
 class RaritySerializer < ApplicationSerializer
-  attributes :id, :name, :scores_count
+  include ImageSerializer
+
+  attributes :id, :name, :scores_count, :image
+  alias image attachment
 end

@@ -9,4 +9,8 @@ FactoryBot.define do
   trait :with_university do
     university { association(:university) }
   end
+
+  trait :with_image do
+    image { Rack::Test::UploadedFile.new(File.join("spec/support/fixtures", "image.png")) }
+  end
 end

@@ -8,6 +8,11 @@ class LevelDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
+    image: Field::Carrierwave.with_options(
+      image: :medium,
+      remove: true,
+      remote_url: false
+    ),
     id: Field::Number,
     name: Field::String,
     scores_count: Field::Number,
@@ -33,6 +38,7 @@ class LevelDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = %i[
     id
     name
+    image
     scores_count
     description
     created_at
@@ -44,6 +50,7 @@ class LevelDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
     name
+    image
     scores_count
     description
   ].freeze
