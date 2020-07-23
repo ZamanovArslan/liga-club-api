@@ -8,6 +8,7 @@ CarrierWave.configure do |config|
     }
     config.fog_directory = Rails.application.credentials.aws[:prod][:bucket]
     config.storage = :fog
+    config.fog_public = false
   elsif Rails.env.test?
     config.root = Rails.root.join("public")
     config.storage = :file

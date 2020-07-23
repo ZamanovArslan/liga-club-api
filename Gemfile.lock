@@ -287,6 +287,7 @@ GEM
       actionpack (>= 5.0)
       railties (>= 5.0)
     rexml (3.2.4)
+    rollbar (2.26.1)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
@@ -394,6 +395,7 @@ DEPENDENCIES
   raddocs
   rails (= 6.0.3.1)
   responders
+  rollbar
   rspec-rails
   rspec_api_documentation!
   rubocop-rails
