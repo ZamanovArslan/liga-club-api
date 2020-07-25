@@ -11,7 +11,11 @@ resource "My Profile" do
           "full_name" => current_user.full_name,
           "group_number" => current_user.group_number,
           "phone_number" => current_user.phone_number,
-          "university_id" => current_user.university.id,
+          "level" => nil,
+          "university" => {
+            "id" => current_user.university.id,
+            "name" => current_user.university.name
+          },
           "avatar" => be_a_empty_image_attachment,
           "scores_count" => 0
         }
@@ -49,7 +53,12 @@ resource "My Profile" do
         "phone_number" => phone_number,
         "full_name" => full_name,
         "group_number" => group_number,
-        "university_id" => university_id,
+        "level" => nil,
+        "scores_count" => 0,
+        "university" => {
+          "id" => current_user.reload.university.id,
+          "name" => current_user.reload.university.name
+        },
         "avatar" => be_a_empty_image_attachment
       }
     end
@@ -93,8 +102,11 @@ resource "My Profile" do
         "phone_number" => current_user.phone_number,
         "full_name" => current_user.full_name,
         "group_number" => current_user.group_number,
-        "university_id" => current_user.university.id,
-        "avatar" => be_a_empty_image_attachment
+        "avatar" => be_a_empty_image_attachment,
+        "university" => {
+          "id" => current_user.university.id,
+          "name" => current_user.university.name
+        }
       }
     end
 

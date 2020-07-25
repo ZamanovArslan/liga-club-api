@@ -12,18 +12,26 @@ resource "Users" do
         "full_name" => current_user.full_name,
         "group_number" => current_user.group_number,
         "phone_number" => current_user.phone_number,
-        "university_id" => current_user.university.id,
         "avatar" => be_a_empty_image_attachment,
-        "scores_count" => 0
+        "scores_count" => 0,
+        "level" => nil,
+        "university" => {
+          "id" => current_user.university.id,
+          "name" => current_user.university.name
+        }
       },
        {
          "id" => user.id,
          "full_name" => user.full_name,
          "group_number" => user.group_number,
          "phone_number" => user.phone_number,
-         "university_id" => user.university.id,
          "avatar" => be_a_image_attachment,
-         "scores_count" => 0
+         "scores_count" => 0,
+         "level" => nil,
+         "university" => {
+           "id" => user.university.id,
+           "name" => user.university.name
+         }
        }]
     end
 
@@ -42,9 +50,13 @@ resource "Users" do
           "full_name" => user.full_name,
           "group_number" => user.group_number,
           "phone_number" => user.phone_number,
-          "university_id" => user.university.id,
           "avatar" => be_a_image_attachment,
-          "scores_count" => 0
+          "scores_count" => 0,
+          "level" => nil,
+          "university" => {
+            "id" => user.university.id,
+            "name" => user.university.name
+          }
         }
       }
     end

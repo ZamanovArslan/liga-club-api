@@ -13,9 +13,12 @@ resource "Participation" do
           "full_name" => current_user.full_name,
           "group_number" => current_user.group_number,
           "phone_number" => current_user.phone_number,
-          "university_id" => current_user.university.id,
           "avatar" => be_a_empty_image_attachment,
-          "scores_count" => 0
+          "scores_count" => 0,
+          "university" => {
+            "id" => current_user.university.id,
+            "name" => current_user.university.name
+          }
         },
       "badge_id" => badge.id
     }
