@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQ1ODIsInN1YiI6MTc3OX0.ThFxcZ9-AQnD9cuJWvzm5OXHsX-3v_n2MkWf5nRIsh4"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU3OTU2NDIsInN1YiI6MjMyNH0.Zhl1bnJgZkzVQuyR-TOt3eP3iW2rklG3LMexJULG034"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 1778,\n      \"full_name\": \"Darlene Bode\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"(281) 242-2636 x6216\",\n      \"university_id\": 2320,\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/1778/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/1778/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/1778/thumb_image.png\"\n        }\n      },\n      \"scores_count\": 0\n    },\n    {\n      \"id\": 1779,\n      \"full_name\": \"Matthew Stamm\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"532.731.5792 x466\",\n      \"university_id\": 2321,\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"scores_count\": 0\n    }\n  ]\n}",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 2323,\n      \"full_name\": \"Зиновьев Игнатий\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(925)749-00-43\",\n      \"university_id\": 3057,\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/2323/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/2323/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/2323/thumb_image.png\"\n        }\n      },\n      \"scores_count\": 0\n    },\n    {\n      \"id\": 2324,\n      \"full_name\": \"Блохина Клавдия Максимовна\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(954)716-67-32\",\n      \"university_id\": 3058,\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"scores_count\": 0\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQ1ODIsInN1YiI6MTc3OX0.ThFxcZ9-AQnD9cuJWvzm5OXHsX-3v_n2MkWf5nRIsh4\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU3OTU2NDIsInN1YiI6MjMyNH0.Zhl1bnJgZkzVQuyR-TOt3eP3iW2rklG3LMexJULG034\""
     }
   ]
 }

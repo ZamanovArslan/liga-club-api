@@ -14,12 +14,12 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/users/1781",
+      "request_path": "/v1/users/2326",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQ1ODIsInN1YiI6MTc4Mn0.dzlDEZTANyGPOPNrZa8UTE73ci5OGPLWU2EiZvLuUK4"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU3OTU2NDIsInN1YiI6MjMyN30.CZfwaHva3o8zj_hTgfjFy0LoGfzuAwnys88BInO13iE"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 1781,\n    \"full_name\": \"Theo Kreiger\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"661-863-6721 x69121\",\n    \"university_id\": 2323,\n    \"avatar\": {\n      \"large\": {\n        \"url\": \"/uploads/user/avatar/1781/large_image.png\"\n      },\n      \"medium\": {\n        \"url\": \"/uploads/user/avatar/1781/medium_image.png\"\n      },\n      \"thumb\": {\n        \"url\": \"/uploads/user/avatar/1781/thumb_image.png\"\n      }\n    },\n    \"scores_count\": 0\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 2326,\n    \"full_name\": \"Иван Тарасов\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(911)594-38-09\",\n    \"university_id\": 3060,\n    \"avatar\": {\n      \"large\": {\n        \"url\": \"/uploads/user/avatar/2326/large_image.png\"\n      },\n      \"medium\": {\n        \"url\": \"/uploads/user/avatar/2326/medium_image.png\"\n      },\n      \"thumb\": {\n        \"url\": \"/uploads/user/avatar/2326/thumb_image.png\"\n      }\n    },\n    \"scores_count\": 0\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users/1781\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQ1ODIsInN1YiI6MTc4Mn0.dzlDEZTANyGPOPNrZa8UTE73ci5OGPLWU2EiZvLuUK4\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users/2326\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU3OTU2NDIsInN1YiI6MjMyN30.CZfwaHva3o8zj_hTgfjFy0LoGfzuAwnys88BInO13iE\""
     }
   ]
 }

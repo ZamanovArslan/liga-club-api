@@ -19,23 +19,23 @@
     {
       "request_method": "POST",
       "request_path": "/v1/participations",
-      "request_body": "{\"badge_id\":700}",
+      "request_body": "{\"badge_id\":912}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQ1ODEsInN1YiI6MTc3MX0.481A59g4oeCSfgVY3aZgprCKhxg9psYi5ZTII26S5zM"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU3OTU2NDAsInN1YiI6MjMxNn0.6mVzvT0kbL204_wzYMAvBBC5XdAJGuYfdHcfzr-I8zw"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"participation\": {\n    \"id\": 302,\n    \"confirmed\": false,\n    \"badge_id\": 700,\n    \"user\": {\n      \"id\": 1771,\n      \"full_name\": \"Clarisa Nicolas\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"(581) 942-4730\",\n      \"university_id\": 2309,\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"scores_count\": 0\n    }\n  }\n}",
+      "response_body": "{\n  \"participation\": {\n    \"id\": 407,\n    \"confirmed\": false,\n    \"badge_id\": 912,\n    \"user\": {\n      \"id\": 2316,\n      \"full_name\": \"Антонида Егоровна Фадеева\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(919)946-90-59\",\n      \"university_id\": 3046,\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"scores_count\": 0\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/participations\" -d '{\"badge_id\":700}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU2MjQ1ODEsInN1YiI6MTc3MX0.481A59g4oeCSfgVY3aZgprCKhxg9psYi5ZTII26S5zM\""
+      "curl": "curl \"http://0.0.0.0/v1/participations\" -d '{\"badge_id\":912}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU3OTU2NDAsInN1YiI6MjMxNn0.6mVzvT0kbL204_wzYMAvBBC5XdAJGuYfdHcfzr-I8zw\""
     }
   ]
 }
