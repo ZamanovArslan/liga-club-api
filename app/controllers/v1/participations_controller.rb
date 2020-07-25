@@ -6,7 +6,7 @@ module V1
       if participation.save
         respond_with participation, each_serializer: ParticipationSerializer
       else
-        respond_with participation.errors
+        respond_with_invalid_credentials participation.errors
       end
     end
 

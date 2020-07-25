@@ -34,6 +34,9 @@ module LigaClubApi
     config.api_only = true
 
     config.time_zone = "Moscow"
+    config.i18n.default_locale = :ru
+    config.i18n.load_path += Dir[Rails.root.join("config", "locales", "**", "*.{rb,yml}")]
+
     # Enable Flash, Cookies, MethodOverride for Administrate Gem
     config.middleware.use ActionDispatch::Flash
     config.session_store :cookie_store

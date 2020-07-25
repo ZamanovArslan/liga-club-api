@@ -6,3 +6,10 @@ en:
     record_not_found: Record not found
     route_not_found: Route not found
     custom_error: Custom error message
+
+    services:
+      sign_up:
+        code_not_found: Code not found
+        code_already_taken: Code is already taken
+      sign_in:
+        invalid_credentials: Wrong phone number or password

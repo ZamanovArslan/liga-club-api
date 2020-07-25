@@ -1,0 +1,15 @@
+ru:
+  errors:
+    invalid_credentials: Неверные данные
+    invalid_record: Неверная запись
+    unauthorized: Требуется авторизация
+    record_not_found: Запись не найдена
+    route_not_found: Путь не найден
+    custom_error: Другая ошибка
+
+    services:
+      sign_up:
+        code_not_found: Код не найден
+        code_already_taken: Код уже занят
+      sign_in:
+        invalid_credentials: Неверный номер телефона или пароль

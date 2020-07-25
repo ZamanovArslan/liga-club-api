@@ -15,7 +15,7 @@ resource "Users" do
         "university_id" => current_user.university.id,
         "avatar" => be_a_empty_image_attachment,
         "scores_count" => 0
-       },
+      },
        {
          "id" => user.id,
          "full_name" => user.full_name,

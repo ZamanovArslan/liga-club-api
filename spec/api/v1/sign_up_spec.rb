@@ -49,6 +49,18 @@ resource "Sign up" do
 
     context "when code already taken" do
       let(:code) { create :code }
+      let(:expected_data) do
+        {
+          "errors" => [
+            {
+              "id" => "4eac02e2-6856-449b-bc28-fbf1b32a20f2",
+              "status" => 422,
+              "error" => "Неверные данные",
+              "validations" => "Код уже занят"
+            }
+          ]
+        }
+      end
 
       before do
         create :user, code: code

@@ -20,13 +20,23 @@ resource "Sign in" do
 
     context "with invalid password" do
       let(:password) { "invalid" }
-      let(:expected_error) { "Invalid credentials" }
+      let(:expected_data) do
+        {
+          "errors" => [
+            {
+              "id" => "4eac02e2-6856-449b-bc28-fbf1b32a20f2",
+              "status" => 422,
+              "error" => "Неверные данные",
+              "validations" => "Неверный номер телефона или пароль"
+            }
+          ]
+        }
+      end
 
       example "Create Token with invalid password" do
         do_request
 
-        expect(response_status).to eq(422)
-        expect(json_response_body["errors"].first["error"]).to eq(expected_error)
+        expect(json_response_body).to eq(expected_data)
       end
     end
   end

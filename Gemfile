@@ -9,19 +9,20 @@ gem "rails", "6.0.3.1"
 gem "active_model_serializers"
 gem "administrate", git: "https://github.com/thoughtbot/administrate.git", ref: "34686446c" # Cause https://github.com/thoughtbot/administrate/issues/1643
 gem "administrate-field-carrierwave", "~> 0.5.0"
-gem "fog-aws"
 gem "aws-sdk-s3", require: false
 gem "bootsnap", require: false
 gem "carrierwave"
 gem "decent_exposure"
-gem "rollbar"
+gem "fog-aws"
 gem "image_processing"
 gem "interactor"
 gem "knock"
 gem "mini_magick"
 gem "rack-cors"
 gem "raddocs"
+gem "rails-i18n", "~> 6.0.0" # For 6.0.0 or higher
 gem "responders"
+gem "rollbar"
 
 group :development, :test do
   gem "byebug"

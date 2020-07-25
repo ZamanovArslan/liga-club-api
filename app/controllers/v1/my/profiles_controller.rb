@@ -6,15 +6,15 @@ module V1
       end
 
       def update
-        current_user.update(user_params)
-
-        respond_with current_user
+        if current_user.update(user_params)
+          respond_with current_user
+        else
+          respond_with_invalid_credentials current_user.errors_messages
+        end
       end
 
       def destroy
-        current_user.destroy
-
-        respond_with current_user
+        respond_with current_user.destroy
       end
 
       private

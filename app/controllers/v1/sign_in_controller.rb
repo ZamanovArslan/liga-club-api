@@ -8,7 +8,7 @@ module V1
       if result.success?
         respond_with result.jwt_token, root: "token"
       else
-        respond_with_error result.error
+        respond_with_invalid_credentials result.error
       end
     end
 

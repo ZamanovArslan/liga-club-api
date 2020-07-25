@@ -4,6 +4,7 @@ class Badge < ApplicationRecord
 
   has_many :participations, dependent: :destroy
   has_many :users, through: :participations
+
   mount_uploader :image, BaseUploader
 
   scope :ended, -> { where("ends_at < ?", Time.zone.now) }

@@ -5,7 +5,7 @@ module Users
     delegate :params, to: :context
 
     def call
-      context.fail!(error: :invalid_credentials) if code.blank? || code.user.present? || !user.save
+      context.fail!(error: error_message) if error_message.present?
 
       context.user = user
     end
@@ -18,6 +18,13 @@ module Users
 
     def code
       @code = Code.find_by(value: params[:code_value])
+    end
+
+    def error_message
+      return I18n.t("errors.services.sign_up.code_not_found") if code.blank?
+      return I18n.t("errors.services.sign_up.code_already_taken") if code.user.present?
+
+      user.errors_messages unless user.save
     end
   end
 end

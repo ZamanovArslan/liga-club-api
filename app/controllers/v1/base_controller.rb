@@ -8,19 +8,23 @@ module V1
     respond_to :json
 
     rescue_from ActiveRecord::RecordNotFound do |_exception|
-      respond_with_error(:record_not_found)
+      respond_with_error(code: :record_not_found)
     end
 
     private
 
-    def respond_with_error(code)
-      Error.new(code: code).tap do |error|
-        render json: error.to_json, status: error.status
-      end
+    def respond_with_invalid_credentials(validations)
+      respond_with_error(code: :invalid_credentials, validations: validations)
     end
 
     def authenticate_user!
-      respond_with_error(:unauthorized) unless current_user
+      respond_with_error(code: :unauthorized) unless current_user
+    end
+
+    def respond_with_error(error_data)
+      Error.new(error_data).tap do |error|
+        render json: error.to_json, status: error.status
+      end
     end
 
     def current_user

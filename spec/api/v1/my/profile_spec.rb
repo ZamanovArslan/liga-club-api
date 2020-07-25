@@ -66,12 +66,14 @@ resource "My Profile" do
 
       let(:expected_data) do
         {
-          "error" => "Invalid record",
-          "id" => "4eac02e2-6856-449b-bc28-fbf1b32a20f2",
-          "status" => 422,
-          "validations" => {
-            "password" => ["is too short (minimum is 6 characters)"]
-          }
+          "errors" => [
+            {
+              "error" => "Неверные данные",
+              "id" => "4eac02e2-6856-449b-bc28-fbf1b32a20f2",
+              "status" => 422,
+              "validations" => "Пароль недостаточной длины (не может быть меньше 6 символов)"
+            }
+          ]
         }
       end
 
@@ -79,7 +81,7 @@ resource "My Profile" do
         do_request
 
         expect(response_status).to eq(422)
-        expect(json_response_body["error"]).to include(expected_data)
+        expect(json_response_body).to eq(expected_data)
       end
     end
   end

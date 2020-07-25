@@ -5,7 +5,7 @@ module Users
     delegate :phone_number, :password, to: :context
 
     def call
-      context.fail!(error: :invalid_credentials) unless authenticated?
+      context.fail!(error: I18n.t("errors.services.sign_in.invalid_credentials")) unless authenticated?
       context.jwt_token = jwt_token
     end
 
