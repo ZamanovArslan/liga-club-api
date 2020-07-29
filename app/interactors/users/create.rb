@@ -13,11 +13,11 @@ module Users
     private
 
     def user
-      @user = User.new(params.except(:code_value).merge(code: code))
+      @user ||= User.new(params.except(:code_value).merge(code: code))
     end
 
     def code
-      @code = Code.find_by(value: params[:code_value])
+      @code ||= Code.find_by(value: params[:code_value])
     end
 
     def error_message

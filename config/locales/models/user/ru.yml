@@ -3,3 +3,14 @@ ru:
     attributes:
       user:
         password: Пароль
+        full_name: Имя и фамилия
+        group_number: Номер группы
+        phone_number: Телефонный номер
+        university_id: Университет
+        avatar: Аватар
+    errors:
+      models:
+        user:
+          attributes:
+            full_name:
+              blank: не могут быть пустыми

@@ -8,6 +8,6 @@ class ApiResponder < ActionController::Responder
   end
 
   def json_resource_errors
-    Error.new(code: :invalid_record, validations: resource.errors.messages)
+    Error.new(code: :invalid_record, validations: resource.errors_messages)
   end
 end

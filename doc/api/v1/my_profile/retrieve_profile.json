@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU3OTU2NDAsInN1YiI6MjMxMn0.7G8FneLtSangvQdYSED7wGIjRiFI3llLq8sHoIAQ0jg"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTYxMzU4ODMsInN1YiI6MjYyMn0.WfPdEAavKj8lRzOzczYkP0nz1J0O-7M11SS6xyRthIw"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 2312,\n    \"full_name\": \"Блинов Игорь\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(990)320-20-70\",\n    \"university_id\": 3039,\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"scores_count\": 0\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 2622,\n    \"full_name\": \"Беляев Олег\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(998)713-99-64\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"scores_count\": 0,\n    \"university\": {\n      \"id\": 3446,\n      \"name\": \"KPFU\"\n    },\n    \"level\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU3OTU2NDAsInN1YiI6MjMxMn0.7G8FneLtSangvQdYSED7wGIjRiFI3llLq8sHoIAQ0jg\""
+      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTYxMzU4ODMsInN1YiI6MjYyMn0.WfPdEAavKj8lRzOzczYkP0nz1J0O-7M11SS6xyRthIw\""
     }
   ]
 }

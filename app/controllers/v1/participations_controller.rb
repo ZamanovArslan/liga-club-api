@@ -6,14 +6,8 @@ module V1
       if participation.save
         respond_with participation, each_serializer: ParticipationSerializer, include: "user.university"
       else
-        respond_with_invalid_credentials participation.errors
+        respond_with_invalid_credentials participation.errors_messages
       end
-    end
-
-    private
-
-    def authentication_params
-      params.require(:user).permit(:phone_number, :password)
     end
   end
 end

@@ -16,6 +16,9 @@ resource "Sign up" do
     let(:university) { create :university }
 
     let(:user) { build :user }
+    let(:group_number) { user.group_number }
+    let(:password) { user.password }
+    let(:phone_number) { user.phone_number }
     let(:full_name) { user.full_name }
     let(:password) { user.password }
     let(:group_number) { user.group_number }
@@ -37,10 +40,33 @@ resource "Sign up" do
       end
     end
 
+    context "without required fields" do
+      let(:code) { create :code }
+      let(:full_name) { nil }
+      let(:expected_data) do
+        {
+          "errors" => [
+            {
+              "id" => "4eac02e2-6856-449b-bc28-fbf1b32a20f2",
+              "status" => 422,
+              "error" => "Неверные данные",
+              "validations" => "Имя и фамилия не могут быть пустыми"
+            }
+          ]
+        }
+      end
+
+      example "not creates eser", document: false do
+        do_request
+
+        expect(response_status).to eq(422)
+      end
+    end
+
     context "when code not exists" do
       let(:code) { build :code }
 
-      example "don't creates user", document: false do
+      example "not creates user", document: false do
         do_request
 
         expect(response_status).to eq(422)
@@ -66,7 +92,7 @@ resource "Sign up" do
         create :user, code: code
       end
 
-      example "don't creates user", document: false do
+      example "not creates user", document: false do
         do_request
 
         expect(response_status).to eq(422)
