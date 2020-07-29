@@ -1,5 +1,5 @@
 resource "Levels" do
-  include_context "with Authorization header"
+  include_context "with Authorization API headers"
 
   let!(:level) { create :level, scores_count: 10 }
   let!(:too_many_scores_count_level) { create :level, scores_count: 10 }

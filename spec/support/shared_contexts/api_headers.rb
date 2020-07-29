@@ -6,9 +6,12 @@ shared_context "with API Headers" do
   let(:raw_post) { params.to_json }
 end
 
-shared_context "with Authorization header" do
+shared_context "with Authorization API headers" do
   include_context "with API Headers"
+  include_context "with Authorization header"
+end
 
+shared_context "with Authorization header" do
   let(:current_user) { create(:user) }
   let(:jwt_token) { build(:jwt_token, subject: current_user) }
   let(:authorization) { "Bearer #{jwt_token.token}" }

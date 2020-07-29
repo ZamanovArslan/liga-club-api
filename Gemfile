@@ -13,6 +13,7 @@ gem "aws-sdk-s3", require: false
 gem "bootsnap", require: false
 gem "carrierwave"
 gem "decent_exposure"
+gem "enumerize"
 gem "fog-aws"
 gem "image_processing"
 gem "interactor"

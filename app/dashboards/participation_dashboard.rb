@@ -13,7 +13,12 @@ class ParticipationDashboard < Administrate::BaseDashboard
     id: Field::Number,
     confirmed: Field::Boolean,
     created_at: Field::DateTime,
-    updated_at: Field::DateTime
+    updated_at: Field::DateTime,
+    text_confirmation: Field::String,
+    attachment_confirmation: Field::Carrierwave.with_options(
+      image: :medium,
+      remote_url: false
+    )
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -37,6 +42,8 @@ class ParticipationDashboard < Administrate::BaseDashboard
     confirmed
     created_at
     updated_at
+    text_confirmation
+    attachment_confirmation
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -46,6 +53,8 @@ class ParticipationDashboard < Administrate::BaseDashboard
     user
     badge
     confirmed
+    text_confirmation
+    attachment_confirmation
   ].freeze
 
   # COLLECTION_FILTERS

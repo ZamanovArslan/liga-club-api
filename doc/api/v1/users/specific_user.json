@@ -14,12 +14,12 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/users/2636",
+      "request_path": "/v1/users/2781",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTYxMzU4ODMsInN1YiI6MjYzN30.FcwIOKae9g8HQqk19Sq7qbO9qh-mRf8SdM6HtfeRSo8"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTYxNDg2MzIsInN1YiI6Mjc4Mn0.QsPsPUgqemO46LiAOXXdLCEp0RthV2MjXEso3BL74VY"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 2636,\n    \"full_name\": \"Семён Коновалов\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(942)390-56-35\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": \"/uploads/user/avatar/2636/large_image.png\"\n      },\n      \"medium\": {\n        \"url\": \"/uploads/user/avatar/2636/medium_image.png\"\n      },\n      \"thumb\": {\n        \"url\": \"/uploads/user/avatar/2636/thumb_image.png\"\n      }\n    },\n    \"scores_count\": 0,\n    \"university\": {\n      \"id\": 3467,\n      \"name\": \"KPFU\"\n    },\n    \"level\": null\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 2781,\n    \"full_name\": \"Полякова Кира\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(927)116-73-18\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": \"/uploads/user/avatar/2781/large_image.png\"\n      },\n      \"medium\": {\n        \"url\": \"/uploads/user/avatar/2781/medium_image.png\"\n      },\n      \"thumb\": {\n        \"url\": \"/uploads/user/avatar/2781/thumb_image.png\"\n      }\n    },\n    \"scores_count\": 0,\n    \"university\": {\n      \"id\": 3666,\n      \"name\": \"KPFU\"\n    },\n    \"level\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users/2636\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTYxMzU4ODMsInN1YiI6MjYzN30.FcwIOKae9g8HQqk19Sq7qbO9qh-mRf8SdM6HtfeRSo8\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users/2781\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTYxNDg2MzIsInN1YiI6Mjc4Mn0.QsPsPUgqemO46LiAOXXdLCEp0RthV2MjXEso3BL74VY\""
     }
   ]
 }

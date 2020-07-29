@@ -5,4 +5,6 @@ class Participation < ApplicationRecord
   scope :confirmed, -> { where(confirmed: true) }
 
   validates :user, uniqueness: { scope: :badge }
+
+  mount_uploader :attachment_confirmation, BaseUploader
 end

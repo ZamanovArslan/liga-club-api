@@ -14,6 +14,9 @@ class BadgeDashboard < Administrate::BaseDashboard
       remove: true,
       remote_url: false
     ),
+    confirmation_method: Field::Select.with_options(
+      collection: Badge::CONFIRMATION_METHODS
+    ),
     university: Field::BelongsTo,
     users: Field::HasMany,
     id: Field::Number,
@@ -50,6 +53,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     ends_at
     created_at
     updated_at
+    confirmation_method
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -60,6 +64,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     description
     image
     rarity
+    confirmation_method
     ends_at
     university
   ].freeze

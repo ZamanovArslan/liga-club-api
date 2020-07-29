@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_13_211149) do
+ActiveRecord::Schema.define(version: 2020_07_29_205741) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2020_07_13_211149) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
+    t.string "confirmation_method"
     t.index ["rarity_id"], name: "index_badges_on_rarity_id"
     t.index ["university_id"], name: "index_badges_on_university_id"
   end
@@ -58,6 +59,8 @@ ActiveRecord::Schema.define(version: 2020_07_13_211149) do
     t.boolean "confirmed", default: false, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "text_confirmation"
+    t.string "attachment_confirmation"
     t.index ["badge_id"], name: "index_participations_on_badge_id"
     t.index ["user_id", "badge_id"], name: "index_participations_on_user_id_and_badge_id", unique: true
     t.index ["user_id"], name: "index_participations_on_user_id"

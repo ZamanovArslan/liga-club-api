@@ -1,5 +1,5 @@
 resource "Rarities" do
-  include_context "with Authorization header"
+  include_context "with Authorization API headers"
 
   let!(:rarity) { create :rarity, :with_image }
 

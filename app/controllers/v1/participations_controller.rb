@@ -1,13 +1,20 @@
 module V1
   class ParticipationsController < V1::BaseController
-    def create
-      participation = Participation.create(user: current_user, badge_id: params[:badge_id])
+    expose :participation
 
+    def create
       if participation.save
-        respond_with participation, each_serializer: ParticipationSerializer, include: "user.university"
+        respond_with participation, include: "user.university"
       else
         respond_with_invalid_credentials participation.errors_messages
       end
+    end
+
+    private
+
+    def participation_params
+      params.require(:participation).permit(:badge_id, :attachment_confirmation, :text_confirmation)
+        .merge(user: current_user)
     end
   end
 end

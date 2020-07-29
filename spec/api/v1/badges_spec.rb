@@ -1,5 +1,5 @@
 resource "Badges" do
-  include_context "with Authorization header"
+  include_context "with Authorization API headers"
 
   let!(:badge) { create :badge, :with_image }
 
@@ -16,7 +16,8 @@ resource "Badges" do
         "image" => be_a_empty_image_attachment
       },
       "university" => nil,
-      "image" => be_a_image_attachment
+      "image" => be_a_image_attachment,
+      "confirmation_method" => badge.confirmation_method
     }
   end
 

@@ -10,7 +10,7 @@ resource "Sign up" do
       parameter :full_name, "Full name", required: true
       parameter :code_value, "Code", required: true
       parameter :university_id, "University id", required: true
-      parameter :avatar, "Avatar"
+      parameter :avatar, "Avatar", "Type" => "Multipart/Form-data"
     end
 
     let(:university) { create :university }

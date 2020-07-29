@@ -1,5 +1,5 @@
 resource "Users" do
-  include_context "with Authorization header"
+  include_context "with Authorization API headers"
 
   let!(:user) { create :user, :with_avatar }
 

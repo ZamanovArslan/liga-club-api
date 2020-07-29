@@ -1,5 +1,5 @@
 resource "My Profile" do
-  include_context "with Authorization header"
+  include_context "with Authorization API headers"
 
   let(:current_user) { create :user }
 
