@@ -5,10 +5,12 @@ ru:
         password: Пароль
         full_name: Имя и фамилия
         group_number: Номер группы
-        phone_number: Телефонный номер
+        phone_number: Номер телефона
         university_id: Университет
         avatar: Аватар
     errors:
+      messages:
+        taken: уже занят
       models:
         user:
           attributes:

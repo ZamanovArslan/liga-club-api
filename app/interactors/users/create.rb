@@ -14,11 +14,13 @@ module Users
     private
 
     def error_message
-      return I18n.t("errors.services.sign_up.code_not_found") if code.blank?
-      return I18n.t("errors.services.sign_up.code_already_taken") if code.user.present?
-      user.code = code
+      @error_message ||= begin
+        return I18n.t("errors.services.sign_up.code_not_found") if code.blank?
+        return I18n.t("errors.services.sign_up.code_already_taken") if code.user.present?
 
-      user.errors_messages unless user.valid?
+        user.code = code
+        user.errors_messages unless user.valid?
+      end
     end
 
     def user

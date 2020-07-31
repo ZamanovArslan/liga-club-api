@@ -58,17 +58,31 @@ resource "Sign up" do
       example "not creates user", document: false do
         do_request
 
+        expect(json_response_body).to eq(expected_data)
         expect(response_status).to eq(422)
       end
     end
 
     context "when code not exists" do
       let(:code) { build :code }
+      let(:expected_data) do
+        {
+          "errors" => [
+            {
+              "id" => "4eac02e2-6856-449b-bc28-fbf1b32a20f2",
+              "status" => 422,
+              "error" => "Неверные данные",
+              "validations" => "Код не найден"
+            }
+          ]
+        }
+      end
 
       example "not creates user", document: false do
         do_request
 
         expect(response_status).to eq(422)
+        expect(json_response_body).to eq(expected_data)
       end
     end
 
@@ -95,6 +109,7 @@ resource "Sign up" do
         do_request
 
         expect(response_status).to eq(422)
+        expect(json_response_body).to eq(expected_data)
       end
     end
   end
