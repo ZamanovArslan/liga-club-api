@@ -14,7 +14,6 @@ resource "Sign up" do
     end
 
     let(:university) { create :university }
-
     let(:user) { build :user }
     let(:group_number) { user.group_number }
     let(:password) { user.password }
@@ -56,7 +55,7 @@ resource "Sign up" do
         }
       end
 
-      example "not creates eser", document: false do
+      example "not creates user", document: false do
         do_request
 
         expect(response_status).to eq(422)
