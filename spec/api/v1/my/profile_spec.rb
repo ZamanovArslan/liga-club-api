@@ -34,7 +34,6 @@ resource "My Profile" do
     with_options scope: :user do
       parameter :full_name, "Full name"
       parameter :phone_number, "Phone number"
-      parameter :password, "Password"
       parameter :group_number, "Group number"
       parameter :university_id, "University id"
     end

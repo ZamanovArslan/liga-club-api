@@ -21,6 +21,7 @@ module V1
 
       def user_params
         params.require(:user).permit(:full_name, :phone_number, :password, :group_number, :university_id)
+          .merge(password_confirmation: nil)
       end
     end
   end
