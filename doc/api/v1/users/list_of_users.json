@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTYxNDg2MzIsInN1YiI6Mjc3OX0.Ql4eoEtvwewlEIIWUAjm__Bodo0g4j2tEcYOlwi_KNM"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTc1Nzc4NjgsInN1YiI6MjkyOX0.M5ZPjLhpci2xwk6Pk9S72pPTzw31G29aVzeylhM65oc"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 2778,\n      \"full_name\": \"Сергеева Марина\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(926)526-08-54\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/2778/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/2778/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/2778/thumb_image.png\"\n        }\n      },\n      \"scores_count\": 0,\n      \"university\": {\n        \"id\": 3663,\n        \"name\": \"KPFU\"\n      },\n      \"level\": null\n    },\n    {\n      \"id\": 2779,\n      \"full_name\": \"Раиса Игнатьевна Фомичева\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(955)386-48-11\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"scores_count\": 0,\n      \"university\": {\n        \"id\": 3664,\n        \"name\": \"KPFU\"\n      },\n      \"level\": null\n    }\n  ]\n}",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 2928,\n      \"full_name\": \"Зиновьев Георгий\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(968)517-61-33\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/2928/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/2928/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/2928/thumb_image.png\"\n        }\n      },\n      \"scores_count\": 0,\n      \"university\": {\n        \"id\": 4001,\n        \"name\": \"KPFU\"\n      },\n      \"level\": null\n    },\n    {\n      \"id\": 2929,\n      \"full_name\": \"Никита Брагин\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(911)764-81-09\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"scores_count\": 0,\n      \"university\": {\n        \"id\": 4002,\n        \"name\": \"KPFU\"\n      },\n      \"level\": null\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTYxNDg2MzIsInN1YiI6Mjc3OX0.Ql4eoEtvwewlEIIWUAjm__Bodo0g4j2tEcYOlwi_KNM\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTc1Nzc4NjgsInN1YiI6MjkyOX0.M5ZPjLhpci2xwk6Pk9S72pPTzw31G29aVzeylhM65oc\""
     }
   ]
 }

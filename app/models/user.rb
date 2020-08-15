@@ -3,6 +3,7 @@ class User < ApplicationRecord
 
   validates :full_name, :group_number, :phone_number, presence: true
   validates :phone_number, uniqueness: true
+  validates :password, length: { minimum: 6 }, allow_nil: true
 
   has_one :code, dependent: :destroy
   has_many :confirmed_participations, -> { confirmed }, dependent: :destroy, class_name: "Participation",
