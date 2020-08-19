@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_29_205741) do
+ActiveRecord::Schema.define(version: 2020_08_19_211735) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "badges", force: :cascade do |t|
     t.string "name", null: false
-    t.integer "description", null: false
-    t.datetime "ends_at", null: false
+    t.string "description"
+    t.string "ends_at"
     t.bigint "rarity_id", null: false
     t.bigint "university_id"
     t.datetime "created_at", precision: 6, null: false
