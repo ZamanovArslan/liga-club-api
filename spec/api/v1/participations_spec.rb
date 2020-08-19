@@ -46,5 +46,28 @@ resource "Participation" do
       expect(response_status).to eq(201)
       expect(json_response_body["participation"]).to include(expected_data)
     end
+
+    context "when participation already exist" do
+      before do
+        create :participation, user: current_user, badge: badge
+      end
+
+      let(:expected_data) do
+        {
+          "errors" => [
+            {
+              "id" => "4eac02e2-6856-449b-bc28-fbf1b32a20f2",
+              "status" => 422,
+              "error" => "Неверные данные",
+              "validations" => "Пользователь уже участвует"}
+          ]
+        }
+      end
+
+      example_request "Not creates participation", document: false do
+        expect(response_status).to eq(422)
+        expect(json_response_body).to eq(expected_data)
+      end
+    end
   end
 end

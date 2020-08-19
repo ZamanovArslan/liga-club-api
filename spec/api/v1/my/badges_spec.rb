@@ -20,7 +20,8 @@ resource "Badges" do
       },
       "university" => nil,
       "image" => be_a_empty_image_attachment,
-      "confirmation_method" => badge.confirmation_method
+      "confirmation_method" => badge.confirmation_method,
+      "is_participation" => true
     }
   end
 
