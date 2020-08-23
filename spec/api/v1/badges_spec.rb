@@ -8,7 +8,7 @@ resource "Badges" do
       "id" => badge.id,
       "name" => badge.name,
       "description" => badge.description,
-      "ends_at" => badge.ends_at,
+      "ends_at" => badge.ends_at.as_json,
       "rarity" => {
         "id" => badge.rarity.id,
         "name" => badge.rarity.name,

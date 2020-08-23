@@ -1,7 +1,7 @@
 class Badge < ApplicationRecord
   extend Enumerize
 
-  CONFIRMATION_METHODS = %i(photo text)
+  CONFIRMATION_METHODS = %i(photo text).freeze
 
   belongs_to :rarity
   belongs_to :university, optional: true
@@ -18,8 +18,4 @@ class Badge < ApplicationRecord
   enumerize :confirmation_method, in: CONFIRMATION_METHODS, predicates: true, scope: true
 
   mount_uploader :image, BaseUploader
-
-  def ends_at
-    self[:ends_at]&.strftime("%Y-%m-%d %H:%M")
-  end
 end
