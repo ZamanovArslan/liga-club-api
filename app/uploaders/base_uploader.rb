@@ -8,15 +8,15 @@ class BaseUploader < CarrierWave::Uploader::Base
   end
 
   version :large do
-    process resize_to_fill: [1024, 1024]
+    process resize_to_fit: [1024, 1024]
   end
 
-  version :medium do
-    process resize_to_fill: [512, 512]
+  version :medium, from_version: :large do
+    process resize_to_fit: [512, 512]
   end
 
   version :thumb, from_version: :medium do
-    process resize_to_fill: [360, 360]
+    process resize_to_fit: [360, 360]
   end
 
   def extension_whitelist
