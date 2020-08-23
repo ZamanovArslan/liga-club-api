@@ -1,7 +1,7 @@
-resource "Users" do
+resource "Users with ranks" do
   include_context "with Authorization API headers"
 
-  let!(:user) { create :user, :with_avatar }
+  let!(:user) { create :user, :with_avatar, score: 50 }
 
   get "/v1/users" do
     it_behaves_like "API endpoint with authorization"
@@ -13,12 +13,13 @@ resource "Users" do
         "group_number" => current_user.group_number,
         "phone_number" => current_user.phone_number,
         "avatar" => be_a_empty_image_attachment,
-        "scores_count" => 0,
         "level" => nil,
         "university" => {
           "id" => current_user.university.id,
           "name" => current_user.university.name
-        }
+        },
+        "score" => 0,
+        "rank" => 2
       },
        {
          "id" => user.id,
@@ -26,12 +27,13 @@ resource "Users" do
          "group_number" => user.group_number,
          "phone_number" => user.phone_number,
          "avatar" => be_a_image_attachment,
-         "scores_count" => 0,
          "level" => nil,
          "university" => {
            "id" => user.university.id,
            "name" => user.university.name
-         }
+         },
+         "score" => 50,
+         "rank" => 1
        }]
     end
 
@@ -51,12 +53,13 @@ resource "Users" do
           "group_number" => user.group_number,
           "phone_number" => user.phone_number,
           "avatar" => be_a_image_attachment,
-          "scores_count" => 0,
           "level" => nil,
           "university" => {
             "id" => user.university.id,
             "name" => user.university.name
-          }
+          },
+          "rank" => 1,
+          "score" => 50
         }
       }
     end

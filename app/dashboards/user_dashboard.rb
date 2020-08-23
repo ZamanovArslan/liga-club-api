@@ -20,6 +20,7 @@ class UserDashboard < Administrate::BaseDashboard
     group_number: Field::String,
     phone_number: Field::String,
     password: Field::String,
+    score: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime
   }.freeze
@@ -34,6 +35,7 @@ class UserDashboard < Administrate::BaseDashboard
     full_name
     university
     code
+    score
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -47,6 +49,7 @@ class UserDashboard < Administrate::BaseDashboard
     group_number
     phone_number
     password
+    score
     created_at
     updated_at
   ].freeze

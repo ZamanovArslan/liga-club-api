@@ -1,4 +1,4 @@
-resource "Levels" do
+resource "Level" do
   include_context "with Authorization API headers"
 
   let!(:level) { create :level, scores_count: 10 }
@@ -7,6 +7,9 @@ resource "Levels" do
   let(:badge) { create :badge, rarity: rarity }
   let(:rarity) { create :rarity, scores_count: 50 }
   let!(:participation) { create :participation, :confirmed, user: current_user, badge: badge }
+  before do
+    current_user.update(score: 50)
+  end
 
   let(:expected_data) do
     {

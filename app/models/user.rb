@@ -14,11 +14,7 @@ class User < ApplicationRecord
 
   mount_uploader :avatar, BaseUploader
 
-  def scores_count
-    badges.joins(:rarity).sum(:scores_count)
-  end
-
   def level
-    Level.where("scores_count <= ?", scores_count).max_by(&:scores_count)
+    Level.where("scores_count <= ?", score).max_by(&:scores_count)
   end
 end

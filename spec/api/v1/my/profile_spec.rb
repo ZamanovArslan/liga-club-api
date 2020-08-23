@@ -17,7 +17,8 @@ resource "My Profile" do
             "name" => current_user.university.name
           },
           "avatar" => be_a_empty_image_attachment,
-          "scores_count" => 0
+          "score" => 0,
+          "rank" => 1
         }
       }
     end
@@ -57,7 +58,7 @@ resource "My Profile" do
         "full_name" => full_name,
         "group_number" => group_number,
         "level" => nil,
-        "scores_count" => 0,
+        "score" => 0,
         "university" => {
           "id" => current_user.reload.university.id,
           "name" => current_user.reload.university.name

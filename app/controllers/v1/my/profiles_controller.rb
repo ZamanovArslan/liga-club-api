@@ -1,8 +1,10 @@
 module V1
   module My
     class ProfilesController < V1::BaseController
+      expose :user, scope: -> { rank_query }, id: -> { current_user.id }
+
       def show
-        respond_with current_user
+        respond_with user, serializer: UserLeaderboardSerializer
       end
 
       def update
@@ -22,6 +24,10 @@ module V1
       def user_params
         params.require(:user).permit(:full_name, :phone_number, :password, :group_number, :university_id,
                                      :avatar).merge(password_confirmation: nil)
+      end
+
+      def rank_query
+        UserLeaderboardQuery.new.all
       end
     end
   end
