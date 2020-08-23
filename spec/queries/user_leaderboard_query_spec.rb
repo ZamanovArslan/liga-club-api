@@ -7,7 +7,7 @@ describe UserLeaderboardQuery do
   let!(:user_1) { create :user, score: 200 }
   let!(:user_3) { create :user, score: 50 }
 
-  context "#all" do
+  describe "#all" do
     subject(:leaderboard_query_result) { leaderboard_query.all }
 
     it { is_expected.to eq(expected_users) }

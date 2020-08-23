@@ -19,6 +19,13 @@
           "method": "get"
         },
         {
+          "description": "Returns that current user a participation",
+          "link": "badges/returns_that_current_user_a_participation.json",
+          "groups": "all",
+          "route": "/v1/badges/:id",
+          "method": "get"
+        },
+        {
           "description": "List of current user badges",
           "link": "badges/list_of_current_user_badges.json",
           "groups": "all",
@@ -43,13 +50,6 @@
           "link": "levels/specific_level.json",
           "groups": "all",
           "route": "/v1/levels/:id",
-          "method": "get"
-        },
-        {
-          "description": "Current user level",
-          "link": "levels/current_user_level.json",
-          "groups": "all",
-          "route": "/v1/my/level",
           "method": "get"
         }
       ]
@@ -88,6 +88,13 @@
         {
           "description": "Create participation for current user",
           "link": "participation/create_participation_for_current_user.json",
+          "groups": "all",
+          "route": "/v1/participations",
+          "method": "post"
+        },
+        {
+          "description": "Not creates participation",
+          "link": "participation/not_creates_participation.json",
           "groups": "all",
           "route": "/v1/participations",
           "method": "post"
@@ -168,19 +175,19 @@
       ]
     },
     {
-      "name": "Users",
+      "name": "Users with ranks",
       "explanation": null,
       "examples": [
         {
           "description": "List of users",
-          "link": "users/list_of_users.json",
+          "link": "users_with_ranks/list_of_users.json",
           "groups": "all",
           "route": "/v1/users",
           "method": "get"
         },
         {
           "description": "Specific user",
-          "link": "users/specific_user.json",
+          "link": "users_with_ranks/specific_user.json",
           "groups": "all",
           "route": "/v1/users/:id",
           "method": "get"

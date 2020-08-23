@@ -1,7 +1,7 @@
 class Badge < ApplicationRecord
   extend Enumerize
 
-  CONFIRMATION_METHODS = %i(photo text).freeze
+  CONFIRMATION_METHODS = %i[photo text].freeze
 
   belongs_to :rarity
   belongs_to :university, optional: true

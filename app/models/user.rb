@@ -7,7 +7,7 @@ class User < ApplicationRecord
 
   has_one :code, dependent: :destroy
   has_many :confirmed_participations, -> { confirmed }, dependent: :destroy, class_name: "Participation",
-           inverse_of: :user
+                                                        inverse_of: :user
   has_many :badges, through: :confirmed_participations
 
   belongs_to :university, dependent: :destroy

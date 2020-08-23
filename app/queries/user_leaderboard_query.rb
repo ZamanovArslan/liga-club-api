@@ -1,14 +1,14 @@
 class UserLeaderboardQuery
   attr_reader :relation
 
-  SUBQUERY = <<-SQL
+  SUBQUERY = <<-SQL.freeze
     (SELECT *, MAX(score) AS high_score
     FROM users
     GROUP BY id
     ) AS users
   SQL
 
-  SELECT_QUERY = "*, RANK() OVER (ORDER BY users.high_score DESC) AS rank"
+  SELECT_QUERY = "*, RANK() OVER (ORDER BY users.high_score DESC) AS rank".freeze
 
   def initialize(relation = User.all)
     @relation = relation
