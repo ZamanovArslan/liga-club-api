@@ -55,6 +55,19 @@
       ]
     },
     {
+      "name": "Level",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Current user level",
+          "link": "level/current_user_level.json",
+          "groups": "all",
+          "route": "/v1/my/level",
+          "method": "get"
+        }
+      ]
+    },
+    {
       "name": "My Profile",
       "explanation": null,
       "examples": [
@@ -181,6 +194,20 @@
         {
           "description": "List of users",
           "link": "users_with_ranks/list_of_users.json",
+          "groups": "all",
+          "route": "/v1/users",
+          "method": "get"
+        },
+        {
+          "description": "List of users with page parameters",
+          "link": "users_with_ranks/list_of_users_with_page_parameters.json",
+          "groups": "all",
+          "route": "/v1/users",
+          "method": "get"
+        },
+        {
+          "description": "List of filtered users by university and full name",
+          "link": "users_with_ranks/list_of_filtered_users_by_university_and_full_name.json",
           "groups": "all",
           "route": "/v1/users",
           "method": "get"

@@ -1,6 +1,6 @@
 module V1
   class UsersController < V1::BaseController
-    expose :users, -> { rank_query }
+    expose :users, -> { FilteredUsersQuery.new(rank_query, permitted_filter_params).all }
     expose :user, scope: -> { rank_query }
 
     def index
@@ -14,11 +14,11 @@ module V1
     private
 
     def rank_query
-      UserLeaderboardQuery.new(default_query).all
+      UserLeaderboardQuery.new.all
     end
 
-    def default_query
-      User.all.page(params[:page]).per(params[:per_page])
+    def permitted_filter_params
+      params.permit(:page, :per_page, :full_name, :university_id)
     end
   end
 end

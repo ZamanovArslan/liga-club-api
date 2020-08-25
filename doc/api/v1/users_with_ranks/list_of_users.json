@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTgzMDE3MjYsInN1YiI6MzM2NH0.dwwmUFTYEps9q7J41OtZ0RFtjcDt6T9C0gLbCMEryNY"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzYzNjMsInN1YiI6MzUyNH0.D0wgXfNuPyGophKf1WIQ80wrJQvZyNy2COOe9C6ixiU"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 3363,\n      \"full_name\": \"Харитонова София\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(987)199-15-41\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/3363/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/3363/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/3363/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 4494,\n        \"name\": \"KPFU\"\n      },\n      \"level\": null\n    },\n    {\n      \"id\": 3364,\n      \"full_name\": \"Куликов Вадим Евгеньевич\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(958)900-94-08\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"score\": 0,\n      \"rank\": 2,\n      \"university\": {\n        \"id\": 4495,\n        \"name\": \"KPFU\"\n      },\n      \"level\": null\n    }\n  ]\n}",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 3523,\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(940)577-75-70\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/3523/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/3523/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/3523/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 4682,\n        \"name\": \"KPFU\"\n      },\n      \"level\": null\n    },\n    {\n      \"id\": 3524,\n      \"full_name\": \"Белозерова Ольга Владиславовна\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(952)104-03-93\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"score\": 0,\n      \"rank\": 2,\n      \"university\": {\n        \"id\": 4683,\n        \"name\": \"KPFU\"\n      },\n      \"level\": null\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTgzMDE3MjYsInN1YiI6MzM2NH0.dwwmUFTYEps9q7J41OtZ0RFtjcDt6T9C0gLbCMEryNY\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzYzNjMsInN1YiI6MzUyNH0.D0wgXfNuPyGophKf1WIQ80wrJQvZyNy2COOe9C6ixiU\""
     }
   ]
 }
