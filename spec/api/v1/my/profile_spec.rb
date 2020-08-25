@@ -17,7 +17,8 @@ resource "My Profile" do
             "name" => current_user.university.name
           },
           "avatar" => be_a_empty_image_attachment,
-          "scores_count" => 0
+          "score" => 0,
+          "rank" => 1
         }
       }
     end
@@ -57,7 +58,7 @@ resource "My Profile" do
         "full_name" => full_name,
         "group_number" => group_number,
         "level" => nil,
-        "scores_count" => 0,
+        "score" => 0,
         "university" => {
           "id" => current_user.reload.university.id,
           "name" => current_user.reload.university.name
@@ -73,29 +74,29 @@ resource "My Profile" do
       expect(json_response_body["user"]).to include(expected_data)
     end
 
-  #   context "with invalid data" do
-  #     let(:password) { nil }
-  #
-  #     let(:expected_data) do
-  #       {
-  #         "errors" => [
-  #           {
-  #             "error" => "Неверные данные",
-  #             "id" => "4eac02e2-6856-449b-bc28-fbf1b32a20f2",
-  #             "status" => 422,
-  #             "validations" => "Пароль недостаточной длины (не может быть меньше 6 символов)"
-  #           }
-  #         ]
-  #       }
-  #     end
-  #
-  #     example "Update Profile with empty password and invalid email", document: false do
-  #       do_request
-  #
-  #       expect(response_status).to eq(422)
-  #       expect(json_response_body).to eq(expected_data)
-  #     end
-  #   end
+    #   context "with invalid data" do
+    #     let(:password) { nil }
+    #
+    #     let(:expected_data) do
+    #       {
+    #         "errors" => [
+    #           {
+    #             "error" => "Неверные данные",
+    #             "id" => "4eac02e2-6856-449b-bc28-fbf1b32a20f2",
+    #             "status" => 422,
+    #             "validations" => "Пароль недостаточной длины (не может быть меньше 6 символов)"
+    #           }
+    #         ]
+    #       }
+    #     end
+    #
+    #     example "Update Profile with empty password and invalid email", document: false do
+    #       do_request
+    #
+    #       expect(response_status).to eq(422)
+    #       expect(json_response_body).to eq(expected_data)
+    #     end
+    #   end
   end
 
   delete "/v1/my/profile" do

@@ -1,0 +1,46 @@
+{
+  "resource": "Users with ranks",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/v1/users",
+  "description": "List of filtered users by university and full name",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "full_name",
+      "description": "Full name"
+    },
+    {
+      "name": "university_id",
+      "description": "University id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/users?full_name=petrovich&university_id=4725",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzY4MTMsInN1YiI6MzU2MH0.BUiq5Z8Z8RTUtc_rCbocn9AtBqIr1m3UbxGhFGkc-T4"
+      },
+      "request_query_parameters": {
+        "full_name": "petrovich",
+        "university_id": "4725"
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 3559,\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(925)371-77-56\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/3559/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/3559/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/3559/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 4725,\n        \"name\": \"KPFU\"\n      },\n      \"level\": null\n    }\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://0.0.0.0/v1/users?full_name=petrovich&university_id=4725\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzY4MTMsInN1YiI6MzU2MH0.BUiq5Z8Z8RTUtc_rCbocn9AtBqIr1m3UbxGhFGkc-T4\""
+    }
+  ]
+}

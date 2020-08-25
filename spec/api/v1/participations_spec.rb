@@ -27,7 +27,7 @@ resource "Participation" do
             "group_number" => current_user.group_number,
             "phone_number" => current_user.phone_number,
             "avatar" => be_a_empty_image_attachment,
-            "scores_count" => 0,
+            "score" => 0,
             "university" => {
               "id" => current_user.university.id,
               "name" => current_user.university.name
@@ -65,7 +65,7 @@ resource "Participation" do
         }
       end
 
-      example_request "Not creates participation", document: false do
+      example_request "Not creates participation for existing participation", document: false do
         expect(response_status).to eq(422)
         expect(json_response_body).to eq(expected_data)
       end

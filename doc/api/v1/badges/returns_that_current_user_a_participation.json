@@ -1,0 +1,38 @@
+{
+  "resource": "Badges",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/v1/badges/:id",
+  "description": "Returns that current user a participation",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/badges/1374?document=false",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzY4MTMsInN1YiI6MzUzOH0.XGjiTxEOMmB6aUFpnEDT6hgHzVtBBUAeuoR3qSTpVsI"
+      },
+      "request_query_parameters": {
+        "document": "false"
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"badge\": {\n    \"id\": 1374,\n    \"name\": \"Some help to elderly\",\n    \"description\": \"Some help to elderly\",\n    \"ends_at\": \"2020-08-27 00:20:13 +0300\",\n    \"image\": {\n      \"large\": {\n        \"url\": \"/uploads/badge/image/1374/large_image.png\"\n      },\n      \"medium\": {\n        \"url\": \"/uploads/badge/image/1374/medium_image.png\"\n      },\n      \"thumb\": {\n        \"url\": \"/uploads/badge/image/1374/thumb_image.png\"\n      }\n    },\n    \"confirmation_method\": \"text\",\n    \"is_participation\": true,\n    \"rarity\": {\n      \"id\": 1832,\n      \"name\": \"Uncommon\",\n      \"scores_count\": 5,\n      \"image\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      }\n    },\n    \"university\": null\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://0.0.0.0/v1/badges/1374?document=false\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzY4MTMsInN1YiI6MzUzOH0.XGjiTxEOMmB6aUFpnEDT6hgHzVtBBUAeuoR3qSTpVsI\""
+    }
+  ]
+}
