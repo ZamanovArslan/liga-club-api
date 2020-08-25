@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_23_172837) do
+ActiveRecord::Schema.define(version: 2020_08_25_212304) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -101,6 +101,7 @@ ActiveRecord::Schema.define(version: 2020_08_23_172837) do
     t.string "avatar"
     t.integer "score", default: 0, null: false
     t.index ["phone_number"], name: "index_users_on_phone_number", unique: true
+    t.index ["score"], name: "index_users_on_score"
     t.index ["university_id"], name: "index_users_on_university_id"
   end
 
