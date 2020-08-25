@@ -1,6 +1,6 @@
 class FilteredUsersQuery < BaseFilteredQuery
-  ALLOWED_PARAMS = %i(page per_page full_name university_id).freeze
-  SEARCH_SQL = <<-SQL
+  ALLOWED_PARAMS = %i[page per_page full_name university_id].freeze
+  SEARCH_SQL = <<-SQL.freeze
     lower(users.full_name) similar to lower(:full_name) ESCAPE '^'
   SQL
 
