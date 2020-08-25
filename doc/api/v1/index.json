@@ -106,8 +106,8 @@
           "method": "post"
         },
         {
-          "description": "Not creates participation",
-          "link": "participation/not_creates_participation.json",
+          "description": "Not creates participation for existing participation",
+          "link": "participation/not_creates_participation_for_existing_participation.json",
           "groups": "all",
           "route": "/v1/participations",
           "method": "post"

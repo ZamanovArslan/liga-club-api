@@ -46,7 +46,7 @@ resource "Badges" do
         create :participation, user: current_user, badge: badge
       end
 
-      example_request "Returns that current user a participation" do
+      example_request "Returns that current user a participation", document: false do
         expect(json_response_body["badge"]["is_participation"]).to be_truthy
       end
     end

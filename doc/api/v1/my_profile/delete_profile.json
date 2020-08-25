@@ -19,19 +19,19 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzYzNjMsInN1YiI6MzUxNH0.racjqDA9MU1YL9uVmD4AZOZT3bvAOxKHdbeVMMQVe48"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzY4MTMsInN1YiI6MzU0NX0.8Fu4H9eJZ-1djUnKYNaXVICf_hn9owpOxRIjVvudI-E"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 3514,\n    \"full_name\": \"Наталья Корнилова\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(989)620-93-47\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"university\": {\n      \"id\": 4668,\n      \"name\": \"KPFU\"\n    },\n    \"level\": null\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 3545,\n    \"full_name\": \"Назаров Николай Сергеевич\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(918)482-97-84\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"university\": {\n      \"id\": 4706,\n      \"name\": \"KPFU\"\n    },\n    \"level\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzYzNjMsInN1YiI6MzUxNH0.racjqDA9MU1YL9uVmD4AZOZT3bvAOxKHdbeVMMQVe48\""
+      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzY4MTMsInN1YiI6MzU0NX0.8Fu4H9eJZ-1djUnKYNaXVICf_hn9owpOxRIjVvudI-E\""
     }
   ]
 }

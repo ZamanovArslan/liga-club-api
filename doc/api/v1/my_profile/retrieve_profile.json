@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzYzNjMsInN1YiI6MzUxMn0.ZNnmNET_zaOLJinYNk6CAGJr9sMwhZsO09MWFvoOmXE"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzY4MTMsInN1YiI6MzU0M30.S7P2pW7_xTERtPTDYPn42FnGuLwcKxY5MV8peXSyCBA"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 3512,\n    \"full_name\": \"Эдуард Дорофеев\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(910)440-77-30\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"rank\": 1,\n    \"university\": {\n      \"id\": 4664,\n      \"name\": \"KPFU\"\n    },\n    \"level\": null\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 3543,\n    \"full_name\": \"Жданова Евгения\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(949)228-93-47\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"rank\": 1,\n    \"university\": {\n      \"id\": 4702,\n      \"name\": \"KPFU\"\n    },\n    \"level\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzYzNjMsInN1YiI6MzUxMn0.ZNnmNET_zaOLJinYNk6CAGJr9sMwhZsO09MWFvoOmXE\""
+      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzY4MTMsInN1YiI6MzU0M30.S7P2pW7_xTERtPTDYPn42FnGuLwcKxY5MV8peXSyCBA\""
     }
   ]
 }

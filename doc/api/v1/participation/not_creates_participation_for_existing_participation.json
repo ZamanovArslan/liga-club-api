@@ -1,0 +1,53 @@
+{
+  "resource": "Participation",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/v1/participations",
+  "description": "Not creates participation for existing participation",
+  "explanation": null,
+  "parameters": [
+    {
+      "scope": "participation",
+      "required": true,
+      "name": "badge_id",
+      "description": "Badge id"
+    },
+    {
+      "scope": "participation",
+      "Type": "Multipart/Form-data",
+      "name": "attachment_confirmation",
+      "description": "Attachment confirmation"
+    },
+    {
+      "scope": "participation",
+      "name": "text_confirmation",
+      "description": "Text confirmation"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/v1/participations",
+      "request_body": "------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[badge_id]\"\r\n\r\n1381\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[attachment_confirmation]\"; filename=\"image.png\"\r\nContent-Type: image/png\r\nContent-Length: 1626727\r\n\r\n[uploaded data]\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[text_confirmation]\"\r\n\r\nI was there, I swear\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"document\"\r\n\r\nfalse\r\n------------XnJLe9ZIbbGUYtzPQJ16u1--\r",
+      "request_headers": {
+        "Content-Type": "multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1",
+        "Accept": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzY4MTMsInN1YiI6MzU0N30.Zc3hWUt71MgIhCqyOw_4oIrfBItV0NOL125WeINlOLM"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1",
+      "response_status": 422,
+      "response_status_text": "Unprocessable Entity",
+      "response_body": "{\n  \"errors\": [\n    {\n      \"id\": \"4eac02e2-6856-449b-bc28-fbf1b32a20f2\",\n      \"status\": 422,\n      \"error\": \"Неверные данные\",\n      \"validations\": \"Пользователь уже участвует\"\n    }\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://0.0.0.0/v1/participations\" -d '------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[badge_id]\"\r\n\r\n1381\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[attachment_confirmation]\"; filename=\"image.png\"\r\nContent-Type: image/png\r\nContent-Length: 1626727\r\n\r\n[uploaded data]\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[text_confirmation]\"\r\n\r\nI was there, I swear\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"document\"\r\n\r\nfalse\r\n------------XnJLe9ZIbbGUYtzPQJ16u1--\r' -X POST \\\n\t-H \"Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1\" \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTg0NzY4MTMsInN1YiI6MzU0N30.Zc3hWUt71MgIhCqyOw_4oIrfBItV0NOL125WeINlOLM\""
+    }
+  ]
+}

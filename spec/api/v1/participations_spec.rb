@@ -65,7 +65,7 @@ resource "Participation" do
         }
       end
 
-      example_request "Not creates participation", document: false do
+      example_request "Not creates participation for existing participation", document: false do
         expect(response_status).to eq(422)
         expect(json_response_body).to eq(expected_data)
       end

@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/levels/1028",
+      "request_path": "/v1/levels/1036",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
@@ -26,12 +26,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"level\": {\n    \"id\": 1028,\n    \"name\": \"Первак\",\n    \"scores_count\": 0,\n    \"description\": \"Первый уровень\",\n    \"image\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    }\n  }\n}",
+      "response_body": "{\n  \"level\": {\n    \"id\": 1036,\n    \"name\": \"Первак\",\n    \"scores_count\": 9,\n    \"description\": \"Первый уровень\",\n    \"image\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/levels/1028\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+      "curl": "curl -g \"http://0.0.0.0/v1/levels/1036\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
     }
   ]
 }
