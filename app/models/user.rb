@@ -6,11 +6,11 @@ class User < ApplicationRecord
   validates :password, length: { minimum: 6 }, allow_nil: true
 
   has_one :code, dependent: :destroy
-  has_many :confirmed_participations, -> { confirmed }, dependent: :destroy, class_name: "Participation",
-                                                        inverse_of: :user
+  has_many :participations, dependent: :destroy, inverse_of: :user
+  has_many :confirmed_participations, -> { confirmed }, class_name: "Participation", inverse_of: :user
   has_many :badges, through: :confirmed_participations
 
-  belongs_to :university, dependent: :destroy
+  belongs_to :university
 
   mount_uploader :avatar, BaseUploader
 
