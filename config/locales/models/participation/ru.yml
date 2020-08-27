@@ -3,9 +3,12 @@ ru:
     attributes:
       participation:
         user: Пользователь
+        badge: Значок
     errors:
       models:
         participation:
           attributes:
             user:
               taken: уже участвует
+            badge:
+              not_a_student: только для студентов %{university_name}

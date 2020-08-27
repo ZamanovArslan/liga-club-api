@@ -1,0 +1,6 @@
+ru:
+  activerecord:
+    models:
+      badge:
+        one: Значок
+        other: Значки
