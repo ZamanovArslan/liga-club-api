@@ -60,6 +60,6 @@ class UniversityDashboard < Administrate::BaseDashboard
   # across all pages of the admin dashboard.
   #
   def display_resource(university)
-    "University #{university.name}"
+    university.name
   end
 end
