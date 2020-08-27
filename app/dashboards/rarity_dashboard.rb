@@ -15,6 +15,7 @@ class RarityDashboard < Administrate::BaseDashboard
     ),
     id: Field::Number,
     name: Field::String,
+    color: Field::String,
     scores_count: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime
@@ -39,6 +40,7 @@ class RarityDashboard < Administrate::BaseDashboard
     name
     image
     scores_count
+    color
     created_at
     updated_at
   ].freeze
@@ -50,6 +52,7 @@ class RarityDashboard < Administrate::BaseDashboard
     name
     image
     scores_count
+    color
   ].freeze
 
   # COLLECTION_FILTERS
