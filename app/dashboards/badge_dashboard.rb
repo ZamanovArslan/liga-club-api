@@ -21,7 +21,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     users: Field::HasMany,
     id: Field::Number,
     name: Field::String,
-    description: Field::Number,
+    description: Field::String,
     created_at: Field::DateTime,
     ends_at: Field::DateTime,
     updated_at: Field::DateTime
