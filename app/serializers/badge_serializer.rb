@@ -11,4 +11,8 @@ class BadgeSerializer < ApplicationSerializer
   def is_participation
     object.participations.exists?(user: current_user)
   end
+
+  def ends_at
+    object.ends_at.to_datetime.strftime("%m/%d/%Y %R")
+  end
 end
