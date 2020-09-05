@@ -1,14 +1,15 @@
 resource "Rarities" do
   include_context "with Authorization API headers"
 
-  let!(:rarity) { create :rarity, :with_image }
+  let!(:rarity) { create :rarity, :with_image, color: "#ececec" }
 
   let(:expected_data) do
     {
       "id" => rarity.id,
       "scores_count" => rarity.scores_count,
       "name" => rarity.name,
-      "image" => be_a_image_attachment
+      "image" => be_a_image_attachment,
+      "color" => "#ececec"
     }
   end
 
