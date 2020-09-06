@@ -14,7 +14,8 @@ resource "My Profile" do
           "level" => nil,
           "university" => {
             "id" => current_user.university.id,
-            "name" => current_user.university.name
+            "name" => current_user.university.name,
+            "abbreviation" => nil
           },
           "avatar" => be_a_empty_image_attachment,
           "score" => 0,
@@ -61,7 +62,8 @@ resource "My Profile" do
         "score" => 0,
         "university" => {
           "id" => current_user.reload.university.id,
-          "name" => current_user.reload.university.name
+          "name" => current_user.reload.university.name,
+          "abbreviation" => nil
         },
         "avatar" => be_a_image_attachment
       }
@@ -111,7 +113,8 @@ resource "My Profile" do
         "avatar" => be_a_empty_image_attachment,
         "university" => {
           "id" => current_user.university.id,
-          "name" => current_user.university.name
+          "name" => current_user.university.name,
+          "abbreviation" => nil
         }
       }
     end

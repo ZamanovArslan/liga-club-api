@@ -1,3 +1,3 @@
 class UniversitySerializer < ApplicationSerializer
-  attributes :id, :name
+  attributes :id, :name, :abbreviation
 end

@@ -21,26 +21,26 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/users?full_name=petrovich&university_id=5114",
+      "request_path": "/v1/users?full_name=petrovich&university_id=5553",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTk0MTA0OTUsInN1YiI6Mzg3OX0.vi93y0pzgg14ulJupW-_2Bi8x-SmufXJPHuX7fao78E"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTk0OTY3OTIsInN1YiI6NDE2M30.IgjLsdFxZdYKEKJB6fsoNxlVv9U1NMGrfcu6t0cd8Uk"
       },
       "request_query_parameters": {
         "full_name": "petrovich",
-        "university_id": "5114"
+        "university_id": "5553"
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 3878,\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(944)554-53-16\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/3878/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/3878/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/3878/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 5114,\n        \"name\": \"KPFU\"\n      },\n      \"level\": null\n    }\n  ]\n}",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 4162,\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(970)971-75-07\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/4162/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/4162/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/4162/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 5553,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null\n      },\n      \"level\": null\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users?full_name=petrovich&university_id=5114\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTk0MTA0OTUsInN1YiI6Mzg3OX0.vi93y0pzgg14ulJupW-_2Bi8x-SmufXJPHuX7fao78E\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users?full_name=petrovich&university_id=5553\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTk0OTY3OTIsInN1YiI6NDE2M30.IgjLsdFxZdYKEKJB6fsoNxlVv9U1NMGrfcu6t0cd8Uk\""
     }
   ]
 }

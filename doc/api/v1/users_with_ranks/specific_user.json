@@ -14,12 +14,12 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/users/3880",
+      "request_path": "/v1/users/4164",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTk0MTA0OTUsInN1YiI6Mzg4MX0.h8TwLFreKqHpVavCAYnFTk-p_IxQX2J_hz85h5teofo"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTk0OTY3OTIsInN1YiI6NDE2NX0.KLRRkZ4ueYe_EDnoJD9bO-y6G9KeNomEafNCaqwPBV8"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 3880,\n    \"full_name\": \"Ivan Petrovich\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(994)026-67-06\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": \"/uploads/user/avatar/3880/large_image.png\"\n      },\n      \"medium\": {\n        \"url\": \"/uploads/user/avatar/3880/medium_image.png\"\n      },\n      \"thumb\": {\n        \"url\": \"/uploads/user/avatar/3880/thumb_image.png\"\n      }\n    },\n    \"score\": 50,\n    \"rank\": 1,\n    \"university\": {\n      \"id\": 5116,\n      \"name\": \"KPFU\"\n    },\n    \"level\": null\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 4164,\n    \"full_name\": \"Ivan Petrovich\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(941)283-20-68\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": \"/uploads/user/avatar/4164/large_image.png\"\n      },\n      \"medium\": {\n        \"url\": \"/uploads/user/avatar/4164/medium_image.png\"\n      },\n      \"thumb\": {\n        \"url\": \"/uploads/user/avatar/4164/thumb_image.png\"\n      }\n    },\n    \"score\": 50,\n    \"rank\": 1,\n    \"university\": {\n      \"id\": 5555,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null\n    },\n    \"level\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users/3880\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTk0MTA0OTUsInN1YiI6Mzg4MX0.h8TwLFreKqHpVavCAYnFTk-p_IxQX2J_hz85h5teofo\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users/4164\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTk0OTY3OTIsInN1YiI6NDE2NX0.KLRRkZ4ueYe_EDnoJD9bO-y6G9KeNomEafNCaqwPBV8\""
     }
   ]
 }
