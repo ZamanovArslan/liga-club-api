@@ -19,6 +19,18 @@ module Admin
       super
     end
 
+    def destroy
+      if requested_resource.destroy
+        requested_resource.user.score -= requested_resource.badge.scores_count if requested_resource.confirmed?
+        requested_resource.user.save
+
+        flash[:notice] = translate_with_resource("destroy.success")
+      else
+        flash[:error] = requested_resource.errors.full_messages.join("<br/>")
+      end
+      redirect_to action: :index
+    end
+
     def participation_status_confirmed?
       requested_resource.changes["confirmed"] == [false, true]
     end

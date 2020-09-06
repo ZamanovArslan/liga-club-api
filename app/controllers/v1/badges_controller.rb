@@ -1,6 +1,6 @@
 module V1
   class BadgesController < V1::BaseController
-    expose :badges, -> { Badge.actual }
+    expose :badges, :fetch_badges
     expose :badge
 
     def index
@@ -9,6 +9,12 @@ module V1
 
     def show
       respond_with badge
+    end
+
+    private
+
+    def fetch_badges
+      Badge.actual.with_university(current_user.university.id)
     end
   end
 end

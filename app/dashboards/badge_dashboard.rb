@@ -19,6 +19,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     ),
     university: Field::BelongsTo,
     users: Field::HasMany,
+    participations: Field::HasMany,
     id: Field::Number,
     name: Field::String,
     description: Field::String,
@@ -49,7 +50,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     image
     rarity
     university
-    users
+    participations
     ends_at
     created_at
     updated_at

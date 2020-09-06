@@ -11,6 +11,7 @@ class Badge < ApplicationRecord
 
   scope :ended, -> { where("ends_at < ?", Time.zone.now) }
   scope :actual, -> { where("ends_at > ?", Time.zone.now) }
+  scope :with_university, ->(university_id) { where(university_id: [university_id, nil]) }
 
   validates :name, presence: true
   validates :name, length: { maximum: 30 }

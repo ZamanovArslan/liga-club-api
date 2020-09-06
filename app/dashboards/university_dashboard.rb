@@ -11,6 +11,7 @@ class UniversityDashboard < Administrate::BaseDashboard
     students: Field::HasMany.with_options(class_name: "User"),
     id: Field::Number,
     name: Field::String,
+    abbreviation: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime
   }.freeze
@@ -22,9 +23,9 @@ class UniversityDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
     id
+    abbreviation
     name
     students
-    created_at
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -32,6 +33,7 @@ class UniversityDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = %i[
     id
     name
+    abbreviation
     students
     created_at
     updated_at
@@ -42,6 +44,7 @@ class UniversityDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
     name
+    abbreviation
   ].freeze
 
   # COLLECTION_FILTERS
@@ -60,6 +63,6 @@ class UniversityDashboard < Administrate::BaseDashboard
   # across all pages of the admin dashboard.
   #
   def display_resource(university)
-    university.name
+    university.abbreviation.presence || university.name
   end
 end
