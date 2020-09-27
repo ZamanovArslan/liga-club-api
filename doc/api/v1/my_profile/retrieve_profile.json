@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTk0OTY3OTEsInN1YiI6NDE0Nn0.z7KjJU0usa_reP76MSkT1LvUurV2sFBDXXI44vnWkzk"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDEyOTMyMzAsInN1YiI6NDMxNH0.bX2WnoLahyG-Xa_QFyUd7I25yV2W8ZBH1Vlsj_Q3keU"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 4146,\n    \"full_name\": \"Лобанов Григорий Юрьевич\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(969)449-97-17\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"rank\": 1,\n    \"university\": {\n      \"id\": 5530,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null\n    },\n    \"level\": null\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 4314,\n    \"full_name\": \"Валентина Захарова\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(933)225-85-91\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"rank\": 2,\n    \"university\": {\n      \"id\": 5748,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null\n    },\n    \"level\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTk0OTY3OTEsInN1YiI6NDE0Nn0.z7KjJU0usa_reP76MSkT1LvUurV2sFBDXXI44vnWkzk\""
+      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDEyOTMyMzAsInN1YiI6NDMxNH0.bX2WnoLahyG-Xa_QFyUd7I25yV2W8ZBH1Vlsj_Q3keU\""
     }
   ]
 }

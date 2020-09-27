@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTk0OTY3OTIsInN1YiI6NDE1OH0.0fibLsf7CqEmwTMoeAU_M_I5dPYkTLQQWsWbC3tLExk"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDEyOTMyMzMsInN1YiI6NDMzMX0.CREX763hGAZyW6bHK-SAR-R0NaHURSXcwArZ2xTL-p4"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 4157,\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(925)018-74-10\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/4157/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/4157/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/4157/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 5548,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null\n      },\n      \"level\": null\n    },\n    {\n      \"id\": 4158,\n      \"full_name\": \"Орехова Анфиса Олеговна\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(919)567-63-01\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"score\": 0,\n      \"rank\": 2,\n      \"university\": {\n        \"id\": 5549,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null\n      },\n      \"level\": null\n    }\n  ]\n}",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 4330,\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(931)802-54-53\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/4330/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/4330/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/4330/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 5771,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null\n      },\n      \"level\": null\n    },\n    {\n      \"id\": 4331,\n      \"full_name\": \"Андреев Герман Юрьевич\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(965)566-21-92\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"score\": 0,\n      \"rank\": 2,\n      \"university\": {\n        \"id\": 5772,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null\n      },\n      \"level\": null\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTk0OTY3OTIsInN1YiI6NDE1OH0.0fibLsf7CqEmwTMoeAU_M_I5dPYkTLQQWsWbC3tLExk\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDEyOTMyMzMsInN1YiI6NDMzMX0.CREX763hGAZyW6bHK-SAR-R0NaHURSXcwArZ2xTL-p4\""
     }
   ]
 }

@@ -2,7 +2,7 @@ module V1
   class LevelsController < V1::BaseController
     skip_before_action :authenticate_user!
 
-    expose :levels, -> { Level.all }
+    expose :levels, -> { Level.all.order(scores_count: :asc) }
     expose :level
 
     def index

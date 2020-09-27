@@ -95,6 +95,19 @@
       ]
     },
     {
+      "name": "News",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List of news",
+          "link": "news/list_of_news.json",
+          "groups": "all",
+          "route": "/v1/news",
+          "method": "get"
+        }
+      ]
+    },
+    {
       "name": "Participation",
       "explanation": null,
       "examples": [
@@ -111,6 +124,19 @@
           "groups": "all",
           "route": "/v1/participations",
           "method": "post"
+        }
+      ]
+    },
+    {
+      "name": "Partners",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List of partners",
+          "link": "partners/list_of_partners.json",
+          "groups": "all",
+          "route": "/v1/partners",
+          "method": "get"
         }
       ]
     },

@@ -10,7 +10,7 @@ class Badge < ApplicationRecord
   has_many :users, through: :participations
 
   scope :ended, -> { where("ends_at < ?", Time.zone.now) }
-  scope :actual, -> { where("ends_at > ?", Time.zone.now) }
+  scope :actual, -> { where("ends_at > ?", Time.zone.now).or(where(ends_at: nil)) }
   scope :with_university, ->(university_id) { where(university_id: [university_id, nil]) }
 
   validates :name, presence: true

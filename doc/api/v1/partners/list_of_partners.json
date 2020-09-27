@@ -1,0 +1,37 @@
+{
+  "resource": "Partners",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/v1/partners",
+  "description": "List of partners",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/partners",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"partners\": [\n    {\n      \"id\": 5,\n      \"name\": \"ООО ЧебоксарыСбыт\",\n      \"description\": \"Realigned value-added moratorium\",\n      \"discount\": 50,\n      \"instagram_link\": \"https://www.instagram.com/unicsbasket/\",\n      \"image\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      }\n    }\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://0.0.0.0/v1/partners\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+    }
+  ]
+}

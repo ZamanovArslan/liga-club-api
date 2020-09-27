@@ -1,5 +1,5 @@
 resource "My Profile" do
-  let(:current_user) { create :user }
+  let!(:second_user) { create :user, score: 20 }
 
   get "/v1/my/profile" do
     include_context "with Authorization API headers"
@@ -19,7 +19,7 @@ resource "My Profile" do
           },
           "avatar" => be_a_empty_image_attachment,
           "score" => 0,
-          "rank" => 1
+          "rank" => 2
         }
       }
     end

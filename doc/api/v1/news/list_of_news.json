@@ -1,9 +1,9 @@
 {
-  "resource": "Universities",
+  "resource": "News",
   "resource_explanation": null,
   "http_method": "GET",
-  "route": "/v1/universities/:id",
-  "description": "Specific university",
+  "route": "/v1/news",
+  "description": "List of news",
   "explanation": null,
   "parameters": [
 
@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/universities/5770",
+      "request_path": "/v1/news",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
@@ -26,12 +26,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"university\": {\n    \"id\": 5770,\n    \"name\": \"KPFU\",\n    \"abbreviation\": \"KFU\"\n  }\n}",
+      "response_body": "{\n  \"news\": [\n    {\n      \"id\": 7,\n      \"title\": \"Nesciunt et illum reprehenderit.\",\n      \"description\": \"Et sint ab voluptatem.\"\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/universities/5770\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+      "curl": "curl -g \"http://0.0.0.0/v1/news\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
     }
   ]
 }
