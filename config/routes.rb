@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       rarities
       levels
       codes
+      cities
       news
       partners
       universities

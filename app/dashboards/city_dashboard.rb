@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class UniversityDashboard < Administrate::BaseDashboard
+class CityDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -8,13 +8,10 @@ class UniversityDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    students: Field::HasMany.with_options(class_name: "User"),
     id: Field::Number,
     name: Field::String,
-    abbreviation: Field::String,
-    city: Field::BelongsTo,
     created_at: Field::DateTime,
-    updated_at: Field::DateTime
+    updated_at: Field::DateTime,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -23,32 +20,26 @@ class UniversityDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
-    id
-    abbreviation
-    name
-    students
-    city
+  id
+  name
+  created_at
+  updated_at
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
-    id
-    name
-    abbreviation
-    students
-    city
-    created_at
-    updated_at
+  id
+  name
+  created_at
+  updated_at
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
-    name
-    abbreviation
-    city
+  name
   ].freeze
 
   # COLLECTION_FILTERS
@@ -63,10 +54,10 @@ class UniversityDashboard < Administrate::BaseDashboard
   #   }.freeze
   COLLECTION_FILTERS = {}.freeze
 
-  # Overwrite this method to customize how universities are displayed
+  # Overwrite this method to customize how cities are displayed
   # across all pages of the admin dashboard.
   #
-  def display_resource(university)
-    university.abbreviation.presence || university.name
+  def display_resource(city)
+    city.name
   end
 end

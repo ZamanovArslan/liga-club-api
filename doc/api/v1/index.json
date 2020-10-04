@@ -5,8 +5,15 @@
       "explanation": null,
       "examples": [
         {
-          "description": "List of only actual badges",
-          "link": "badges/list_of_only_actual_badges.json",
+          "description": "List of all badges",
+          "link": "badges/list_of_all_badges.json",
+          "groups": "all",
+          "route": "/v1/badges",
+          "method": "get"
+        },
+        {
+          "description": "Filtered badges",
+          "link": "badges/filtered_badges.json",
           "groups": "all",
           "route": "/v1/badges",
           "method": "get"
@@ -14,13 +21,6 @@
         {
           "description": "Specific badge",
           "link": "badges/specific_badge.json",
-          "groups": "all",
-          "route": "/v1/badges/:id",
-          "method": "get"
-        },
-        {
-          "description": "Returns that current user a participation",
-          "link": "badges/returns_that_current_user_a_participation.json",
           "groups": "all",
           "route": "/v1/badges/:id",
           "method": "get"

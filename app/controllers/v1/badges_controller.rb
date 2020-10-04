@@ -14,7 +14,11 @@ module V1
     private
 
     def fetch_badges
-      Badge.actual.with_university(current_user.university.id)
+      BadgesQuery.new(Badge.includes(:university), filter_params).all
+    end
+
+    def filter_params
+      params.permit(:page, :per_page, :actual, :university_id, :city_id, :rarity_id)
     end
   end
 end
