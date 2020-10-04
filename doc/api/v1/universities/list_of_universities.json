@@ -26,7 +26,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"universities\": [\n    {\n      \"id\": 5769,\n      \"name\": \"KPFU\",\n      \"abbreviation\": \"KFU\"\n    }\n  ]\n}",
+      "response_body": "{\n  \"universities\": [\n    {\n      \"id\": 6110,\n      \"name\": \"KPFU\",\n      \"abbreviation\": \"KFU\",\n      \"city\": \"Kazan\"\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

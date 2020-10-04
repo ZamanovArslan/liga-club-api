@@ -19,19 +19,19 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDEyOTMyMzEsInN1YiI6NDMyMH0.85K25h1RMLIH4tud5pd5FFoFnfS6B-uFvO9VaMea4wU"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ1Nzl9.Pq8Ggv1lYePaMWl4pPQf7A3qZgN4ZwPHDjrqaAR40mc"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 4320,\n    \"full_name\": \"Ксения Эдуардовна Кулакова\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(972)524-47-86\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"university\": {\n      \"id\": 5756,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null\n    },\n    \"level\": null\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 4579,\n    \"full_name\": \"Валентина Егорова\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(948)119-66-26\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"university\": {\n      \"id\": 6097,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDEyOTMyMzEsInN1YiI6NDMyMH0.85K25h1RMLIH4tud5pd5FFoFnfS6B-uFvO9VaMea4wU\""
+      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ1Nzl9.Pq8Ggv1lYePaMWl4pPQf7A3qZgN4ZwPHDjrqaAR40mc\""
     }
   ]
 }

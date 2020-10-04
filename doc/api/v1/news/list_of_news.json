@@ -26,7 +26,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"news\": [\n    {\n      \"id\": 7,\n      \"title\": \"Nesciunt et illum reprehenderit.\",\n      \"description\": \"Et sint ab voluptatem.\"\n    }\n  ]\n}",
+      "response_body": "{\n  \"news\": [\n    {\n      \"id\": 14,\n      \"title\": \"Natus aperiam dolore dolorum.\",\n      \"description\": \"Non quasi quidem tempora.\"\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
