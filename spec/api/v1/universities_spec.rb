@@ -1,13 +1,14 @@
 resource "Universities" do
   include_context "with API Headers"
 
-  let!(:university) { create :university, abbreviation: "KFU" }
+  let!(:university) { create :university, abbreviation: "KFU", city: "Kazan" }
 
   let(:expected_data) do
     {
       "id" => university.id,
       "name" => university.name,
-      "abbreviation" => "KFU"
+      "abbreviation" => "KFU",
+      "city" => "Kazan"
     }
   end
 

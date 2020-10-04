@@ -31,7 +31,8 @@ resource "Participation" do
             "university" => {
               "id" => current_user.university.id,
               "name" => current_user.university.name,
-              "abbreviation" => nil
+              "abbreviation" => nil,
+              "city" => nil
             }
           },
         "badge_id" => badge.id

@@ -15,7 +15,8 @@ resource "My Profile" do
           "university" => {
             "id" => current_user.university.id,
             "name" => current_user.university.name,
-            "abbreviation" => nil
+            "abbreviation" => nil,
+            "city" => nil
           },
           "avatar" => be_a_empty_image_attachment,
           "score" => 0,
@@ -63,7 +64,8 @@ resource "My Profile" do
         "university" => {
           "id" => current_user.reload.university.id,
           "name" => current_user.reload.university.name,
-          "abbreviation" => nil
+          "abbreviation" => nil,
+          "city" => nil
         },
         "avatar" => be_a_image_attachment
       }
@@ -114,7 +116,8 @@ resource "My Profile" do
         "university" => {
           "id" => current_user.university.id,
           "name" => current_user.university.name,
-          "abbreviation" => nil
+          "abbreviation" => nil,
+          "city" => nil
         }
       }
     end

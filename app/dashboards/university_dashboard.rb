@@ -12,6 +12,7 @@ class UniversityDashboard < Administrate::BaseDashboard
     id: Field::Number,
     name: Field::String,
     abbreviation: Field::String,
+    city: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime
   }.freeze
@@ -26,6 +27,7 @@ class UniversityDashboard < Administrate::BaseDashboard
     abbreviation
     name
     students
+    city
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -35,6 +37,7 @@ class UniversityDashboard < Administrate::BaseDashboard
     name
     abbreviation
     students
+    city
     created_at
     updated_at
   ].freeze
@@ -45,6 +48,7 @@ class UniversityDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = %i[
     name
     abbreviation
+    city
   ].freeze
 
   # COLLECTION_FILTERS

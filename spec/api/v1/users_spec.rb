@@ -17,7 +17,8 @@ resource "Users with ranks" do
         "university" => {
           "id" => current_user.university.id,
           "name" => current_user.university.name,
-          "abbreviation" => nil
+          "abbreviation" => nil,
+          "city" => nil
         },
         "score" => 0,
         "rank" => 2
@@ -32,7 +33,8 @@ resource "Users with ranks" do
          "university" => {
            "id" => user.university.id,
            "name" => user.university.name,
-           "abbreviation" => nil
+           "abbreviation" => nil,
+           "city" => nil
          },
          "score" => 50,
          "rank" => 1
@@ -64,7 +66,8 @@ resource "Users with ranks" do
             "university" => {
               "id" => current_user.university.id,
               "name" => current_user.university.name,
-              "abbreviation" => nil
+              "abbreviation" => nil,
+              "city" => nil
             },
             "score" => 0,
             "rank" => 2
@@ -96,7 +99,8 @@ resource "Users with ranks" do
             "university" => {
               "id" => user.university.id,
               "name" => user.university.name,
-              "abbreviation" => nil
+              "abbreviation" => nil,
+              "city" => nil
             },
             "rank" => 1,
             "score" => 50
@@ -125,7 +129,8 @@ resource "Users with ranks" do
           "university" => {
             "id" => user.university.id,
             "name" => user.university.name,
-            "abbreviation" => nil
+            "abbreviation" => nil,
+            "city" => nil
           },
           "rank" => 1,
           "score" => 50
