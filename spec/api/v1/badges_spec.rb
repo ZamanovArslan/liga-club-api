@@ -1,7 +1,7 @@
 resource "Badges" do
   include_context "with Authorization API headers"
 
-  let!(:badge) { create :badge, name: "Do something", university: university }
+  let!(:badge) { create :badge, name: "Do something", university: university, ends_at: nil }
   let!(:university) { create :university, :with_city, name: "KPFU" }
 
   let(:expected_data) do
@@ -9,7 +9,7 @@ resource "Badges" do
       "id" => badge.id,
       "name" => badge.name,
       "description" => badge.description,
-      "ends_at" => badge.ends_at.to_datetime.strftime("%m.%d.%Y %R"),
+      "ends_at" => nil,
       "rarity" => {
         "id" => badge.rarity.id,
         "name" => badge.rarity.name,

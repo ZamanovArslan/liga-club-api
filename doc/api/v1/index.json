@@ -26,10 +26,30 @@
           "method": "get"
         },
         {
+          "description": "Returns that current user a participation",
+          "link": "badges/returns_that_current_user_a_participation.json",
+          "groups": "all",
+          "route": "/v1/badges/:id",
+          "method": "get"
+        },
+        {
           "description": "List of current user badges",
           "link": "badges/list_of_current_user_badges.json",
           "groups": "all",
           "route": "/v1/my/badges",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Cities",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List of cities",
+          "link": "cities/list_of_cities.json",
+          "groups": "all",
+          "route": "/v1/cities",
           "method": "get"
         }
       ]
@@ -232,8 +252,8 @@
           "method": "get"
         },
         {
-          "description": "List of filtered users by university and full name",
-          "link": "users_with_ranks/list_of_filtered_users_by_university_and_full_name.json",
+          "description": "List of filtered users by university, city and full name",
+          "link": "users_with_ranks/list_of_filtered_users_by_university,_city_and_full_name.json",
           "groups": "all",
           "route": "/v1/users",
           "method": "get"

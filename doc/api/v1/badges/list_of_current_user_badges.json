@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUxNDd9.Bi8NboAawnb57tpwJElfD40lSAneuuern_ekxWIRp5k"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUyMzl9.JKdB-T7MpHm0Qs5GeadxpU9VacACDq3B-wj_xTJUftI"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"badges\": [\n    {\n      \"id\": 2615,\n      \"name\": \"Some help to elderly\",\n      \"description\": \"Some help to elderly\",\n      \"ends_at\": \"10.05.2020 21:04\",\n      \"image\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"confirmation_method\": \"text\",\n      \"is_participation\": true,\n      \"rarity\": {\n        \"id\": 3267,\n        \"name\": \"Uncommon\",\n        \"scores_count\": 5,\n        \"image\": {\n          \"large\": {\n            \"url\": null\n          },\n          \"medium\": {\n            \"url\": null\n          },\n          \"thumb\": {\n            \"url\": null\n          }\n        },\n        \"color\": \"#ffffff\"\n      },\n      \"university\": null\n    }\n  ]\n}",
+      "response_body": "{\n  \"badges\": [\n    {\n      \"id\": 2692,\n      \"name\": \"Some help to elderly\",\n      \"description\": \"Some help to elderly\",\n      \"ends_at\": \"10.11.2020 23:19\",\n      \"image\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"confirmation_method\": \"text\",\n      \"is_participation\": true,\n      \"rarity\": {\n        \"id\": 3348,\n        \"name\": \"Uncommon\",\n        \"scores_count\": 6,\n        \"image\": {\n          \"large\": {\n            \"url\": null\n          },\n          \"medium\": {\n            \"url\": null\n          },\n          \"thumb\": {\n            \"url\": null\n          }\n        },\n        \"color\": \"#ffffff\"\n      },\n      \"university\": null\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/my/badges\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUxNDd9.Bi8NboAawnb57tpwJElfD40lSAneuuern_ekxWIRp5k\""
+      "curl": "curl -g \"http://0.0.0.0/v1/my/badges\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUyMzl9.JKdB-T7MpHm0Qs5GeadxpU9VacACDq3B-wj_xTJUftI\""
     }
   ]
 }

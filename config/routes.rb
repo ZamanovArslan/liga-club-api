@@ -36,6 +36,7 @@ Rails.application.routes.draw do
     resources :universities, only: %i[show index]
     resources :news, only: %i[index]
     resources :partners, only: %i[index]
+    resources :cities, only: %i[index]
 
     post :sign_in, to: "sign_in#create"
     post :sign_up, to: "sign_up#create"

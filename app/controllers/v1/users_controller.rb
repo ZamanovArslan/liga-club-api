@@ -14,11 +14,11 @@ module V1
     private
 
     def rank_query
-      UserLeaderboardQuery.new.all
+      UserLeaderboardQuery.new(User.includes(:university)).all
     end
 
     def permitted_filter_params
-      params.permit(:page, :per_page, :full_name, :university_id)
+      params.permit(:page, :per_page, :full_name, :university_id, :city_id)
     end
   end
 end

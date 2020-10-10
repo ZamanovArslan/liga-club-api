@@ -1,0 +1,50 @@
+{
+  "resource": "Users with ranks",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/v1/users",
+  "description": "List of filtered users by university, city and full name",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "full_name",
+      "description": "Full name"
+    },
+    {
+      "name": "university_id",
+      "description": "University id"
+    },
+    {
+      "name": "city_id",
+      "description": "City id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/users?full_name=petrovich&university_id=7317",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUyNjZ9.RfF4Vx5kPT2oNNoTtyTecQ96dKlR9INTi6F3SS8mygM"
+      },
+      "request_query_parameters": {
+        "full_name": "petrovich",
+        "university_id": "7317"
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 5265,\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(915)676-97-24\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/5265/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/5265/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/5265/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 7317,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": {\n          \"id\": 491,\n          \"name\": \"Kazan\"\n        }\n      },\n      \"level\": null\n    }\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://0.0.0.0/v1/users?full_name=petrovich&university_id=7317\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUyNjZ9.RfF4Vx5kPT2oNNoTtyTecQ96dKlR9INTi6F3SS8mygM\""
+    }
+  ]
+}

@@ -19,19 +19,19 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUxNTh9.Fbc9xfIJuQb2-dAh3Xj4hJUfvzRHFLDM9I46-4LT_xw"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUyNTB9.rgrsVLu_9aCAx8soQ3r-hoW7NnfqlKRwaYfMee1DNgM"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 5158,\n    \"full_name\": \"Анфиса Колобова\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(917)276-72-70\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"university\": {\n      \"id\": 7144,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 5250,\n    \"full_name\": \"Виктория Медведева\",\n    \"group_number\": \"11-703\",\n    \"phone_number\": \"+7(940)672-94-27\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"university\": {\n      \"id\": 7297,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUxNTh9.Fbc9xfIJuQb2-dAh3Xj4hJUfvzRHFLDM9I46-4LT_xw\""
+      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUyNTB9.rgrsVLu_9aCAx8soQ3r-hoW7NnfqlKRwaYfMee1DNgM\""
     }
   ]
 }

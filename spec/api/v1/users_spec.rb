@@ -1,7 +1,8 @@
 resource "Users with ranks" do
   include_context "with Authorization API headers"
 
-  let!(:user) { create :user, :with_avatar, score: 50, full_name: "Ivan Petrovich" }
+  let!(:user) { create :user, :with_avatar, score: 50, full_name: "Ivan Petrovich", university: university }
+  let(:university) { create :university, :with_city }
 
   get "/v1/users" do
     it_behaves_like "API endpoint with authorization"
@@ -34,7 +35,10 @@ resource "Users with ranks" do
            "id" => user.university.id,
            "name" => user.university.name,
            "abbreviation" => nil,
-           "city" => nil
+           "city" => {
+             "id" => university.city.id,
+             "name" => university.city.name,
+           }
          },
          "score" => 50,
          "rank" => 1
@@ -84,6 +88,7 @@ resource "Users with ranks" do
     context "with full name and university params" do
       parameter :full_name, "Full name"
       parameter :university_id, "University id"
+      parameter :city_id, "City id"
 
       let(:full_name) { "petrovich" }
       let(:university_id) { user.university.id }
@@ -100,7 +105,10 @@ resource "Users with ranks" do
               "id" => user.university.id,
               "name" => user.university.name,
               "abbreviation" => nil,
-              "city" => nil
+              "city" => {
+                "id" => university.city.id,
+                "name" => university.city.name,
+              }
             },
             "rank" => 1,
             "score" => 50
@@ -108,7 +116,7 @@ resource "Users with ranks" do
         }
       end
 
-      example_request "List of filtered users by university and full name" do
+      example_request "List of filtered users by university, city and full name" do
         expect(response_status).to eq(200)
         expect(json_response_body).to include(expected_data)
       end
@@ -130,7 +138,10 @@ resource "Users with ranks" do
             "id" => user.university.id,
             "name" => user.university.name,
             "abbreviation" => nil,
-            "city" => nil
+            "city" => {
+              "id" => university.city.id,
+              "name" => university.city.name,
+            }
           },
           "rank" => 1,
           "score" => 50
