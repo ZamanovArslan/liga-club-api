@@ -1,5 +1,8 @@
 class BadgesQuery < BaseFilteredQuery
   ALLOWED_PARAMS = %i[page per_page actual university_id city_id rarity_id name].freeze
+  SEARCH_SQL = <<-SQL.freeze
+    lower(badges.name) similar to lower(:name) ESCAPE '^'
+  SQL
 
   private
 

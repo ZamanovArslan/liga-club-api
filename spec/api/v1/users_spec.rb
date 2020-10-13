@@ -92,6 +92,7 @@ resource "Users with ranks" do
 
       let(:full_name) { "petrovich" }
       let(:university_id) { user.university.id }
+      let(:city_id) { university.city.id }
       let(:expected_data) do
         {
           "users" => [{

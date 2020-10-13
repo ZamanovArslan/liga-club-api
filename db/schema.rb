@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_10_195932) do
+ActiveRecord::Schema.define(version: 2020_10_10_224738) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(version: 2020_10_10_195932) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "participations", force: :cascade do |t|
+  create_table "participation", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "badge_id", null: false
     t.boolean "confirmed", default: false, null: false
@@ -67,9 +67,9 @@ ActiveRecord::Schema.define(version: 2020_10_10_195932) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "text_confirmation"
     t.string "attachment_confirmation"
-    t.index ["badge_id"], name: "index_participations_on_badge_id"
-    t.index ["user_id", "badge_id"], name: "index_participations_on_user_id_and_badge_id", unique: true
-    t.index ["user_id"], name: "index_participations_on_user_id"
+    t.index ["badge_id"], name: "index_participation_on_badge_id"
+    t.index ["user_id", "badge_id"], name: "index_participation_on_user_id_and_badge_id", unique: true
+    t.index ["user_id"], name: "index_participation_on_user_id"
   end
 
   create_table "partners", force: :cascade do |t|
@@ -118,7 +118,7 @@ ActiveRecord::Schema.define(version: 2020_10_10_195932) do
   add_foreign_key "badges", "rarities"
   add_foreign_key "badges", "universities"
   add_foreign_key "codes", "users"
-  add_foreign_key "participations", "badges"
-  add_foreign_key "participations", "users"
+  add_foreign_key "participation", "badges"
+  add_foreign_key "participation", "users"
   add_foreign_key "users", "universities"
 end
