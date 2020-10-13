@@ -135,14 +135,14 @@
           "description": "Create participation for current user",
           "link": "participation/create_participation_for_current_user.json",
           "groups": "all",
-          "route": "/v1/participations",
+          "route": "/v1/participation",
           "method": "post"
         },
         {
           "description": "Not creates participation for existing participation",
           "link": "participation/not_creates_participation_for_existing_participation.json",
           "groups": "all",
-          "route": "/v1/participations",
+          "route": "/v1/participation",
           "method": "post"
         }
       ]
@@ -268,21 +268,21 @@
       ]
     },
     {
-      "name": "Verify code",
+      "name": "Verify phone",
       "explanation": null,
       "examples": [
         {
-          "description": "Verify code",
-          "link": "verify_code/verify_code.json",
+          "description": "Verify phone number",
+          "link": "verify_phone/verify_phone_number.json",
           "groups": "all",
-          "route": "/v1/verify_code",
+          "route": "/v1/verify_phone",
           "method": "get"
         },
         {
-          "description": "Verify code which not exists",
-          "link": "verify_code/verify_code_which_not_exists.json",
+          "description": "Verify phone number which not exists in db",
+          "link": "verify_phone/verify_phone_number_which_not_exists_in_db.json",
           "groups": "all",
-          "route": "/v1/verify_code",
+          "route": "/v1/verify_phone",
           "method": "get"
         }
       ]

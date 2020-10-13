@@ -18,14 +18,13 @@ resource "Participation" do
       {
         "id" => Participation.last.id,
         "confirmed" => Participation.last.confirmed,
-        "text_confirmation" => "I was there, I swear",
+        "text_confirmation" => "I were there, I swear",
         "attachment_confirmation" => be_a_image_attachment,
         "user" =>
           {
             "id" => current_user.id,
             "full_name" => current_user.full_name,
             "group_number" => current_user.group_number,
-            "phone_number" => current_user.phone_number,
             "avatar" => be_a_empty_image_attachment,
             "score" => 0,
             "university" => {

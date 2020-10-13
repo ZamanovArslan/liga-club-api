@@ -13,11 +13,6 @@
     },
     {
       "scope": "user",
-      "name": "phone_number",
-      "description": "Phone number"
-    },
-    {
-      "scope": "user",
       "name": "group_number",
       "description": "Group number"
     },
@@ -39,9 +34,9 @@
     {
       "request_method": "PATCH",
       "request_path": "/v1/my/profile",
-      "request_body": "------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[full_name]\"\r\n\r\nUpdated Name\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[phone_number]\"\r\n\r\n+79393619602\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[group_number]\"\r\n\r\n11-707\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[university_id]\"\r\n\r\n7292\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[avatar]\"; filename=\"image.png\"\r\nContent-Type: text/plain\r\nContent-Length: 1626727\r\n\r\n[uploaded data]\r\n------------XnJLe9ZIbbGUYtzPQJ16u1--\r",
+      "request_body": "------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[full_name]\"\r\n\r\nUpdated Name\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[group_number]\"\r\n\r\n11-707\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[university_id]\"\r\n\r\n9069\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[avatar]\"; filename=\"image.png\"\r\nContent-Type: text/plain\r\nContent-Length: 1626727\r\n\r\n[uploaded data]\r\n------------XnJLe9ZIbbGUYtzPQJ16u1--\r",
       "request_headers": {
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUyNDd9.TYCJcJtT_vqN6sJGeFpEzg4JOhbfgJlaj4n_0XF-8yI",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjYyMzV9.ct4bG_BMq7VYd2oTJH_QJKyNscAbrxs-ELcP60_FHfQ",
         "Content-Type": "multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1"
       },
       "request_query_parameters": {
@@ -49,12 +44,12 @@
       "request_content_type": "multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 5247,\n    \"full_name\": \"Updated Name\",\n    \"group_number\": \"11-707\",\n    \"phone_number\": \"+79393619602\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": \"/uploads/user/avatar/5247/large_image.png\"\n      },\n      \"medium\": {\n        \"url\": \"/uploads/user/avatar/5247/medium_image.png\"\n      },\n      \"thumb\": {\n        \"url\": \"/uploads/user/avatar/5247/thumb_image.png\"\n      }\n    },\n    \"score\": 0,\n    \"university\": {\n      \"id\": 7292,\n      \"name\": \"KNITU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 6235,\n    \"full_name\": \"Updated Name\",\n    \"group_number\": \"11-707\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": \"/uploads/user/avatar/6235/large_image.png\"\n      },\n      \"medium\": {\n        \"url\": \"/uploads/user/avatar/6235/medium_image.png\"\n      },\n      \"thumb\": {\n        \"url\": \"/uploads/user/avatar/6235/thumb_image.png\"\n      }\n    },\n    \"score\": 0,\n    \"university\": {\n      \"id\": 9069,\n      \"name\": \"KNITU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[full_name]\"\r\n\r\nUpdated Name\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[phone_number]\"\r\n\r\n+79393619602\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[group_number]\"\r\n\r\n11-707\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[university_id]\"\r\n\r\n7292\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[avatar]\"; filename=\"image.png\"\r\nContent-Type: text/plain\r\nContent-Length: 1626727\r\n\r\n[uploaded data]\r\n------------XnJLe9ZIbbGUYtzPQJ16u1--\r' -X PATCH \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUyNDd9.TYCJcJtT_vqN6sJGeFpEzg4JOhbfgJlaj4n_0XF-8yI\" \\\n\t-H \"Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1\""
+      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[full_name]\"\r\n\r\nUpdated Name\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[group_number]\"\r\n\r\n11-707\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[university_id]\"\r\n\r\n9069\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[avatar]\"; filename=\"image.png\"\r\nContent-Type: text/plain\r\nContent-Length: 1626727\r\n\r\n[uploaded data]\r\n------------XnJLe9ZIbbGUYtzPQJ16u1--\r' -X PATCH \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjYyMzV9.ct4bG_BMq7VYd2oTJH_QJKyNscAbrxs-ELcP60_FHfQ\" \\\n\t-H \"Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1\""
     }
   ]
 }

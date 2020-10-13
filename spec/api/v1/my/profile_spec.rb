@@ -37,7 +37,6 @@ resource "My Profile" do
 
     with_options scope: :user do
       parameter :full_name, "Full name"
-      parameter :phone_number, "Phone number"
       parameter :group_number, "Group number"
       parameter :university_id, "University id"
       parameter :avatar, "Avatar"
@@ -45,7 +44,6 @@ resource "My Profile" do
 
     let(:id) { current_user.id }
     let(:full_name) { "Updated Name" }
-    let(:phone_number) { "+79393619602" }
     let(:password) { "new_password" }
     let(:group_number) { "11-707" }
     let(:university_id) { new_university.id }
@@ -55,7 +53,6 @@ resource "My Profile" do
     let(:expected_data) do
       {
         "id" => id,
-        "phone_number" => phone_number,
         "full_name" => full_name,
         "group_number" => group_number,
         "level" => nil,
@@ -108,7 +105,6 @@ resource "My Profile" do
     let(:expected_data) do
       {
         "id" => current_user.id,
-        "phone_number" => current_user.phone_number,
         "full_name" => current_user.full_name,
         "group_number" => current_user.group_number,
         "avatar" => be_a_empty_image_attachment,

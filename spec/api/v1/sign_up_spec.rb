@@ -69,7 +69,7 @@ resource "Sign up" do
               "id" => "4eac02e2-6856-449b-bc28-fbf1b32a20f2",
               "status" => 422,
               "error" => "Неверные данные",
-              "validations" => "Код не найден"
+              "validations" => "Телефонный номер не найден"
             }
           ]
         }
@@ -92,7 +92,7 @@ resource "Sign up" do
               "id" => "4eac02e2-6856-449b-bc28-fbf1b32a20f2",
               "status" => 422,
               "error" => "Неверные данные",
-              "validations" => "Код уже занят"
+              "validations" => "Телефонный номер уже занят"
             }
           ]
         }

@@ -1,7 +1,7 @@
 class ParticipationQuery
   attr_reader :relation, :user
   SELECT_QUERY = <<~SQL
-    badges.id, CASE WHEN participation.user_id = %{id} THEN true ELSE false END AS participation
+    badges.*, CASE WHEN participation.id IS NULL THEN false ELSE true END AS is_participation
   SQL
 
   def initialize(user, relation = Badge.all)
@@ -10,6 +10,12 @@ class ParticipationQuery
   end
 
   def all
-    relation.select("*, true AS is_participation").from(relation.joins(:participation).where(participation: {user_id: user.id}).to_sql)
+    relation.select(SELECT_QUERY).joins("LEFT OUTER JOIN (#{user_participation}) participation ON participation.badge_id = badges.id")
+  end
+
+  private
+
+  def user_participation
+    user.participation.to_sql
   end
 end

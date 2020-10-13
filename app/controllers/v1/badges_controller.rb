@@ -1,14 +1,14 @@
 module V1
   class BadgesController < V1::BaseController
     expose :badges, :fetch_badges
-    expose :badge
+    expose :badge, -> { ParticipationQuery.new(current_user, Badge.where(id: params[:id])).all.first }
 
     def index
-      respond_with badges, each_serializer: BadgeSerializer
+      respond_with badges, each_serializer: BadgeParticipationSerializer
     end
 
     def show
-      respond_with badge
+      respond_with badge, serializer: BadgeParticipationSerializer
     end
 
     private

@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUyNjF9.8SJkxQ1en3n1vLrJp01LDbj0C2LR93kMTCdw_b-m4GE"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjYyNDl9.eiT49pbZc5qNjCc2UdnAhTwADqDMRpdaUSmEW4ddebM"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 5260,\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(999)824-63-84\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/5260/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/5260/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/5260/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 7312,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": {\n          \"id\": 488,\n          \"name\": \"Kazan\"\n        }\n      },\n      \"level\": null\n    },\n    {\n      \"id\": 5261,\n      \"full_name\": \"Дарья Альбертовна Николаева\",\n      \"group_number\": \"11-703\",\n      \"phone_number\": \"+7(916)882-54-59\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"score\": 0,\n      \"rank\": 2,\n      \"university\": {\n        \"id\": 7313,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": null\n      },\n      \"level\": null\n    }\n  ]\n}",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 6248,\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/6248/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/6248/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/6248/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 9089,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": {\n          \"id\": 1184,\n          \"name\": \"Kazan\"\n        }\n      },\n      \"level\": null\n    },\n    {\n      \"id\": 6249,\n      \"full_name\": \"Брагин Виталий\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"score\": 0,\n      \"rank\": 2,\n      \"university\": {\n        \"id\": 9090,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": null\n      },\n      \"level\": null\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUyNjF9.8SJkxQ1en3n1vLrJp01LDbj0C2LR93kMTCdw_b-m4GE\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjYyNDl9.eiT49pbZc5qNjCc2UdnAhTwADqDMRpdaUSmEW4ddebM\""
     }
   ]
 }

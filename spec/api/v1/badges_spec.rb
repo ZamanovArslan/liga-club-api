@@ -2,8 +2,6 @@ resource "Badges" do
   include_context "with Authorization API headers"
 
   let!(:badge) { create :badge, name: "Do something", university: university, ends_at: nil }
-  let!(:badge1) { create :badge, name: "Do something", university: university, ends_at: nil }
-  let!(:badge2) { create :badge, name: "Do something", university: university, ends_at: nil }
   let(:university) { create :university, :with_city, name: "KPFU" }
 
   let(:expected_data) do
