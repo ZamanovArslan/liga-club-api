@@ -9,7 +9,7 @@ resource "Sign in" do
 
     let!(:user) { create :user }
     let(:password) { user.password }
-    let(:phone_number) { user.phone_number }
+    let(:phone_number) { user.phone.value }
     let(:jwt_token) { build(:jwt_token, subject: user) }
     let(:expected_data) { { "value" => jwt_token.token } }
 

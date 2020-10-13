@@ -15,20 +15,20 @@ module Users
 
     def error_message
       @error_message ||= begin
-        return I18n.t("errors.services.sign_up.code_not_found") if code.blank?
-        return I18n.t("errors.services.sign_up.code_already_taken") if code.user.present?
+        return I18n.t("errors.services.sign_up.phone_not_found") if phone.blank?
+        return I18n.t("errors.services.sign_up.phone_already_taken") if phone.user.present?
 
-        user.code = code
+        user.phone = phone
         user.errors_messages unless user.valid?
       end
     end
 
     def user
-      @user ||= User.new(params.except(:code_value))
+      @user ||= User.new(params.except(:phone_number))
     end
 
-    def code
-      @code ||= Code.find_by(value: params[:code_value])
+    def phone
+      @phone ||= Phone.find_by(value: params[:phone_number])
     end
   end
 end

@@ -20,7 +20,7 @@ module Users
     end
 
     def user
-      @user ||= User.find_by(phone_number: phone_number)
+      @user ||= Phone.find_by(value: phone_number).user
     end
   end
 end

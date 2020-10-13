@@ -10,7 +10,6 @@ resource "My Profile" do
           "id" => User.last.id,
           "full_name" => current_user.full_name,
           "group_number" => current_user.group_number,
-          "phone_number" => current_user.phone_number,
           "level" => nil,
           "university" => {
             "id" => current_user.university.id,

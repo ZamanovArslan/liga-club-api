@@ -2,7 +2,7 @@ FactoryBot.define do
   factory :user do
     full_name { Faker::Name.name }
     group_number { "11-703" }
-    phone_number { Faker::PhoneNumber.phone_number }
+    phone { association(:phone) }
     password { "123456" }
     university { association(:university) }
   end

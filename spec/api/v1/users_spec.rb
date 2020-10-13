@@ -12,7 +12,6 @@ resource "Users with ranks" do
         "id" => current_user.id,
         "full_name" => current_user.full_name,
         "group_number" => current_user.group_number,
-        "phone_number" => current_user.phone_number,
         "avatar" => be_a_empty_image_attachment,
         "level" => nil,
         "university" => {
@@ -64,7 +63,6 @@ resource "Users with ranks" do
             "id" => current_user.id,
             "full_name" => current_user.full_name,
             "group_number" => current_user.group_number,
-            "phone_number" => current_user.phone_number,
             "avatar" => be_a_empty_image_attachment,
             "level" => nil,
             "university" => {
@@ -98,7 +96,6 @@ resource "Users with ranks" do
             "id" => user.id,
             "full_name" => user.full_name,
             "group_number" => user.group_number,
-            "phone_number" => user.phone_number,
             "avatar" => be_a_image_attachment,
             "level" => nil,
             "university" => {
@@ -131,7 +128,6 @@ resource "Users with ranks" do
           "id" => user.id,
           "full_name" => user.full_name,
           "group_number" => user.group_number,
-          "phone_number" => user.phone_number,
           "avatar" => be_a_image_attachment,
           "level" => nil,
           "university" => {

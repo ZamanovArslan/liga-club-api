@@ -1,7 +1,7 @@
 class UserSerializer < ApplicationSerializer
   include ImageSerializer
 
-  attributes :id, :full_name, :group_number, :phone_number, :avatar, :score
+  attributes :id, :full_name, :group_number, :avatar, :score
 
   has_one :university
   has_one :level

@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class CodeDashboard < Administrate::BaseDashboard
+class PhoneDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -54,7 +54,7 @@ class CodeDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how codes are displayed
   # across all pages of the admin dashboard.
   #
-  def display_resource(code)
-    code.value
+  def display_resource(phone)
+    phone.value
   end
 end

@@ -9,7 +9,7 @@ Rails.application.routes.draw do
       universities
       rarities
       levels
-      codes
+      phones
       cities
       news
       partners
@@ -40,6 +40,6 @@ Rails.application.routes.draw do
 
     post :sign_in, to: "sign_in#create"
     post :sign_up, to: "sign_up#create"
-    get :verify_code, to: "verify_code#show"
+    get :verify_phone, to: "verify_phone#show"
   end
 end

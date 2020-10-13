@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_10_195932) do
+ActiveRecord::Schema.define(version: 2020_10_13_161544) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,14 +35,6 @@ ActiveRecord::Schema.define(version: 2020_10_10_195932) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "codes", force: :cascade do |t|
-    t.string "value", null: false
-    t.bigint "user_id"
-    t.index ["user_id", "value"], name: "index_codes_on_user_id_and_value", unique: true
-    t.index ["user_id"], name: "index_codes_on_user_id"
-    t.index ["value"], name: "index_codes_on_value", unique: true
-  end
-
   create_table "levels", force: :cascade do |t|
     t.string "name", null: false
     t.integer "scores_count", default: 0, null: false
@@ -59,7 +51,7 @@ ActiveRecord::Schema.define(version: 2020_10_10_195932) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "participations", force: :cascade do |t|
+  create_table "participation", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "badge_id", null: false
     t.boolean "confirmed", default: false, null: false
@@ -67,9 +59,9 @@ ActiveRecord::Schema.define(version: 2020_10_10_195932) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "text_confirmation"
     t.string "attachment_confirmation"
-    t.index ["badge_id"], name: "index_participations_on_badge_id"
-    t.index ["user_id", "badge_id"], name: "index_participations_on_user_id_and_badge_id", unique: true
-    t.index ["user_id"], name: "index_participations_on_user_id"
+    t.index ["badge_id"], name: "index_participation_on_badge_id"
+    t.index ["user_id", "badge_id"], name: "index_participation_on_user_id_and_badge_id", unique: true
+    t.index ["user_id"], name: "index_participation_on_user_id"
   end
 
   create_table "partners", force: :cascade do |t|
@@ -80,6 +72,14 @@ ActiveRecord::Schema.define(version: 2020_10_10_195932) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
+  end
+
+  create_table "phones", force: :cascade do |t|
+    t.string "value", null: false
+    t.bigint "user_id"
+    t.index ["user_id", "value"], name: "index_phones_on_user_id_and_value", unique: true
+    t.index ["user_id"], name: "index_phones_on_user_id"
+    t.index ["value"], name: "index_phones_on_value", unique: true
   end
 
   create_table "rarities", force: :cascade do |t|
@@ -103,22 +103,20 @@ ActiveRecord::Schema.define(version: 2020_10_10_195932) do
   create_table "users", force: :cascade do |t|
     t.string "full_name", null: false
     t.string "group_number", null: false
-    t.string "phone_number", null: false
     t.string "password_digest", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "university_id"
     t.string "avatar"
     t.integer "score", default: 0, null: false
-    t.index ["phone_number"], name: "index_users_on_phone_number", unique: true
     t.index ["score"], name: "index_users_on_score"
     t.index ["university_id"], name: "index_users_on_university_id"
   end
 
   add_foreign_key "badges", "rarities"
   add_foreign_key "badges", "universities"
-  add_foreign_key "codes", "users"
-  add_foreign_key "participations", "badges"
-  add_foreign_key "participations", "users"
+  add_foreign_key "participation", "badges"
+  add_foreign_key "participation", "users"
+  add_foreign_key "phones", "users"
   add_foreign_key "users", "universities"
 end

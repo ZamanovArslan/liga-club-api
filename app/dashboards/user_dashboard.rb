@@ -8,7 +8,7 @@ class UserDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    code: Field::HasOne,
+    phone: Field::HasOne,
     avatar: Field::Carrierwave.with_options(
       image: :medium,
       remove: true,
@@ -18,7 +18,6 @@ class UserDashboard < Administrate::BaseDashboard
     id: Field::Number,
     full_name: Field::String,
     group_number: Field::String,
-    phone_number: Field::String,
     password: Field::String,
     score: Field::Number,
     created_at: Field::DateTime,
@@ -34,20 +33,19 @@ class UserDashboard < Administrate::BaseDashboard
     id
     full_name
     university
-    code
+    phone
     score
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
-    code
+    phone
     avatar
     university
     id
     full_name
     group_number
-    phone_number
     password
     score
     created_at
@@ -62,7 +60,6 @@ class UserDashboard < Administrate::BaseDashboard
     full_name
     group_number
     avatar
-    phone_number
     password
   ].freeze
 

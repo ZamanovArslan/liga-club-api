@@ -9,7 +9,7 @@ ru:
 
     services:
       sign_up:
-        code_not_found: Код не найден
-        code_already_taken: Код уже занят
+        phone_not_found: Телефонный номер не найден
+        phone_already_taken: Телефонный номер уже занят
       sign_in:
         invalid_credentials: Неверный номер телефона или пароль
