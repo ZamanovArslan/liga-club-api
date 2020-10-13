@@ -1,4 +1,6 @@
 class Participation < ApplicationRecord
+  self.table_name = :participation
+
   belongs_to :user
   belongs_to :badge
 

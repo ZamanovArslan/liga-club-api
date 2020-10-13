@@ -9,7 +9,8 @@ class BadgeSerializer < ApplicationSerializer
   alias image attachment
 
   def is_participation
-    object.participations.exists?(user: current_user)
+
+    object.participation?
   end
 
   def ends_at

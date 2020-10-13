@@ -5,9 +5,9 @@ class User < ApplicationRecord
   validates :password, length: { minimum: 6 }, allow_nil: true
 
   has_one :phone, dependent: :destroy
-  has_many :participations, dependent: :destroy, inverse_of: :user
-  has_many :confirmed_participations, -> { confirmed }, class_name: "Participation", inverse_of: :user
-  has_many :badges, through: :confirmed_participations
+  has_many :participation, dependent: :destroy, inverse_of: :user
+  has_many :confirmed_participation, -> { confirmed }, class_name: "Participation", inverse_of: :user
+  has_many :badges, through: :confirmed_participation
 
   belongs_to :university
 

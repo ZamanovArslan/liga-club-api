@@ -35,6 +35,14 @@ ActiveRecord::Schema.define(version: 2020_10_13_161544) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "codes", force: :cascade do |t|
+    t.string "value", null: false
+    t.bigint "user_id"
+    t.index ["user_id", "value"], name: "index_codes_on_user_id_and_value", unique: true
+    t.index ["user_id"], name: "index_codes_on_user_id"
+    t.index ["value"], name: "index_codes_on_value", unique: true
+  end
+
   create_table "levels", force: :cascade do |t|
     t.string "name", null: false
     t.integer "scores_count", default: 0, null: false
@@ -103,12 +111,14 @@ ActiveRecord::Schema.define(version: 2020_10_13_161544) do
   create_table "users", force: :cascade do |t|
     t.string "full_name", null: false
     t.string "group_number", null: false
+    t.string "phone_number", null: false
     t.string "password_digest", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "university_id"
     t.string "avatar"
     t.integer "score", default: 0, null: false
+    t.index ["phone_number"], name: "index_users_on_phone_number", unique: true
     t.index ["score"], name: "index_users_on_score"
     t.index ["university_id"], name: "index_users_on_university_id"
   end

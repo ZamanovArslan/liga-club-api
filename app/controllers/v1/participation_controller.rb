@@ -1,5 +1,5 @@
 module V1
-  class ParticipationsController < V1::BaseController
+  class ParticipationController < V1::BaseController
     expose :participation
 
     def create

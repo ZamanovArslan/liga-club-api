@@ -27,6 +27,7 @@ gem "rollbar"
 
 group :development, :test do
   gem "byebug"
+  gem "bullet"
   gem "dotenv-rails"
   gem "factory_bot_rails"
   gem "faker"

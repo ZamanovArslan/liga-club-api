@@ -4,7 +4,7 @@ resource "Participation" do
   header "Content-Type", "application/json"
   header "Accept", "application/json"
 
-  post "/v1/participations" do
+  post "/v1/participation" do
     with_options scope: :participation do
       parameter :badge_id, "Badge id", required: true
       parameter :attachment_confirmation, "Attachment confirmation", "Type" => "Multipart/Form-data"
@@ -13,7 +13,7 @@ resource "Participation" do
 
     let(:badge) { create :badge }
     let(:badge_id) { badge.id }
-    let(:text_confirmation) { "I was there, I swear" }
+    let(:text_confirmation) { "I were there, I swear" }
     let(:expected_data) do
       {
         "id" => Participation.last.id,
