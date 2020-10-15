@@ -25,6 +25,7 @@ resource "Participation" do
             "id" => current_user.id,
             "full_name" => current_user.full_name,
             "group_number" => current_user.group_number,
+            "phone_number" => current_user.phone.value,
             "avatar" => be_a_empty_image_attachment,
             "score" => 0,
             "university" => {
