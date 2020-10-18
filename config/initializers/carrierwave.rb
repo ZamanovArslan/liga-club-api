@@ -6,7 +6,7 @@ CarrierWave.configure do |config|
       aws_secret_access_key: Rails.application.credentials.aws[:secret_access_key],
       region: Rails.application.credentials.aws[:region]
     }
-    config.fog_directory = Rails.application.credentials.aws[:prod][:bucket]
+    config.fog_directory = Rails.application.credentials.aws[:bucket]
     config.storage = :fog
     config.fog_public = false
   elsif Rails.env.test?
