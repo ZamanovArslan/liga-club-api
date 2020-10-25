@@ -24,6 +24,8 @@ resource "Participation" do
           {
             "id" => current_user.id,
             "full_name" => current_user.full_name,
+            "first_name" => current_user.first_name,
+            "last_name" => current_user.last_name,
             "group_number" => current_user.group_number,
             "phone_number" => current_user.phone.value,
             "avatar" => be_a_empty_image_attachment,

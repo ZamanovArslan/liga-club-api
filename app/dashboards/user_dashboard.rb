@@ -16,7 +16,8 @@ class UserDashboard < Administrate::BaseDashboard
     ),
     university: Field::BelongsTo,
     id: Field::Number,
-    full_name: Field::String,
+    first_name: Field::String,
+    last_name: Field::String,
     group_number: Field::String,
     password: Field::String,
     score: Field::Number,
@@ -57,7 +58,8 @@ class UserDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
     university
-    full_name
+    first_name
+    last_name
     group_number
     avatar
     password

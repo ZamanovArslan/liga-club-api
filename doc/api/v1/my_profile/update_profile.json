@@ -8,8 +8,13 @@
   "parameters": [
     {
       "scope": "user",
-      "name": "full_name",
-      "description": "Full name"
+      "name": "first_name",
+      "description": "First name"
+    },
+    {
+      "scope": "user",
+      "name": "last_name",
+      "description": "Last name"
     },
     {
       "scope": "user",
@@ -34,9 +39,9 @@
     {
       "request_method": "PATCH",
       "request_path": "/v1/my/profile",
-      "request_body": "------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[full_name]\"\r\n\r\nUpdated Name\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[group_number]\"\r\n\r\n11-707\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[university_id]\"\r\n\r\n9069\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[avatar]\"; filename=\"image.png\"\r\nContent-Type: text/plain\r\nContent-Length: 1626727\r\n\r\n[uploaded data]\r\n------------XnJLe9ZIbbGUYtzPQJ16u1--\r",
+      "request_body": "------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[first_name]\"\r\n\r\nNewName\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[last_name]\"\r\n\r\nNewLastName\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[group_number]\"\r\n\r\n11-707\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[university_id]\"\r\n\r\n10018\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[avatar]\"; filename=\"image.png\"\r\nContent-Type: text/plain\r\nContent-Length: 1626727\r\n\r\n[uploaded data]\r\n------------XnJLe9ZIbbGUYtzPQJ16u1--\r",
       "request_headers": {
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjYyMzV9.ct4bG_BMq7VYd2oTJH_QJKyNscAbrxs-ELcP60_FHfQ",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjY4ODd9.xzmgx6X19mAlC1GE3XFROhA6ZnTI-2VAYmO2UB3fLXU",
         "Content-Type": "multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1"
       },
       "request_query_parameters": {
@@ -44,12 +49,12 @@
       "request_content_type": "multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 6235,\n    \"full_name\": \"Updated Name\",\n    \"group_number\": \"11-707\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": \"/uploads/user/avatar/6235/large_image.png\"\n      },\n      \"medium\": {\n        \"url\": \"/uploads/user/avatar/6235/medium_image.png\"\n      },\n      \"thumb\": {\n        \"url\": \"/uploads/user/avatar/6235/thumb_image.png\"\n      }\n    },\n    \"score\": 0,\n    \"university\": {\n      \"id\": 9069,\n      \"name\": \"KNITU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 6887,\n    \"first_name\": \"NewName\",\n    \"last_name\": \"NewLastName\",\n    \"full_name\": \"NewName NewLastName\",\n    \"group_number\": \"11-707\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": \"/uploads/user/avatar/6887/large_image.png\"\n      },\n      \"medium\": {\n        \"url\": \"/uploads/user/avatar/6887/medium_image.png\"\n      },\n      \"thumb\": {\n        \"url\": \"/uploads/user/avatar/6887/thumb_image.png\"\n      }\n    },\n    \"score\": 0,\n    \"phone_number\": \"+7(931)399-48-42\",\n    \"university\": {\n      \"id\": 10018,\n      \"name\": \"KNITU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[full_name]\"\r\n\r\nUpdated Name\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[group_number]\"\r\n\r\n11-707\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[university_id]\"\r\n\r\n9069\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[avatar]\"; filename=\"image.png\"\r\nContent-Type: text/plain\r\nContent-Length: 1626727\r\n\r\n[uploaded data]\r\n------------XnJLe9ZIbbGUYtzPQJ16u1--\r' -X PATCH \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjYyMzV9.ct4bG_BMq7VYd2oTJH_QJKyNscAbrxs-ELcP60_FHfQ\" \\\n\t-H \"Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1\""
+      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[first_name]\"\r\n\r\nNewName\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[last_name]\"\r\n\r\nNewLastName\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[group_number]\"\r\n\r\n11-707\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[university_id]\"\r\n\r\n10018\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"user[avatar]\"; filename=\"image.png\"\r\nContent-Type: text/plain\r\nContent-Length: 1626727\r\n\r\n[uploaded data]\r\n------------XnJLe9ZIbbGUYtzPQJ16u1--\r' -X PATCH \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjY4ODd9.xzmgx6X19mAlC1GE3XFROhA6ZnTI-2VAYmO2UB3fLXU\" \\\n\t-H \"Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1\""
     }
   ]
 }

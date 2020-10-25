@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjYyNDl9.eiT49pbZc5qNjCc2UdnAhTwADqDMRpdaUSmEW4ddebM"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjY5MDF9.rIiyn2bIKaeRqKFsFuUYDtXBOoOdq7WvpVf_VBaS1UI"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 6248,\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/6248/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/6248/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/6248/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 9089,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": {\n          \"id\": 1184,\n          \"name\": \"Kazan\"\n        }\n      },\n      \"level\": null\n    },\n    {\n      \"id\": 6249,\n      \"full_name\": \"Брагин Виталий\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"score\": 0,\n      \"rank\": 2,\n      \"university\": {\n        \"id\": 9090,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": null\n      },\n      \"level\": null\n    }\n  ]\n}",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 6900,\n      \"first_name\": \"Ivan\",\n      \"last_name\": \"Petrovich\",\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/6900/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/6900/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/6900/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"phone_number\": \"+7(927)883-12-79\",\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 10038,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": {\n          \"id\": 1467,\n          \"name\": \"Kazan\"\n        }\n      },\n      \"level\": null\n    },\n    {\n      \"id\": 6901,\n      \"first_name\": \"Алевтина\",\n      \"last_name\": \"Дроздов\",\n      \"full_name\": \"Алевтина Дроздов\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"score\": 0,\n      \"phone_number\": \"+7(919)951-88-59\",\n      \"rank\": 2,\n      \"university\": {\n        \"id\": 10039,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": null\n      },\n      \"level\": null\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjYyNDl9.eiT49pbZc5qNjCc2UdnAhTwADqDMRpdaUSmEW4ddebM\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjY5MDF9.rIiyn2bIKaeRqKFsFuUYDtXBOoOdq7WvpVf_VBaS1UI\""
     }
   ]
 }

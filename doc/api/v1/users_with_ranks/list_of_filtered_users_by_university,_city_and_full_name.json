@@ -25,27 +25,27 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/users?full_name=petrovich&university_id=9094&city_id=1187",
+      "request_path": "/v1/users?full_name=petrovich&university_id=10043&city_id=1470",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjYyNTR9.vowqj6oiuMBpalhGvXMr7-GInODXqbkRYNDXH346Jtw"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjY5MDZ9.dKdwRuWsju5TVQ-h9ZMiKJWN3Rrw4Y58a3qsZGQ5HkE"
       },
       "request_query_parameters": {
         "full_name": "petrovich",
-        "university_id": "9094",
-        "city_id": "1187"
+        "university_id": "10043",
+        "city_id": "1470"
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 6253,\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/6253/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/6253/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/6253/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 9094,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": {\n          \"id\": 1187,\n          \"name\": \"Kazan\"\n        }\n      },\n      \"level\": null\n    }\n  ]\n}",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 6905,\n      \"first_name\": \"Ivan\",\n      \"last_name\": \"Petrovich\",\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/6905/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/6905/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/6905/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"phone_number\": \"+7(991)211-44-56\",\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 10043,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": {\n          \"id\": 1470,\n          \"name\": \"Kazan\"\n        }\n      },\n      \"level\": null\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users?full_name=petrovich&university_id=9094&city_id=1187\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjYyNTR9.vowqj6oiuMBpalhGvXMr7-GInODXqbkRYNDXH346Jtw\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users?full_name=petrovich&university_id=10043&city_id=1470\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjY5MDZ9.dKdwRuWsju5TVQ-h9ZMiKJWN3Rrw4Y58a3qsZGQ5HkE\""
     }
   ]
 }

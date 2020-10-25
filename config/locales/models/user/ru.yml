@@ -4,6 +4,8 @@ ru:
       user:
         password: Пароль
         full_name: Имя и фамилия
+        first_name: Имя
+        last_name: Фамилия
         group_number: Номер группы
         phone_number: Номер телефона
         university_id: Университет

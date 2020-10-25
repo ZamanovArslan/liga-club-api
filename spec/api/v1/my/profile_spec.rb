@@ -9,6 +9,8 @@ resource "My Profile" do
         "user" => {
           "id" => User.last.id,
           "full_name" => current_user.full_name,
+          "first_name" => current_user.first_name,
+          "last_name" => current_user.last_name,
           "group_number" => current_user.group_number,
           "phone_number" => current_user.phone.value,
           "level" => nil,
@@ -37,14 +39,16 @@ resource "My Profile" do
     include_context "with Authorization header"
 
     with_options scope: :user do
-      parameter :full_name, "Full name"
+      parameter :first_name, "First name"
+      parameter :last_name, "Last name"
       parameter :group_number, "Group number"
       parameter :university_id, "University id"
       parameter :avatar, "Avatar"
     end
 
     let(:id) { current_user.id }
-    let(:full_name) { "Updated Name" }
+    let(:first_name) { "NewName" }
+    let(:last_name) { "NewLastName" }
     let(:password) { "new_password" }
     let(:group_number) { "11-707" }
     let(:university_id) { new_university.id }
@@ -54,7 +58,8 @@ resource "My Profile" do
     let(:expected_data) do
       {
         "id" => id,
-        "full_name" => full_name,
+        "first_name" => "NewName",
+        "last_name" => "NewLastName",
         "group_number" => group_number,
         "level" => nil,
         "score" => 0,

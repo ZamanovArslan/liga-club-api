@@ -14,7 +14,7 @@ module V1
     private
 
     def rank_query
-      UserLeaderboardQuery.new(User.includes({ university: :city }, :phone)).all
+      UserLeaderboardQuery.new(User.includes(:university, :phone)).all
     end
 
     def permitted_filter_params

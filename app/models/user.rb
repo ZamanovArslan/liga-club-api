@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   has_secure_password
 
-  validates :full_name, :group_number, presence: true
+  validates :first_name, :last_name, :group_number, presence: true
   validates :password, length: { minimum: 6 }, allow_nil: true
 
   has_one :phone, dependent: :destroy
@@ -15,5 +15,9 @@ class User < ApplicationRecord
 
   def level
     Level.where("scores_count <= ?", score).max_by(&:scores_count)
+  end
+
+  def full_name
+    [first_name, last_name].join(" ")
   end
 end

@@ -1,7 +1,9 @@
 resource "Users with ranks" do
   include_context "with Authorization API headers"
 
-  let!(:user) { create :user, :with_avatar, score: 50, full_name: "Ivan Petrovich", university: university }
+  let!(:user) do
+    create :user, :with_avatar, score: 50, first_name: "Ivan", university: university, last_name: "Petrovich"
+  end
   let(:university) { create :university, :with_city }
 
   get "/v1/users" do
@@ -11,6 +13,8 @@ resource "Users with ranks" do
       [{
         "id" => current_user.id,
         "full_name" => current_user.full_name,
+        "first_name" => current_user.first_name,
+        "last_name" => current_user.last_name,
         "group_number" => current_user.group_number,
         "phone_number" => current_user.phone.value,
         "avatar" => be_a_empty_image_attachment,
@@ -27,6 +31,8 @@ resource "Users with ranks" do
        {
          "id" => user.id,
          "full_name" => user.full_name,
+         "first_name" => user.first_name,
+         "last_name" => user.last_name,
          "group_number" => user.group_number,
          "phone_number" => user.phone.value,
          "avatar" => be_a_image_attachment,
@@ -63,6 +69,8 @@ resource "Users with ranks" do
           "users" => [{
             "id" => current_user.id,
             "full_name" => current_user.full_name,
+            "first_name" => current_user.first_name,
+            "last_name" => current_user.last_name,
             "group_number" => current_user.group_number,
             "phone_number" => current_user.phone.value,
             "avatar" => be_a_empty_image_attachment,
@@ -98,6 +106,8 @@ resource "Users with ranks" do
           "users" => [{
             "id" => user.id,
             "full_name" => user.full_name,
+            "first_name" => user.first_name,
+            "last_name" => user.last_name,
             "group_number" => user.group_number,
             "phone_number" => user.phone.value,
             "avatar" => be_a_image_attachment,
@@ -131,6 +141,8 @@ resource "Users with ranks" do
         "user" => {
           "id" => user.id,
           "full_name" => user.full_name,
+          "first_name" => user.first_name,
+          "last_name" => user.last_name,
           "group_number" => user.group_number,
           "phone_number" => user.phone.value,
           "avatar" => be_a_image_attachment,
