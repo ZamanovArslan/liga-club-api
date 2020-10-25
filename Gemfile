@@ -26,8 +26,8 @@ gem "responders"
 gem "rollbar"
 
 group :development, :test do
-  gem "byebug"
   gem "bullet"
+  gem "byebug"
   gem "dotenv-rails"
   gem "factory_bot_rails"
   gem "faker"
@@ -37,7 +37,6 @@ end
 
 group :development do
   gem "letter_opener"
-  gem "bullet"
   gem "listen", "~> 3.2"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"

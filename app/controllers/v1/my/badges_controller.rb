@@ -8,7 +8,11 @@ module V1
       end
 
       def fetch_badges
-        ParticipationQuery.new(current_user, Badge.where(id: current_user.badges.pluck(:id)).includes(:university, :rarity)).all
+        ParticipationQuery.new(current_user, base_query).all
+      end
+
+      def base_query
+        Badge.where(id: current_user.badges.pluck(:id)).includes(:university, :rarity)
       end
     end
   end

@@ -45,6 +45,12 @@ RSpec/RepeatedDescription:
 RSpec/MessageSpies:
   EnforcedStyle: receive
 
+RSpec/EmptyExampleGroup:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
 Capybara/FeatureMethods:
   Enabled: false
 

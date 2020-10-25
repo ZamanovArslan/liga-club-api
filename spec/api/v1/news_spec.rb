@@ -7,7 +7,7 @@ resource "News" do
     {
       "id" => news.id,
       "title" => news.title,
-      "description" => news.description,
+      "description" => news.description
     }
   end
 

@@ -7,7 +7,7 @@ class BadgesQuery < BaseFilteredQuery
   private
 
   def by_city_id(relation, city_id)
-    relation.where(universities: { city_id: city_id})
+    relation.where(universities: { city_id: city_id })
   end
 
   def by_actual(relation, actuality)

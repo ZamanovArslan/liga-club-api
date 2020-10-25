@@ -14,8 +14,8 @@ class Participation < ApplicationRecord
   private
 
   def user_should_be_from_badge_university
-    unless badge.university == user.university
-      errors.add(:badge, :not_a_student, { university_name: badge.university.name })
-    end
+    return if badge.university == user.university
+
+    errors.add(:badge, :not_a_student, { university_name: badge.university.name })
   end
 end

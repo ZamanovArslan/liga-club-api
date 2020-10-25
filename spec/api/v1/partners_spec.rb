@@ -1,7 +1,8 @@
 resource "Partners" do
   include_context "with API Headers"
 
-  let!(:partner) { create :partner }
+  let!(:partner) { create :partner, city: city }
+  let!(:city) { create :city }
 
   let(:expected_data) do
     {
@@ -10,7 +11,11 @@ resource "Partners" do
       "description" => partner.description,
       "discount" => partner.discount,
       "instagram_link" => partner.instagram_link,
-      "image" => be_a_empty_image_attachment
+      "image" => be_a_empty_image_attachment,
+      "city" => {
+        "id" => city.id,
+        "name" => city.name
+      }
     }
   end
 

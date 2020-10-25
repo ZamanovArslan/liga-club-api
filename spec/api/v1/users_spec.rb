@@ -43,7 +43,7 @@ resource "Users with ranks" do
            "abbreviation" => nil,
            "city" => {
              "id" => university.city.id,
-             "name" => university.city.name,
+             "name" => university.city.name
            }
          },
          "score" => 50,
@@ -118,7 +118,7 @@ resource "Users with ranks" do
               "abbreviation" => nil,
               "city" => {
                 "id" => university.city.id,
-                "name" => university.city.name,
+                "name" => university.city.name
               }
             },
             "rank" => 1,
@@ -153,7 +153,7 @@ resource "Users with ranks" do
             "abbreviation" => nil,
             "city" => {
               "id" => university.city.id,
-              "name" => university.city.name,
+              "name" => university.city.name
             }
           },
           "rank" => 1,
