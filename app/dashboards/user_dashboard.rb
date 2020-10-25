@@ -17,6 +17,7 @@ class UserDashboard < Administrate::BaseDashboard
     university: Field::BelongsTo,
     id: Field::Number,
     first_name: Field::String,
+    full_name: Field::String,
     last_name: Field::String,
     group_number: Field::String,
     password: Field::String,
@@ -45,7 +46,8 @@ class UserDashboard < Administrate::BaseDashboard
     avatar
     university
     id
-    full_name
+    first_name
+    last_name
     group_number
     password
     score
