@@ -1,7 +1,7 @@
 module V1
   class UsersController < V1::BaseController
-    expose :users, -> { FilteredUsersQuery.new(rank_query, permitted_filter_params).all }
-    expose :user, scope: -> { rank_query }
+    expose :users, -> { fetch_users.page(params[:page]).per(params[:per_page]) }
+    expose :user, scope: -> { fetch_users }
 
     def index
       respond_with users, each_serializer: UserLeaderboardSerializer
@@ -13,8 +13,14 @@ module V1
 
     private
 
-    def rank_query
-      UserLeaderboardQuery.new(User.includes({ university: :city }, :phone)).all
+    def fetch_users
+      UserLeaderboardQuery.new(
+        FilteredUsersQuery.new(base_query, permitted_filter_params).all
+      ).all
+    end
+
+    def base_query
+      User.includes({ university: :city }, :phone)
     end
 
     def permitted_filter_params

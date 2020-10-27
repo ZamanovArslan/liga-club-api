@@ -1,3 +1,3 @@
 class UserLeaderboardSerializer < UserSerializer
-  attributes :score, :rank
+  attributes :rank
 end

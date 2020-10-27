@@ -62,7 +62,6 @@ resource "Users with ranks" do
 
       let(:page) { 2 }
       let(:per_page) { 1 }
-      let(:users) { create_list :user, 5 }
 
       let(:expected_data) do
         {

@@ -1,12 +1,12 @@
 class UserLeaderboardQuery
   attr_reader :relation
 
-  SUBQUERY = <<-SQL.freeze
-    (SELECT *, RANK() OVER (ORDER BY users.high_score DESC) AS rank FROM 
-      (SELECT *, MAX(score) AS high_score
-        FROM users
-        GROUP BY id
-    ) AS users) AS users
+  FROM_QUERY = <<~SQL.squish.freeze
+    (SELECT users.*, RANK() OVER (ORDER BY users.high_score DESC) AS rank
+      FROM (SELECT id, MAX(score) AS high_score
+            FROM (%{relation}) as users
+            GROUP BY id) AS users
+      ORDER BY "rank" ASC) AS ranked_users
   SQL
 
   def initialize(relation = User.all)
@@ -14,6 +14,9 @@ class UserLeaderboardQuery
   end
 
   def all
-    relation.select("*").from(SUBQUERY).order(rank: :asc)
+    User.select("*")
+      .from(format(FROM_QUERY, relation: relation.to_sql))
+      .joins("INNER JOIN users ON users.id = ranked_users.id")
+      .order(rank: :asc)
   end
 end
