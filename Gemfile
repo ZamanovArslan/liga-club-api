@@ -22,6 +22,7 @@ gem "mini_magick"
 gem "rack-cors"
 gem "raddocs"
 gem "rails-i18n", "~> 6.0.0" # For 6.0.0 or higher
+gem "redis-rails"
 gem "responders"
 gem "rollbar"
 
