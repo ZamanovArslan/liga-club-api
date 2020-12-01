@@ -2,9 +2,11 @@ class Badge < ApplicationRecord
   extend Enumerize
 
   CONFIRMATION_METHODS = %i[photo text].freeze
+  SCOPES = %i[university city republic country global].freeze
 
   belongs_to :rarity
   belongs_to :university, optional: true
+  belongs_to :city, optional: true
 
   has_many :participation, dependent: :destroy
   has_many :users, through: :participation
@@ -18,6 +20,7 @@ class Badge < ApplicationRecord
   delegate :scores_count, to: :rarity
 
   enumerize :confirmation_method, in: CONFIRMATION_METHODS, predicates: true, scope: true
+  enumerize :scope, in: SCOPES
 
   mount_uploader :image, BaseUploader
 end

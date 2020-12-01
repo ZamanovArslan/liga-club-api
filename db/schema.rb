@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_25_110446) do
+ActiveRecord::Schema.define(version: 2020_12_01_205347) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,9 @@ ActiveRecord::Schema.define(version: 2020_10_25_110446) do
     t.string "image"
     t.string "confirmation_method"
     t.datetime "ends_at"
+    t.string "scope", default: "republic", null: false
+    t.bigint "city_id"
+    t.index ["city_id"], name: "index_badges_on_city_id"
     t.index ["rarity_id"], name: "index_badges_on_rarity_id"
     t.index ["university_id"], name: "index_badges_on_university_id"
   end
@@ -116,6 +119,7 @@ ActiveRecord::Schema.define(version: 2020_10_25_110446) do
     t.index ["university_id"], name: "index_users_on_university_id"
   end
 
+  add_foreign_key "badges", "cities"
   add_foreign_key "badges", "rarities"
   add_foreign_key "badges", "universities"
   add_foreign_key "participation", "badges"

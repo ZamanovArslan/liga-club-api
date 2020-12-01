@@ -22,7 +22,11 @@ class BadgeDashboard < Administrate::BaseDashboard
     participation: Field::HasMany,
     id: Field::Number,
     name: Field::String,
+    city: Field::BelongsTo,
     description: Field::String,
+    scope: Field::Select.with_options(
+      collection: Badge::SCOPES
+    ),
     created_at: Field::DateTime,
     ends_at: Field::DateTime,
     updated_at: Field::DateTime
@@ -36,7 +40,7 @@ class BadgeDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = %i[
     name
     rarity
-    university
+    scope
     ends_at
     users
   ].freeze
@@ -49,6 +53,8 @@ class BadgeDashboard < Administrate::BaseDashboard
     description
     image
     rarity
+    scope
+    city
     university
     participation
     ends_at
@@ -65,9 +71,11 @@ class BadgeDashboard < Administrate::BaseDashboard
     description
     image
     rarity
-    confirmation_method
     ends_at
+    confirmation_method
+    scope
     university
+    city
   ].freeze
 
   # COLLECTION_FILTERS
