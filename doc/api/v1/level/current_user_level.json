@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjY5OTV9._wmaYISvXWh2k4i5qPRH-MUMvPkKI6Ai0WfpICRpwFk"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg2NTN9.yOLbammb3WggCcBip9nK0uSjhGJv0cAmh9g7M_UnEFE"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"level\": {\n    \"id\": 1748,\n    \"name\": \"Первак\",\n    \"scores_count\": 50,\n    \"description\": \"Первый уровень\",\n    \"image\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    }\n  }\n}",
+      "response_body": "{\n  \"level\": {\n    \"id\": 1828,\n    \"name\": \"Первак\",\n    \"scores_count\": 50,\n    \"description\": \"Первый уровень\",\n    \"image\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/my/level\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjY5OTV9._wmaYISvXWh2k4i5qPRH-MUMvPkKI6Ai0WfpICRpwFk\""
+      "curl": "curl -g \"http://0.0.0.0/v1/my/level\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg2NTN9.yOLbammb3WggCcBip9nK0uSjhGJv0cAmh9g7M_UnEFE\""
     }
   ]
 }

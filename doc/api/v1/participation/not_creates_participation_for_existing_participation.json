@@ -31,11 +31,11 @@
     {
       "request_method": "POST",
       "request_path": "/v1/participation",
-      "request_body": "------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[badge_id]\"\r\n\r\n4566\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[attachment_confirmation]\"; filename=\"image.png\"\r\nContent-Type: image/png\r\nContent-Length: 1626727\r\n\r\n[uploaded data]\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[text_confirmation]\"\r\n\r\nI were there, I swear\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"document\"\r\n\r\nfalse\r\n------------XnJLe9ZIbbGUYtzPQJ16u1--\r",
+      "request_body": "------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[badge_id]\"\r\n\r\n4746\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[attachment_confirmation]\"; filename=\"image.png\"\r\nContent-Type: image/png\r\nContent-Length: 1626727\r\n\r\n[uploaded data]\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[text_confirmation]\"\r\n\r\nI were there, I swear\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"document\"\r\n\r\nfalse\r\n------------XnJLe9ZIbbGUYtzPQJ16u1--\r",
       "request_headers": {
         "Content-Type": "multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1",
         "Accept": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjcwMDd9.yNEcSybbvB9n-nu0DlN5bXxihzaryk0WivitK8DcQVU"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg2NjV9.CzmSpG5nOhI9p0A9W_0zUFccsPp-O8YwMcsrqSCchU0"
       },
       "request_query_parameters": {
       },
@@ -47,7 +47,7 @@
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/participation\" -d '------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[badge_id]\"\r\n\r\n4566\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[attachment_confirmation]\"; filename=\"image.png\"\r\nContent-Type: image/png\r\nContent-Length: 1626727\r\n\r\n[uploaded data]\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[text_confirmation]\"\r\n\r\nI were there, I swear\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"document\"\r\n\r\nfalse\r\n------------XnJLe9ZIbbGUYtzPQJ16u1--\r' -X POST \\\n\t-H \"Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1\" \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjcwMDd9.yNEcSybbvB9n-nu0DlN5bXxihzaryk0WivitK8DcQVU\""
+      "curl": "curl \"http://0.0.0.0/v1/participation\" -d '------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[badge_id]\"\r\n\r\n4746\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[attachment_confirmation]\"; filename=\"image.png\"\r\nContent-Type: image/png\r\nContent-Length: 1626727\r\n\r\n[uploaded data]\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"participation[text_confirmation]\"\r\n\r\nI were there, I swear\r\n------------XnJLe9ZIbbGUYtzPQJ16u1\r\nContent-Disposition: form-data; name=\"document\"\r\n\r\nfalse\r\n------------XnJLe9ZIbbGUYtzPQJ16u1--\r' -X POST \\\n\t-H \"Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1\" \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg2NjV9.CzmSpG5nOhI9p0A9W_0zUFccsPp-O8YwMcsrqSCchU0\""
     }
   ]
 }

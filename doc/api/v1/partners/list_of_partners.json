@@ -26,7 +26,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"partners\": [\n    {\n      \"id\": 73,\n      \"name\": \"ОАО Жанна\",\n      \"description\": \"Multi-lateral asynchronous website\",\n      \"discount\": 50,\n      \"instagram_link\": \"https://www.instagram.com/unicsbasket/\",\n      \"image\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"city\": {\n        \"id\": 1515,\n        \"name\": \"Kazan\"\n      }\n    }\n  ]\n}",
+      "response_body": "{\n  \"partners\": [\n    {\n      \"id\": 83,\n      \"name\": \"НКО СбытПром\",\n      \"description\": \"Balanced high-level policy\",\n      \"discount\": 50,\n      \"instagram_link\": \"https://www.instagram.com/unicsbasket/\",\n      \"image\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"city\": {\n        \"id\": 1696,\n        \"name\": \"Kazan\"\n      }\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

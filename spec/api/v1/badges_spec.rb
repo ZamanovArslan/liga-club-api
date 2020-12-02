@@ -28,7 +28,8 @@ resource "Badges" do
       },
       "image" => be_a_empty_image_attachment,
       "confirmation_method" => badge.confirmation_method,
-      "is_participation" => false
+      "is_participation" => false,
+      "scope" => "republic"
     }
   end
 

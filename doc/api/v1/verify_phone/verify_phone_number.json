@@ -18,24 +18,24 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/verify_phone?value=%2B7%28989%29689-81-26",
+      "request_path": "/v1/verify_phone?value=%2B7%28970%29348-63-16",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"
       },
       "request_query_parameters": {
-        "value": "+7(989)689-81-26"
+        "value": "+7(970)348-63-16"
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"phone\": {\n    \"value\": \"+7(989)689-81-26\",\n    \"user_id\": null\n  }\n}",
+      "response_body": "{\n  \"phone\": {\n    \"value\": \"+7(970)348-63-16\",\n    \"user_id\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/verify_phone?value=%2B7%28989%29689-81-26\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+      "curl": "curl -g \"http://0.0.0.0/v1/verify_phone?value=%2B7%28970%29348-63-16\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
     }
   ]
 }
