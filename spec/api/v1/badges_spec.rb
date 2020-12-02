@@ -27,7 +27,7 @@ resource "Badges" do
         }
       },
       "image" => be_a_empty_image_attachment,
-      "confirmation_method" => badge.confirmation_method,
+      "confirmation_method" => badge.confirmation_method.to_a,
       "is_participation" => false,
       "scope" => "republic"
     }

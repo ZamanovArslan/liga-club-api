@@ -1,15 +1,13 @@
 describe UserLeaderboardQuery do
-  let(:leaderboard_query) { described_class.new(relation) }
   subject(:leaderboard_query_result) { leaderboard_query.all }
 
+  let(:leaderboard_query) { described_class.new(relation) }
   let(:expected_users) { [user_4, user_1, user_2, user_3] }
   let(:relation) { User.all }
-
   let!(:user_2) { create :user, score: 100, university: kfu }
   let!(:user_1) { create :user, score: 200, university: kai }
   let!(:user_3) { create :user, score: 50, university: kfu }
   let!(:user_4) { create :user, score: 300, university: kai }
-
   let(:kfu) { create :university }
   let(:kai) { create :university, name: "KAI" }
 

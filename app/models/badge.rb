@@ -19,7 +19,7 @@ class Badge < ApplicationRecord
 
   delegate :scores_count, to: :rarity
 
-  enumerize :confirmation_method, in: CONFIRMATION_METHODS, predicates: true, scope: true
+  enumerize :confirmation_method, in: CONFIRMATION_METHODS, predicates: true, multiple: true
   enumerize :scope, in: SCOPES
 
   mount_uploader :image, BaseUploader

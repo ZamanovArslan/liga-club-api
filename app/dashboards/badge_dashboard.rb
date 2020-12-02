@@ -14,7 +14,7 @@ class BadgeDashboard < Administrate::BaseDashboard
       remove: true,
       remote_url: false
     ),
-    confirmation_method: Field::Select.with_options(
+    confirmation_method: MultiSelectField.with_options(
       collection: Badge::CONFIRMATION_METHODS
     ),
     university: Field::BelongsTo,
@@ -95,5 +95,9 @@ class BadgeDashboard < Administrate::BaseDashboard
   #
   def display_resource(badge)
     badge.name
+  end
+
+  def permitted_attributes
+    super + [confirmation_method: []]
   end
 end

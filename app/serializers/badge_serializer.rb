@@ -8,8 +8,10 @@ class BadgeSerializer < ApplicationSerializer
 
   alias image attachment
 
-  def scope
-    object.scope
+  delegate :scope, to: :object
+
+  def confirmation_method
+    object.confirmation_method.to_a
   end
 
   def ends_at

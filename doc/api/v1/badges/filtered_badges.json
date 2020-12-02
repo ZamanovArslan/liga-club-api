@@ -38,29 +38,29 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/badges?city_id=1690&university_id=10858&actual=true&rarity_id=5613&name=Do+something",
+      "request_path": "/v1/badges?city_id=1817&university_id=11244&actual=true&rarity_id=5759&name=Do+something",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg2NDh9.1jd3qzKK1Ove7EFFDr6E2_sjawVTL-JX6N9D2zoe_Ps"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg5NDR9.NWVAx7IEgFt4LQSfvnbiPDVy1kLXyMgHjd4GWeHbRck"
       },
       "request_query_parameters": {
-        "city_id": "1690",
-        "university_id": "10858",
+        "city_id": "1817",
+        "university_id": "11244",
         "actual": "true",
-        "rarity_id": "5613",
+        "rarity_id": "5759",
         "name": "Do something"
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"badges\": [\n    {\n      \"id\": 4731,\n      \"name\": \"Do something\",\n      \"description\": \"Some help to elderly\",\n      \"ends_at\": null,\n      \"image\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"confirmation_method\": \"text\",\n      \"scope\": \"republic\",\n      \"is_participation\": false,\n      \"rarity\": {\n        \"id\": 5613,\n        \"name\": \"Uncommon\",\n        \"scores_count\": 7,\n        \"image\": {\n          \"large\": {\n            \"url\": null\n          },\n          \"medium\": {\n            \"url\": null\n          },\n          \"thumb\": {\n            \"url\": null\n          }\n        },\n        \"color\": \"#ffffff\"\n      },\n      \"university\": {\n        \"id\": 10858,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": {\n          \"id\": 1690,\n          \"name\": \"Kazan\"\n        }\n      }\n    }\n  ]\n}",
+      "response_body": "{\n  \"badges\": [\n    {\n      \"id\": 4833,\n      \"name\": \"Do something\",\n      \"description\": \"Some help to elderly\",\n      \"ends_at\": null,\n      \"image\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"confirmation_method\": [\n        \"text\"\n      ],\n      \"scope\": \"republic\",\n      \"is_participation\": false,\n      \"rarity\": {\n        \"id\": 5759,\n        \"name\": \"Uncommon\",\n        \"scores_count\": 9,\n        \"image\": {\n          \"large\": {\n            \"url\": null\n          },\n          \"medium\": {\n            \"url\": null\n          },\n          \"thumb\": {\n            \"url\": null\n          }\n        },\n        \"color\": \"#ffffff\"\n      },\n      \"university\": {\n        \"id\": 11244,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": {\n          \"id\": 1817,\n          \"name\": \"Kazan\"\n        }\n      }\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/badges?city_id=1690&university_id=10858&actual=true&rarity_id=5613&name=Do+something\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg2NDh9.1jd3qzKK1Ove7EFFDr6E2_sjawVTL-JX6N9D2zoe_Ps\""
+      "curl": "curl -g \"http://0.0.0.0/v1/badges?city_id=1817&university_id=11244&actual=true&rarity_id=5759&name=Do+something\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg5NDR9.NWVAx7IEgFt4LQSfvnbiPDVy1kLXyMgHjd4GWeHbRck\""
     }
   ]
 }

@@ -4,7 +4,7 @@ FactoryBot.define do
     description { "Some help to elderly" }
     ends_at { Time.zone.now + 1.day }
     rarity { association(:rarity) }
-    confirmation_method { :text }
+    confirmation_method { [:text] }
   end
 
   trait :with_university do
