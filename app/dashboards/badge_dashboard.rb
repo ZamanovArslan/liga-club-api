@@ -22,6 +22,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     participation: Field::HasMany,
     id: Field::Number,
     name: Field::String,
+    participation_terms: Field::String,
     city: Field::BelongsTo,
     description: Field::String,
     scope: Field::Select.with_options(
@@ -51,6 +52,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     id
     name
     description
+    participation_terms
     image
     rarity
     scope
@@ -69,6 +71,7 @@ class BadgeDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = %i[
     name
     description
+    participation_terms
     image
     rarity
     ends_at

@@ -14,7 +14,7 @@ class Badge < ApplicationRecord
   scope :ended, -> { where("ends_at < ?", Time.zone.now) }
   scope :actual, -> { where("ends_at > ?", Time.zone.now).or(where(ends_at: nil)) }
 
-  validates :name, presence: true
+  validates :name, :participation_terms, presence: true
   validates :name, length: { maximum: 30 }
 
   delegate :scores_count, to: :rarity

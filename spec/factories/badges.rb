@@ -5,6 +5,7 @@ FactoryBot.define do
     ends_at { Time.zone.now + 1.day }
     rarity { association(:rarity) }
     confirmation_method { [:text] }
+    participation_terms { "Attach photo" }
   end
 
   trait :with_university do

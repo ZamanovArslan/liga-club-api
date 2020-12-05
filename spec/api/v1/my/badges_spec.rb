@@ -23,7 +23,9 @@ resource "Badges" do
       "image" => be_a_empty_image_attachment,
       "confirmation_method" => badge.confirmation_method,
       "is_participation" => true,
-      "scope" => "republic"
+      "scope" => "republic",
+      "city" => nil,
+      "participation_description" => badge.participation_terms
     }
   end
 
