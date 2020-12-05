@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjkyOTB9.UVdRXrC_mEDinqOwiv10L-1V3NjvU0jlcvsnx1JKaLI"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk1MDV9.OgBT8_AbKO-fTSCVMrq4MGy86w-GMl6D6X9BYZPPRSM"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 9290,\n    \"first_name\": \"Юрий\",\n    \"last_name\": \"Лыткина\",\n    \"full_name\": \"Юрий Лыткина\",\n    \"group_number\": \"11-703\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"phone_number\": \"+7(929)714-12-31\",\n    \"rank\": 2,\n    \"university\": {\n      \"id\": 11698,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 9505,\n    \"first_name\": \"Олег\",\n    \"last_name\": \"Кулагин\",\n    \"full_name\": \"Олег Кулагин\",\n    \"group_number\": \"11-703\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"phone_number\": \"+7(920)596-12-69\",\n    \"rank\": 2,\n    \"university\": {\n      \"id\": 11973,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjkyOTB9.UVdRXrC_mEDinqOwiv10L-1V3NjvU0jlcvsnx1JKaLI\""
+      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk1MDV9.OgBT8_AbKO-fTSCVMrq4MGy86w-GMl6D6X9BYZPPRSM\""
     }
   ]
 }

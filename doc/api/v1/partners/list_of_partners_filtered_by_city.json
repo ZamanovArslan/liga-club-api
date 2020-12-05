@@ -1,0 +1,41 @@
+{
+  "resource": "Partners",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/v1/partners",
+  "description": "List of partners filtered by city",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": false,
+      "name": "city_id",
+      "description": "City id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/partners?city_id=2077",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "city_id": "2077"
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"partners\": [\n    {\n      \"id\": 120,\n      \"name\": \"ИП Терентьев\",\n      \"description\": \"Multi-tiered scalable array\",\n      \"discount\": 50,\n      \"instagram_link\": \"https://www.instagram.com/unicsbasket/\",\n      \"image\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"city\": {\n        \"id\": 2077,\n        \"name\": \"Kazan\"\n      }\n    }\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://0.0.0.0/v1/partners?city_id=2077\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+    }
+  ]
+}

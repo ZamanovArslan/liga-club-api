@@ -152,8 +152,8 @@
       "explanation": null,
       "examples": [
         {
-          "description": "List of partners",
-          "link": "partners/list_of_partners.json",
+          "description": "List of partners filtered by city",
+          "link": "partners/list_of_partners_filtered_by_city.json",
           "groups": "all",
           "route": "/v1/partners",
           "method": "get"
