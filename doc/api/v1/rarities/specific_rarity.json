@@ -14,12 +14,12 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/rarities/5777",
+      "request_path": "/v1/rarities/5956",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg5NjN9.ZerkZnJO21yU24JmmWzbmlSKSp4C4_a8kmYBgAPhgnk"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjkzMDF9.NH8iYRWYUrIQFPbipAGFQ30nxB6vOPVmGSxR7UKoqlo"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"rarity\": {\n    \"id\": 5777,\n    \"name\": \"Uncommon\",\n    \"scores_count\": 4,\n    \"image\": {\n      \"large\": {\n        \"url\": \"/uploads/rarity/image/5777/large_image.png\"\n      },\n      \"medium\": {\n        \"url\": \"/uploads/rarity/image/5777/medium_image.png\"\n      },\n      \"thumb\": {\n        \"url\": \"/uploads/rarity/image/5777/thumb_image.png\"\n      }\n    },\n    \"color\": \"#ececec\"\n  }\n}",
+      "response_body": "{\n  \"rarity\": {\n    \"id\": 5956,\n    \"name\": \"Uncommon\",\n    \"scores_count\": 8,\n    \"image\": {\n      \"large\": {\n        \"url\": \"/uploads/rarity/image/5956/large_image.png\"\n      },\n      \"medium\": {\n        \"url\": \"/uploads/rarity/image/5956/medium_image.png\"\n      },\n      \"thumb\": {\n        \"url\": \"/uploads/rarity/image/5956/thumb_image.png\"\n      }\n    },\n    \"color\": \"#ececec\"\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/rarities/5777\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg5NjN9.ZerkZnJO21yU24JmmWzbmlSKSp4C4_a8kmYBgAPhgnk\""
+      "curl": "curl -g \"http://0.0.0.0/v1/rarities/5956\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjkzMDF9.NH8iYRWYUrIQFPbipAGFQ30nxB6vOPVmGSxR7UKoqlo\""
     }
   ]
 }

@@ -19,19 +19,19 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg5NTh9.fS9cc5Cdlf0VrmP0Q0HvSufy1r3Rg530ssX3CYZO9sA"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjkyOTZ9.UODNAzwSbq4nl5sbY0CqZULnWToZCT208yYiBI4xprQ"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 8958,\n    \"first_name\": \"Василиса\",\n    \"last_name\": \"Фадеева\",\n    \"full_name\": \"Василиса Фадеева\",\n    \"group_number\": \"11-703\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"phone_number\": \"+7(943)750-23-74\",\n    \"university\": {\n      \"id\": 11267,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 9296,\n    \"first_name\": \"София\",\n    \"last_name\": \"Большаков\",\n    \"full_name\": \"София Большаков\",\n    \"group_number\": \"11-703\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"phone_number\": \"+7(947)206-89-37\",\n    \"university\": {\n      \"id\": 11706,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg5NTh9.fS9cc5Cdlf0VrmP0Q0HvSufy1r3Rg530ssX3CYZO9sA\""
+      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjkyOTZ9.UODNAzwSbq4nl5sbY0CqZULnWToZCT208yYiBI4xprQ\""
     }
   ]
 }
