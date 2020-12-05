@@ -1,0 +1,30 @@
+<header class="main-content__header" role="banner">
+
+  <h1 class="main-content__page-title" id="page-title">
+    Import Phones
+
+  </h1>
+</header>
+<section class="main-content__body main-content__body--flush">
+  <div style="padding: 40px">
+    <div class="attribute-label" style="text-align: left">
+      Only csv file. Example:
+    </div>
+    <span style="display: table-caption;font-family: 'Droid Sans Mono', Arial, sans-serif">
+      value
+      +3252352352
+      +3252352353
+      +3252352354
+      +3252352352
+      +3252352355
+      +3252352356
+      +3252352357
+      +3252352358
+    </span>
+
+    <%= form_with(method: :post, :multipart => true) do %>
+      <%= file_field_tag "document", class: "field-unit", accept: "text/csv" %>
+      <%= submit_tag "Добавить" %>
+    <% end %>
+  </div>
+</section>

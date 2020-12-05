@@ -18,6 +18,7 @@ Rails.application.routes.draw do
       resources name, only: %i[index show new create edit update destroy]
     end
 
+    resources :import_phones, only: [:index, :create]
     root to: "users#index"
   end
 
