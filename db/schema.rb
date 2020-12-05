@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_05_160331) do
+ActiveRecord::Schema.define(version: 2020_12_05_164053) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2020_12_05_160331) do
     t.string "scope", default: "republic", null: false
     t.bigint "city_id"
     t.text "participation_terms"
+    t.text "bonus_description"
     t.index ["city_id"], name: "index_badges_on_city_id"
     t.index ["rarity_id"], name: "index_badges_on_rarity_id"
     t.index ["university_id"], name: "index_badges_on_university_id"

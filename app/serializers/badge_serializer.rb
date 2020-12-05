@@ -1,7 +1,8 @@
 class BadgeSerializer < ApplicationSerializer
   include ImageSerializer
 
-  attributes :id, :name, :description, :ends_at, :image, :confirmation_method, :scope, :participation_description
+  attributes :id, :name, :description, :ends_at, :image, :confirmation_method, :scope, :participation_description,
+    :bonus_description
 
   has_one :rarity
   has_one :university

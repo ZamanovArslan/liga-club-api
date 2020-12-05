@@ -31,7 +31,8 @@ resource "Badges" do
       "is_participation" => false,
       "scope" => "republic",
       "city" => nil,
-      "participation_description" => badge.participation_terms
+      "participation_description" => badge.participation_terms,
+      "bonus_description" => nil
     }
   end
 

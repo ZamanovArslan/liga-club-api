@@ -22,6 +22,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     participation: Field::HasMany,
     id: Field::Number,
     name: Field::String,
+    bonus_description: Field::String,
     participation_terms: Field::String,
     city: Field::BelongsTo,
     description: Field::String,
@@ -53,6 +54,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     name
     description
     participation_terms
+    bonus_description
     image
     rarity
     scope
@@ -72,6 +74,7 @@ class BadgeDashboard < Administrate::BaseDashboard
     name
     description
     participation_terms
+    bonus_description
     image
     rarity
     ends_at
