@@ -15,6 +15,7 @@ class LevelDashboard < Administrate::BaseDashboard
     ),
     id: Field::Number,
     name: Field::String,
+    bonus_description: Field::String,
     scores_count: Field::Number,
     description: Field::Text,
     created_at: Field::DateTime,
@@ -41,6 +42,7 @@ class LevelDashboard < Administrate::BaseDashboard
     image
     scores_count
     description
+    bonus_description
     created_at
     updated_at
   ].freeze
@@ -53,6 +55,7 @@ class LevelDashboard < Administrate::BaseDashboard
     image
     scores_count
     description
+    bonus_description
   ].freeze
 
   # COLLECTION_FILTERS

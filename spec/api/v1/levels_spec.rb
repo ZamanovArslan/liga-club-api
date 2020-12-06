@@ -9,7 +9,8 @@ resource "Levels" do
       "name" => level.name,
       "scores_count" => level.scores_count,
       "description" => level.description,
-      "image" => be_a_empty_image_attachment
+      "image" => be_a_empty_image_attachment,
+      "bonus_description" => nil
     }
   end
 

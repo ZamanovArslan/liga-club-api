@@ -18,7 +18,8 @@ resource "Level" do
         "name" => suitable_level.name,
         "scores_count" => suitable_level.scores_count,
         "description" => suitable_level.description,
-        "image" => be_a_empty_image_attachment
+        "image" => be_a_empty_image_attachment,
+        "bonus_description" => nil
       }
     }
   end
