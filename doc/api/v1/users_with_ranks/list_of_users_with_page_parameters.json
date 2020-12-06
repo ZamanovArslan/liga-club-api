@@ -26,7 +26,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk1MjV9.3WyRbpgkkZWNA895GGD_XS5nZGa3_ixux9F2M64geu4"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk2NTR9.EtxYrl3Cbl7AWnFr1FsuSAjEHn710wMYFYluQA1SclE"
       },
       "request_query_parameters": {
         "page": "2",
@@ -35,12 +35,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 9525,\n      \"first_name\": \"Антонида\",\n      \"last_name\": \"Шубина\",\n      \"full_name\": \"Антонида Шубина\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"score\": 0,\n      \"phone_number\": \"+7(917)051-65-16\",\n      \"rank\": 2,\n      \"university\": {\n        \"id\": 12000,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": null\n      },\n      \"level\": null\n    }\n  ]\n}",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 9654,\n      \"first_name\": \"Иван\",\n      \"last_name\": \"Тетерина\",\n      \"full_name\": \"Иван Тетерина\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"score\": 0,\n      \"phone_number\": \"+7(962)171-11-41\",\n      \"rank\": 2,\n      \"university\": {\n        \"id\": 12165,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": null\n      },\n      \"level\": null\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users?page=2&per_page=1\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk1MjV9.3WyRbpgkkZWNA895GGD_XS5nZGa3_ixux9F2M64geu4\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users?page=2&per_page=1\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk2NTR9.EtxYrl3Cbl7AWnFr1FsuSAjEHn710wMYFYluQA1SclE\""
     }
   ]
 }

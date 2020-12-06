@@ -19,19 +19,19 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk1MTF9.b3ccU2dBK91RoUiPEv2jQd9aALkUAEy2AUPSgsN-kqA"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk2NDB9.Y938uecq4YSWL6R_YD11kYJOdPXovH-mLyg_qg8lggQ"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 9511,\n    \"first_name\": \"Макар\",\n    \"last_name\": \"Терентьева\",\n    \"full_name\": \"Макар Терентьева\",\n    \"group_number\": \"11-703\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"phone_number\": \"+7(978)384-00-20\",\n    \"university\": {\n      \"id\": 11981,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 9640,\n    \"first_name\": \"Оксана\",\n    \"last_name\": \"Игнатьева\",\n    \"full_name\": \"Оксана Игнатьева\",\n    \"group_number\": \"11-703\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"phone_number\": \"+7(931)137-49-08\",\n    \"university\": {\n      \"id\": 12146,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk1MTF9.b3ccU2dBK91RoUiPEv2jQd9aALkUAEy2AUPSgsN-kqA\""
+      "curl": "curl \"http://0.0.0.0/v1/my/profile\" -d '{}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk2NDB9.Y938uecq4YSWL6R_YD11kYJOdPXovH-mLyg_qg8lggQ\""
     }
   ]
 }

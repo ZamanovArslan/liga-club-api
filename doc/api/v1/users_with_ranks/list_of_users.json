@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk1MjJ9.vioLRDDqabpoE2-mCno9tIAZ_DCJacmgZgclbZDC94Y"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk2NTF9.FkWKCaw9kVVYSfUXM4W43Vbnn-a9jF1c4RBTYox3Kw8"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 9521,\n      \"first_name\": \"Ivan\",\n      \"last_name\": \"Petrovich\",\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/9521/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/9521/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/9521/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"phone_number\": \"+7(951)072-59-77\",\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 11996,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": {\n          \"id\": 2081,\n          \"name\": \"Kazan\"\n        }\n      },\n      \"level\": null\n    },\n    {\n      \"id\": 9522,\n      \"first_name\": \"Владимир\",\n      \"last_name\": \"Сергеева\",\n      \"full_name\": \"Владимир Сергеева\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"score\": 0,\n      \"phone_number\": \"+7(925)996-02-10\",\n      \"rank\": 2,\n      \"university\": {\n        \"id\": 11997,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": null\n      },\n      \"level\": null\n    }\n  ]\n}",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 9650,\n      \"first_name\": \"Ivan\",\n      \"last_name\": \"Petrovich\",\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/9650/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/9650/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/9650/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"phone_number\": \"+7(992)786-50-43\",\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 12161,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": {\n          \"id\": 2135,\n          \"name\": \"Kazan\"\n        }\n      },\n      \"level\": null\n    },\n    {\n      \"id\": 9651,\n      \"first_name\": \"Анжела\",\n      \"last_name\": \"Суворов\",\n      \"full_name\": \"Анжела Суворов\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"score\": 0,\n      \"phone_number\": \"+7(987)239-58-81\",\n      \"rank\": 2,\n      \"university\": {\n        \"id\": 12162,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": null\n      },\n      \"level\": null\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk1MjJ9.vioLRDDqabpoE2-mCno9tIAZ_DCJacmgZgclbZDC94Y\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk2NTF9.FkWKCaw9kVVYSfUXM4W43Vbnn-a9jF1c4RBTYox3Kw8\""
     }
   ]
 }
