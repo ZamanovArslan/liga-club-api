@@ -20,5 +20,11 @@ describe UserLeaderboardQuery do
 
       it { is_expected.to eq(expected_users) }
     end
+
+    context "when relation has no records" do
+      let(:relation) { User.where(id: -1) }
+
+      it { is_expected.to eq([]) }
+    end
   end
 end

@@ -15,7 +15,7 @@ class UserLeaderboardQuery
 
   def all
     User.select("*")
-      .from(format(FROM_QUERY, user_ids: relation.pluck(:id).join(",")))
+      .from(format(FROM_QUERY, user_ids: relation.pluck(:id).join(",").presence || "-1"))
       .joins("INNER JOIN users ON users.id = ranked_users.id")
       .order(rank: :asc)
   end

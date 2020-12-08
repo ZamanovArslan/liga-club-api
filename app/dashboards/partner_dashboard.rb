@@ -15,6 +15,7 @@ class PartnerDashboard < Administrate::BaseDashboard
     ),
     id: Field::Number,
     name: Field::String,
+    city: Field::BelongsTo,
     description: Field::Text,
     discount: Field::Number,
     instagram_link: Field::String,
@@ -30,7 +31,7 @@ class PartnerDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = %i[
     id
     name
-    description
+    city
     discount
   ].freeze
 
@@ -41,6 +42,7 @@ class PartnerDashboard < Administrate::BaseDashboard
     name
     image
     description
+    city
     discount
     instagram_link
     created_at
@@ -54,6 +56,7 @@ class PartnerDashboard < Administrate::BaseDashboard
     name
     image
     description
+    city
     discount
     instagram_link
   ].freeze
