@@ -17,10 +17,14 @@ class UserDashboard < Administrate::BaseDashboard
     university: Field::BelongsTo,
     id: Field::Number,
     first_name: Field::String,
-    full_name: Field::String,
+    full_name: Field::String.with_options(
+      searchable: false
+    ),
     last_name: Field::String,
     group_number: Field::String,
-    password: Field::String,
+    password: Field::String.with_options(
+      searchable: false
+    ),
     score: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime
