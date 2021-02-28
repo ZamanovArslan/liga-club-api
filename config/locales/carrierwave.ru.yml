@@ -1,0 +1,14 @@
+ru:
+  errors:
+    messages:
+      carrierwave_processing_error: не удалось обработать
+      carrierwave_integrity_error: файл недопустимого типа
+      carrierwave_download_error: не может быть загружен
+      extension_whitelist_error: "не может быть расширения %{extension}, разрешенные расширения: %{allowed_types}"
+      extension_blacklist_error: "не может быть расширения %{extension}, запрещенные расширения: %{prohibited_types}"
+      content_type_whitelist_error: "не может быть %{content_type} типа, разрешенные типы: %{allowed_types}"
+      content_type_blacklist_error: "не может быть %{content_type} типа"
+      rmagick_processing_error: "не удалось обработать, может быть это не изображение?"
+      mini_magick_processing_error: "не удалось обработать, может быть это не изображение? Ошибка: %{e}"
+      min_size_error: "должен быть больше, чем %{min_size}"
+      max_size_error: "должен быть меньше, чем %{max_size}"

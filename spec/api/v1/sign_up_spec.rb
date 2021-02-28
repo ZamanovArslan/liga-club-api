@@ -25,10 +25,9 @@ resource "Sign up" do
     let(:university_id) { university.id }
     let(:avatar) { Rack::Test::UploadedFile.new("spec/support/fixtures/image.png", "image/png") }
     let(:new_user) { User.last }
+    let(:phone) { create :phone }
 
     context "when phone exists" do
-      let(:phone) { create :phone }
-
       example "Create User" do
         do_request
 
@@ -39,7 +38,6 @@ resource "Sign up" do
     end
 
     context "without required fields" do
-      let(:phone) { create :phone }
       let(:first_name) { nil }
       let(:expected_data) do
         {
@@ -86,7 +84,6 @@ resource "Sign up" do
     end
 
     context "when phone already taken" do
-      let(:phone) { create :phone }
       let(:expected_data) do
         {
           "errors" => [
@@ -102,6 +99,30 @@ resource "Sign up" do
 
       before do
         create :user, phone: phone
+      end
+
+      example "not creates user", document: false do
+        do_request
+
+        expect(response_status).to eq(422)
+        expect(json_response_body).to eq(expected_data)
+      end
+    end
+
+    context "when image not correct" do
+      let(:avatar) { Rack::Test::UploadedFile.new("spec/support/fixtures/large_image.jpg", "image/jpg") }
+
+      let(:expected_data) do
+        {
+          "errors" => [
+            {
+              "id" => "4eac02e2-6856-449b-bc28-fbf1b32a20f2",
+              "status" => 422,
+              "error" => "Неверные данные",
+              "validations" => "Аватар должен быть меньше, чем 3,0 МБ"
+            }
+          ]
+        }
       end
 
       example "not creates user", document: false do
