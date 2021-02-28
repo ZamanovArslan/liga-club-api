@@ -17,7 +17,7 @@ resource "Participation" do
     let(:expected_data) do
       {
         "id" => Participation.last.id,
-        "confirmed" => Participation.last.confirmed,
+        "status" => "pending",
         "text_confirmation" => "I were there, I swear",
         "attachment_confirmation" => be_a_image_attachment,
         "user" =>

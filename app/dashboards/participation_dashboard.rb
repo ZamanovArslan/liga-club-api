@@ -11,7 +11,9 @@ class ParticipationDashboard < Administrate::BaseDashboard
     user: Field::BelongsTo,
     badge: Field::BelongsTo,
     id: Field::Number,
-    confirmed: Field::Boolean,
+    status: Field::Select.with_options(
+      collection: Participation::STATUSES
+    ),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     text_confirmation: Field::String,
@@ -30,7 +32,7 @@ class ParticipationDashboard < Administrate::BaseDashboard
     id
     user
     badge
-    confirmed
+    status
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -39,7 +41,7 @@ class ParticipationDashboard < Administrate::BaseDashboard
     id
     user
     badge
-    confirmed
+    status
     created_at
     updated_at
     text_confirmation
@@ -52,7 +54,7 @@ class ParticipationDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = %i[
     user
     badge
-    confirmed
+    status
     text_confirmation
     attachment_confirmation
   ].freeze
