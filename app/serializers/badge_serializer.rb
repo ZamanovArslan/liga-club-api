@@ -21,6 +21,6 @@ class BadgeSerializer < ApplicationSerializer
   end
 
   def ends_at
-    object.ends_at&.strftime("%m.%d.%Y %R")
+    object.ends_at&.strftime("%d.%m.%Y %R")
   end
 end

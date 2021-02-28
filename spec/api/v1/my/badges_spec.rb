@@ -11,7 +11,7 @@ resource "Badges" do
       "id" => badge.id,
       "name" => badge.name,
       "description" => badge.description,
-      "ends_at" => badge.ends_at.strftime("%m.%d.%Y %R"),
+      "ends_at" => badge.ends_at.strftime("%d.%m.%Y %R"),
       "rarity" => {
         "id" => badge.rarity.id,
         "name" => badge.rarity.name,
