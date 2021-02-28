@@ -26,7 +26,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"levels\": [\n    {\n      \"id\": 2008,\n      \"name\": \"Первак\",\n      \"scores_count\": 8,\n      \"description\": \"Первый уровень\",\n      \"image\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"bonus_description\": null\n    }\n  ]\n}",
+      "response_body": "{\n  \"levels\": [\n    {\n      \"id\": 2088,\n      \"name\": \"Первак\",\n      \"scores_count\": 5,\n      \"description\": \"Первый уровень\",\n      \"image\": {\n        \"large\": {\n          \"url\": null\n        },\n        \"medium\": {\n          \"url\": null\n        },\n        \"thumb\": {\n          \"url\": null\n        }\n      },\n      \"bonus_description\": null\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

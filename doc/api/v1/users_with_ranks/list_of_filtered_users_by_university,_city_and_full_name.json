@@ -25,27 +25,27 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/users?full_name=petrovich&university_id=12166&city_id=2138",
+      "request_path": "/v1/users?full_name=petrovich&university_id=12810&city_id=2338",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk2NTZ9.S6LYc7a5H_5Db_Fm0VaMif8cvcaL2diTpJUiclePjIY"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEwMTY0fQ.9QXtgnx0l2RD4LNyNyXJrMr6a2x2iM9IOeq65Hd8GkY"
       },
       "request_query_parameters": {
         "full_name": "petrovich",
-        "university_id": "12166",
-        "city_id": "2138"
+        "university_id": "12810",
+        "city_id": "2338"
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 9655,\n      \"first_name\": \"Ivan\",\n      \"last_name\": \"Petrovich\",\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/9655/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/9655/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/9655/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"phone_number\": \"+7(956)336-21-04\",\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 12166,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": {\n          \"id\": 2138,\n          \"name\": \"Kazan\"\n        }\n      },\n      \"level\": null\n    }\n  ]\n}",
+      "response_body": "{\n  \"users\": [\n    {\n      \"id\": 10163,\n      \"first_name\": \"Ivan\",\n      \"last_name\": \"Petrovich\",\n      \"full_name\": \"Ivan Petrovich\",\n      \"group_number\": \"11-703\",\n      \"avatar\": {\n        \"large\": {\n          \"url\": \"/uploads/user/avatar/10163/large_image.png\"\n        },\n        \"medium\": {\n          \"url\": \"/uploads/user/avatar/10163/medium_image.png\"\n        },\n        \"thumb\": {\n          \"url\": \"/uploads/user/avatar/10163/thumb_image.png\"\n        }\n      },\n      \"score\": 50,\n      \"phone_number\": \"+7(966)822-07-79\",\n      \"rank\": 1,\n      \"university\": {\n        \"id\": 12810,\n        \"name\": \"KPFU\",\n        \"abbreviation\": null,\n        \"city\": {\n          \"id\": 2338,\n          \"name\": \"Kazan\"\n        }\n      },\n      \"level\": null\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/users?full_name=petrovich&university_id=12166&city_id=2138\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk2NTZ9.S6LYc7a5H_5Db_Fm0VaMif8cvcaL2diTpJUiclePjIY\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users?full_name=petrovich&university_id=12810&city_id=2338\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEwMTY0fQ.9QXtgnx0l2RD4LNyNyXJrMr6a2x2iM9IOeq65Hd8GkY\""
     }
   ]
 }

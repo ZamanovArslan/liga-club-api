@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk2MzR9.2lK4dlefmtp2PqaLCzv32Gaio_AE0kgkdBX4XkRA3gE"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEwMTQyfQ.RBf_46lTxJQjmbQwxgiHEf0KEZXA-2nbQLgGFxnpJ84"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"user\": {\n    \"id\": 9634,\n    \"first_name\": \"Василий\",\n    \"last_name\": \"Михайлова\",\n    \"full_name\": \"Василий Михайлова\",\n    \"group_number\": \"11-703\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"phone_number\": \"+7(989)819-64-86\",\n    \"rank\": 2,\n    \"university\": {\n      \"id\": 12138,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
+      "response_body": "{\n  \"user\": {\n    \"id\": 10142,\n    \"first_name\": \"Анжела\",\n    \"last_name\": \"Евдокимова\",\n    \"full_name\": \"Анжела Евдокимова\",\n    \"group_number\": \"11-703\",\n    \"avatar\": {\n      \"large\": {\n        \"url\": null\n      },\n      \"medium\": {\n        \"url\": null\n      },\n      \"thumb\": {\n        \"url\": null\n      }\n    },\n    \"score\": 0,\n    \"phone_number\": \"+7(947)219-58-81\",\n    \"rank\": 2,\n    \"university\": {\n      \"id\": 12781,\n      \"name\": \"KPFU\",\n      \"abbreviation\": null,\n      \"city\": null\n    },\n    \"level\": null\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjk2MzR9.2lK4dlefmtp2PqaLCzv32Gaio_AE0kgkdBX4XkRA3gE\""
+      "curl": "curl -g \"http://0.0.0.0/v1/my/profile\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEwMTQyfQ.RBf_46lTxJQjmbQwxgiHEf0KEZXA-2nbQLgGFxnpJ84\""
     }
   ]
 }
