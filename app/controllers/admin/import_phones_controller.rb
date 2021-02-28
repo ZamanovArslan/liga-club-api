@@ -1,4 +1,4 @@
-require 'csv'
+require "csv"
 
 module Admin
   class ImportPhonesController < Admin::ApplicationController
@@ -6,12 +6,11 @@ module Admin
     # For example, you may want to send an email after a foo is updated.
 
     def index
-
     end
 
     def create
       import_phones = ImportRecords.call(data: CSV.read(params[:document], headers: true), model: Phone,
-        find_by_columns: ["value"])
+                                         find_by_columns: ["value"])
 
       if import_phones.success?
         redirect_to admin_phones_path, notice: success_message(import_phones)
