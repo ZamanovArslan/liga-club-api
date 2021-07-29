@@ -6,8 +6,8 @@ class User < ApplicationRecord
 
   has_one :phone, dependent: :destroy
   has_many :participation, dependent: :destroy, inverse_of: :user
-  has_many :confirmed_participation, -> { confirmed }, class_name: "Participation", inverse_of: :user
-  has_many :badges, through: :confirmed_participation
+  has_many :approved_participation, -> { approved }, class_name: "Participation", inverse_of: :user
+  has_many :badges, through: :approved_participation
 
   belongs_to :university
 

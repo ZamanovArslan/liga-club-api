@@ -3,7 +3,7 @@ resource "Badges" do
 
   let(:badge) { create :badge }
   before do
-    create :participation, :confirmed, user: current_user, badge: badge
+    create :participation, :approved, user: current_user, badge: badge
   end
 
   let(:expected_data) do

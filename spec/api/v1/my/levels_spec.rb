@@ -6,7 +6,7 @@ resource "Level" do
   let!(:suitable_level) { create :level, scores_count: 50 }
   let(:badge) { create :badge, rarity: rarity }
   let(:rarity) { create :rarity, scores_count: 50 }
-  let!(:participation) { create :participation, :confirmed, user: current_user, badge: badge }
+  let!(:participation) { create :participation, :approved, user: current_user, badge: badge }
   before do
     current_user.update(score: 50)
   end

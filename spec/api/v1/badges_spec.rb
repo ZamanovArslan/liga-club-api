@@ -45,6 +45,27 @@ resource "Badges" do
     end
   end
 
+  context "with page params" do
+    before do
+      create :badge
+    end
+
+    parameter :page, "Page"
+    parameter :per_page, "Per page records count"
+
+    let(:page) { 1 }
+    let(:per_page) { 1 }
+
+    get "/v1/badges" do
+      it_behaves_like "API endpoint with authorization"
+
+      example_request "List of users with page parameters" do
+        expect(response_status).to eq(200)
+        expect(json_response_body["badges"]).to match_array([expected_data])
+      end
+    end
+  end
+
   context "with filter" do
     parameter :city_id, "City id", required: false
     parameter :university_id, "University id", required: false

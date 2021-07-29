@@ -4,13 +4,11 @@ module Admin
     # For example, you may want to send an email after a foo is updated.
     #
     def update
-      requested_resource.assign_attributes(resource_params)
-
-      if requested_resource.confirmed_changed?
-        if participation_status_confirmed?
-          requested_resource.user.score += requested_resource.badge.scores_count
-        else
+      if requested_resource.status != resource_params[:status]
+        if requested_resource.approved?
           requested_resource.user.score -= requested_resource.badge.scores_count
+        elsif resource_params[:status] == "approved"
+          requested_resource.user.score += requested_resource.badge.scores_count
         end
 
         requested_resource.user.save
@@ -21,7 +19,7 @@ module Admin
 
     def destroy
       if requested_resource.destroy
-        requested_resource.user.score -= requested_resource.badge.scores_count if requested_resource.confirmed?
+        requested_resource.user.score -= requested_resource.badge.scores_count if requested_resource.approved?
         requested_resource.user.save
 
         flash[:notice] = translate_with_resource("destroy.success")
@@ -29,10 +27,6 @@ module Admin
         flash[:error] = requested_resource.errors.full_messages.join("<br/>")
       end
       redirect_to action: :index
-    end
-
-    def participation_status_confirmed?
-      requested_resource.changes["confirmed"] == [false, true]
     end
 
     # Override this method to specify custom lookup behavior.

@@ -12,6 +12,13 @@
           "method": "get"
         },
         {
+          "description": "List of users with page parameters",
+          "link": "badges/list_of_users_with_page_parameters.json",
+          "groups": "all",
+          "route": "/v1/badges",
+          "method": "get"
+        },
+        {
           "description": "Filtered badges",
           "link": "badges/filtered_badges.json",
           "groups": "all",
