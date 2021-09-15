@@ -144,7 +144,7 @@ ActiveRecord::Schema.define(version: 2021_09_15_211047) do
   add_foreign_key "badges", "cities"
   add_foreign_key "badges", "rarities"
   add_foreign_key "badges", "universities"
-  add_foreign_key "level_bonuses", "bonuses", column: "bonus_id"
+  add_foreign_key "level_bonuses", "bonuses"
   add_foreign_key "level_bonuses", "levels"
   add_foreign_key "participation", "badges"
   add_foreign_key "participation", "users"
