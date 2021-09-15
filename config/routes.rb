@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       news
       partners
       universities
+      bonuses
     ].each do |name|
       resources name, only: %i[index show new create edit update destroy]
     end
