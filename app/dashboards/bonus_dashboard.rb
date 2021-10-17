@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class LevelDashboard < Administrate::BaseDashboard
+class BonusDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -8,19 +8,13 @@ class LevelDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    image: Field::Carrierwave.with_options(
-      image: :medium,
-      remove: true,
-      remote_url: false
-    ),
     id: Field::Number,
-    name: Field::String,
-    bonuses: Field::HasMany,
-    bonus_description: Field::String,
-    scores_count: Field::Number,
+    title: Field::String,
     description: Field::Text,
+    link: Field::Text,
     created_at: Field::DateTime,
-    updated_at: Field::DateTime
+    updated_at: Field::DateTime,
+    levels: Field::HasMany
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -30,35 +24,30 @@ class LevelDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
     id
-    name
-    scores_count
+    title
     description
+    link
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
     id
-    name
-    image
-    scores_count
+    title
     description
-    bonus_description
+    link
     created_at
     updated_at
-    bonuses
+    levels
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
-    name
-    image
-    scores_count
+    title
     description
-    bonus_description
-    bonuses
+    link
   ].freeze
 
   # COLLECTION_FILTERS
@@ -73,10 +62,10 @@ class LevelDashboard < Administrate::BaseDashboard
   #   }.freeze
   COLLECTION_FILTERS = {}.freeze
 
-  # Overwrite this method to customize how levels are displayed
+  # Overwrite this method to customize how bonuses are displayed
   # across all pages of the admin dashboard.
   #
-  def display_resource(level)
-    level.name
+  def display_resource(bonus)
+    bonus.title
   end
 end

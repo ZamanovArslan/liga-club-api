@@ -1,7 +1,8 @@
 resource "Levels" do
   include_context "with API Headers"
 
-  let!(:level) { create :level }
+  let!(:level) { create :level, bonuses: [bonus] }
+  let!(:bonus) { create :bonus }
 
   let(:expected_data) do
     {
@@ -10,7 +11,15 @@ resource "Levels" do
       "scores_count" => level.scores_count,
       "description" => level.description,
       "image" => be_a_empty_image_attachment,
-      "bonus_description" => nil
+      "bonus_description" => nil,
+      "bonuses" => [
+        {
+          "id" => bonus.id,
+          "title" => bonus.title,
+          "description" => bonus.description,
+          "link" => bonus.link
+        }
+      ]
     }
   end
 
